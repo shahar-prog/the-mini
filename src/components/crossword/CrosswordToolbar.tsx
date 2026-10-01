@@ -41,13 +41,6 @@ export default function CrosswordToolbar({
       <div className="flex items-center gap-2 text-[#2C221B] font-mono text-sm font-semibold">
         <Clock className="w-4 h-4 text-[#F17127]" />
         <span>{timeFormatted}</span>
-        <button
-          onClick={onToggleTimer}
-          className="p-1 text-muted-foreground hover:text-foreground transition-colors"
-          title={isRunning ? 'Pause Timer' : 'Resume Timer'}
-        >
-          {isRunning ? <Pause className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5" />}
-        </button>
       </div>
 
       {/* Puzzle Mode & Title Badge */}
@@ -82,14 +75,6 @@ export default function CrosswordToolbar({
         >
           <Eye className="w-3.5 h-3.5" />
           Reveal
-        </button>
-
-        <button
-          onClick={onResetPuzzle}
-          className="p-1.5 rounded-md hover:bg-neutral-200 text-neutral-700 transition-colors"
-          title="Reset Puzzle"
-        >
-          <RotateCcw className="w-3.5 h-3.5" />
         </button>
 
         {onNewRandomPuzzle ? (
