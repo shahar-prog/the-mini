@@ -170,7 +170,7 @@ export default function CrosswordGame({
               )}
             </div>
             <div className="mt-3 text-xs text-muted-foreground text-center">
-              Tap cell to toggle Across / Down • Space or Tab to advance
+              Tap cell or Space to toggle Across • Tab to advance
             </div>
           </div>
 
