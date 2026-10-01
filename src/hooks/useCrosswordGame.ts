@@ -1,56 +1,46 @@
-import { useState, useCallback, useMemo } from 'react';
+import { useState, useCallback } from 'react';
 import { CrosswordPuzzle } from '@/types/playminicrossword';
 
-export function useCrosswordGame(puzzle: CrosswordPuzzle) {
-  // 1. Grid Values State (user input)
+export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSeconds: number) => void) {
   const [gridValues, setGridValues] = useState<string[][]>(() =>
     puzzle.initialGrid
       ? puzzle.initialGrid.map((row) => [...row])
-      : Array.from({ length: puzzle.height }, () => Array(puzzle.width).fill(''))
+      : Array.from({ length: puzzle.height }, () =>
+          Array(puzzle.width).fill(''),
+        ),
   );
 
-  // 2. Active Cell & Direction
-  const [selectedCell, setSelectedCell] = useState<[number, number] | null>(() => {
-    for (let r = 0; r < puzzle.height; r++) {
-      for (let c = 0; c < puzzle.width; c++) {
-        if (puzzle.grid[r][c] !== ' ') return [r, c];
-      }
-    }
-    return null;
-  });
-  const [direction, setDirection] = useState<'across' | 'down'>('across');
-
-  // 3. Completion State
+  const [elapsedSeconds, setElapsedSeconds] = useState(0);
+  const [isRunning, setIsRunning] = useState(true);
   const [isSolved, setIsSolved] = useState(false);
   const [incorrectCells, setIncorrectCells] = useState<Set<string>>(new Set());
 
-  const checkIsComplete = useCallback((currentGrid: string[][]) => {
-    for (let r = 0; r < puzzle.height; r++) {
-      for (let c = 0; c < puzzle.width; c++) {
-        if (puzzle.grid[r][c] !== ' ') {
-          if (currentGrid[r][c].toUpperCase() !== puzzle.grid[r][c].toUpperCase()) {
-            return false;
+  const checkIsComplete = useCallback(
+    (currentGrid: string[][]) => {
+      for (let r = 0; r < puzzle.height; r++) {
+        for (let c = 0; c < puzzle.width; c++) {
+          if (puzzle.grid[r][c] !== ' ') {
+            if (
+              currentGrid[r][c].toUpperCase() !==
+              puzzle.grid[r][c].toUpperCase()
+            ) {
+              return false;
+            }
           }
         }
       }
-    }
-    return true;
-  }, [puzzle]);
+      return true;
+    },
+    [puzzle],
+  );
 
   const handleSolve = useCallback(() => {
     setIsSolved(true);
-  }, []);
+    setIsRunning(false);
+    onSolve?.(elapsedSeconds);
+  }, [elapsedSeconds, onSolve]);
 
-  const handleCellClick = (r: number, c: number) => {
-    if (puzzle.grid[r][c] === ' ') return;
-    if (selectedCell && selectedCell[0] === r && selectedCell[1] === c) {
-      setDirection((prev) => (prev === 'across' ? 'down' : 'across'));
-    } else {
-      setSelectedCell([r, c]);
-    }
-  };
-
-  const handleCheckPuzzle = () => {
+  const handleCheckPuzzle = useCallback(() => {
     const errors = new Set<string>();
     for (let r = 0; r < puzzle.height; r++) {
       for (let c = 0; c < puzzle.width; c++) {
@@ -63,9 +53,9 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle) {
       }
     }
     setIncorrectCells(errors);
-  };
+  }, [gridValues, puzzle]);
 
-  const handleRevealWord = (activeClue: any) => {
+  const handleRevealWord = useCallback((activeClue: any) => {
     if (!activeClue) return;
     const newGrid = gridValues.map((row) => [...row]);
     const isAcross = activeClue.direction === 'across';
@@ -76,31 +66,33 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle) {
     }
     setGridValues(newGrid);
     if (checkIsComplete(newGrid)) handleSolve();
-  };
+  }, [gridValues, puzzle, checkIsComplete, handleSolve]);
 
-  const handleResetPuzzle = () => {
+  const handleResetPuzzle = useCallback(() => {
     if (puzzle.initialGrid) {
       setGridValues(puzzle.initialGrid.map((row) => [...row]));
     }
     setIncorrectCells(new Set());
+    setElapsedSeconds(0);
+    setIsRunning(true);
     setIsSolved(false);
-  };
+  }, [puzzle]);
 
   return {
     gridValues,
     setGridValues,
-    selectedCell,
-    setSelectedCell,
-    direction,
-    setDirection,
+    elapsedSeconds,
+    setElapsedSeconds,
+    isRunning,
+    setIsRunning,
     isSolved,
+    setIsSolved,
     incorrectCells,
     setIncorrectCells,
-    handleCellClick,
+    checkIsComplete,
+    handleSolve,
     handleCheckPuzzle,
     handleRevealWord,
     handleResetPuzzle,
-    checkIsComplete,
-    handleSolve,
   };
 }

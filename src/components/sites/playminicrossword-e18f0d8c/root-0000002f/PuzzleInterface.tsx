@@ -9,6 +9,8 @@ import CrosswordToolbar from "@/components/crossword/CrosswordToolbar";
 import ActiveClueBanner from "@/components/crossword/ActiveClueBanner";
 import ClueList from "@/components/crossword/ClueList";
 import VirtualKeyboard from "@/components/crossword/VirtualKeyboard";
+import { useCrosswordNavigation } from "@/hooks/useCrosswordNavigation";
+import { useCrosswordGame } from "@/hooks/useCrosswordGame";
 
 interface PuzzleInterfaceProps {
   puzzle: CrosswordPuzzle;
@@ -21,29 +23,35 @@ export default function PuzzleInterface({
   onSolve,
   onNewRandomPuzzle,
 }: PuzzleInterfaceProps) {
-  // 1. Grid Values State (user input)
-  const [gridValues, setGridValues] = useState<string[][]>(() =>
-    puzzle.initialGrid
-      ? puzzle.initialGrid.map((row) => [...row])
-      : Array.from({ length: puzzle.height }, () =>
-          Array(puzzle.width).fill(""),
-        ),
-  );
+  const {
+    selectedCell,
+    setSelectedCell,
+    direction,
+    setDirection,
+    hasWordAt,
+    toggleDirectionIfPossible,
+    moveCursor,
+  } = useCrosswordNavigation(puzzle);
 
-  // 2. Active Cell & Direction
-  const [selectedCell, setSelectedCell] = useState<[number, number] | null>(
-    () => findFirstPlayableCell(puzzle),
-  );
-  const [direction, setDirection] = useState<"across" | "down">("across");
+  const {
+    gridValues,
+    setGridValues,
+    elapsedSeconds,
+    setElapsedSeconds,
+    isRunning,
+    setIsRunning,
+    isSolved,
+    setIsSolved,
+    incorrectCells,
+    setIncorrectCells,
+    checkIsComplete,
+    handleSolve,
+    handleCheckPuzzle,
+    handleRevealWord,
+    handleResetPuzzle,
+  } = useCrosswordGame(puzzle, onSolve);
 
-  // 3. Timer State
-  const [elapsedSeconds, setElapsedSeconds] = useState(0);
-  const [isRunning, setIsRunning] = useState(true);
-
-  // 4. Completion & Share State
-  const [isSolved, setIsSolved] = useState(false);
   const [showShareModal, setShowShareModal] = useState(false);
-  const [incorrectCells, setIncorrectCells] = useState<Set<string>>(new Set());
 
   // Timer Effect
   useEffect(() => {
@@ -52,15 +60,14 @@ export default function PuzzleInterface({
       setElapsedSeconds((prev) => prev + 1);
     }, 1000);
     return () => clearInterval(interval);
-  }, [isRunning, isSolved]);
+  }, [isRunning, isSolved, setElapsedSeconds]);
 
   // Find active clue based on selected cell & direction
   const activeClue = useMemo<Clue | null>(() => {
     if (!selectedCell) return null;
     const [r, c] = selectedCell;
 
-    const list =
-      direction === "across" ? puzzle.clues.across : puzzle.clues.down;
+    const list = direction === "across" ? puzzle.clues.across : puzzle.clues.down;
     for (const clue of list) {
       if (direction === "across") {
         if (clue.row === r && c >= clue.col && c < clue.col + clue.length) {
@@ -68,19 +75,6 @@ export default function PuzzleInterface({
         }
       } else {
         if (clue.col === c && r >= clue.row && r < clue.row + clue.length) {
-          return clue;
-        }
-      }
-    }
-    const otherList =
-      direction === "across" ? puzzle.clues.down : puzzle.clues.across;
-    for (const clue of otherList) {
-      if (direction === "across") {
-        if (clue.col === c && r >= clue.row && r < clue.row + clue.length) {
-          return clue;
-        }
-      } else {
-        if (clue.row === r && c >= clue.col && c < clue.col + clue.length) {
           return clue;
         }
       }
@@ -101,45 +95,30 @@ export default function PuzzleInterface({
     return set;
   }, [activeClue]);
 
-  const checkIsComplete = useCallback(
-    (currentGrid: string[][]) => {
-      for (let r = 0; r < puzzle.height; r++) {
-        for (let c = 0; c < puzzle.width; c++) {
-          if (puzzle.grid[r][c] !== " ") {
-            if (
-              currentGrid[r][c].toUpperCase() !==
-              puzzle.grid[r][c].toUpperCase()
-            ) {
-              return false;
-            }
-          }
-        }
-      }
-      return true;
-    },
-    [puzzle],
-  );
-
-  const handleSolve = useCallback(() => {
-    setIsSolved(true);
-    setIsRunning(false);
-    setShowShareModal(true);
-    onSolve?.(elapsedSeconds);
-  }, [elapsedSeconds, onSolve]);
-
   const handleCellClick = (r: number, c: number) => {
     if (puzzle.grid[r][c] === " ") return;
+
     if (selectedCell && selectedCell[0] === r && selectedCell[1] === c) {
-      setDirection((prev) => (prev === "across" ? "down" : "across"));
+      toggleDirectionIfPossible();
     } else {
       setSelectedCell([r, c]);
+      // Rule 4: Only auto-set direction if the cell belongs to EXACTLY one direction.
+      // If it belongs to both, we keep the current direction to avoid flickering.
+      const hasAcross = hasWordAt(r, c, "across");
+      const hasDown = hasWordAt(r, c, "down");
+
+      if (hasAcross && !hasDown) {
+        setDirection("across");
+      } else if (!hasAcross && hasDown) {
+        setDirection("down");
+      }
     }
   };
 
   const handleClueClick = useCallback((clue: Clue) => {
     setDirection(clue.direction);
     setSelectedCell([clue.row, clue.col]);
-  }, []);
+  }, [setDirection, setSelectedCell]);
 
   const handleNextClue = useCallback(
     (delta: 1 | -1) => {
@@ -157,35 +136,6 @@ export default function PuzzleInterface({
     [puzzle.clues, activeClue, handleClueClick],
   );
 
-  const moveCursor = useCallback(
-    (r: number, c: number, dir: "across" | "down", forward: boolean) => {
-      const step = forward ? 1 : -1;
-      let nextR = r;
-      let nextC = c;
-
-      if (dir === "across") {
-        nextC += step;
-        while (nextC >= 0 && nextC < puzzle.width) {
-          if (puzzle.grid[nextR][nextC] !== " ") {
-            setSelectedCell([nextR, nextC]);
-            return;
-          }
-          nextC += step;
-        }
-      } else {
-        nextR += step;
-        while (nextR >= 0 && nextR < puzzle.height) {
-          if (puzzle.grid[nextR][nextC] !== " ") {
-            setSelectedCell([nextR, nextC]);
-            return;
-          }
-          nextR += step;
-        }
-      }
-    },
-    [puzzle],
-  );
-
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (
@@ -200,26 +150,82 @@ export default function PuzzleInterface({
 
       if (e.key === " " || e.code === "Space") {
         e.preventDefault();
-        setDirection((prev) => (prev === "across" ? "down" : "across"));
+        toggleDirectionIfPossible();
       } else if (e.key === "Tab") {
         e.preventDefault();
         handleNextClue(e.shiftKey ? -1 : 1);
       } else if (e.key === "ArrowRight") {
         e.preventDefault();
-        if (direction !== "across") setDirection("across");
-        else moveCursor(r, c, "across", true);
+        if (direction === "across") {
+          moveCursor(r, c, "across", true);
+        } else {
+          if (hasWordAt(r, c, "across")) {
+            setDirection("across");
+          } else {
+            let nextC = c + 1;
+            while (nextC >= 0 && nextC < puzzle.width) {
+              if (puzzle.grid[r][nextC] !== " ") {
+                setSelectedCell([r, nextC]);
+                return;
+              }
+              nextC++;
+            }
+          }
+        }
       } else if (e.key === "ArrowLeft") {
         e.preventDefault();
-        if (direction !== "across") setDirection("across");
-        else moveCursor(r, c, "across", false);
+        if (direction === "across") {
+          moveCursor(r, c, "across", false);
+        } else {
+          if (hasWordAt(r, c, "across")) {
+            setDirection("across");
+          } else {
+            let nextC = c - 1;
+            while (nextC >= 0 && nextC < puzzle.width) {
+              if (puzzle.grid[r][nextC] !== " ") {
+                setSelectedCell([r, nextC]);
+                return;
+              }
+              nextC--;
+            }
+          }
+        }
       } else if (e.key === "ArrowDown") {
         e.preventDefault();
-        if (direction !== "down") setDirection("down");
-        else moveCursor(r, c, "down", true);
+        if (direction === "down") {
+          moveCursor(r, c, "down", true);
+        } else {
+          if (hasWordAt(r, c, "down")) {
+            setDirection("down");
+          } else {
+            let nextR = r + 1;
+            while (nextR >= 0 && nextR < puzzle.height) {
+              if (puzzle.grid[nextR][c] !== " ") {
+                setSelectedCell([nextR, c]);
+                return;
+              }
+              nextR++;
+            }
+          }
+        }
       } else if (e.key === "ArrowUp") {
         e.preventDefault();
-        if (direction !== "down") setDirection("down");
-        else moveCursor(r, c, "down", false);
+        if (direction === "down") {
+          moveCursor(r, c, "down", false);
+        } else {
+          if (hasWordAt(r, c, "down")) {
+            setDirection("down");
+          } else {
+            let nextR = r - 1;
+            while (nextR >= 0 && nextR < puzzle.height) {
+              if (puzzle.grid[nextR][c] !== " ") {
+                setSelectedCell([nextR, c]);
+                return;
+              }
+              nextR--;
+            }
+          }
+        }
       } else if (e.key === "Backspace") {
         e.preventDefault();
         const currentVal = gridValues[r][c];
@@ -246,13 +252,36 @@ export default function PuzzleInterface({
           next.delete(`${r},${c}`);
           return next;
         });
-        moveCursor(r, c, direction, true);
+
+        const currentHasAcross = hasWordAt(r, c, "across");
+        const currentHasDown = hasWordAt(r, c, "down");
+
+        let moveDir = direction;
+        if (currentHasAcross && !currentHasDown) moveDir = "across";
+        else if (!currentHasAcross && currentHasDown) moveDir = "down";
+
+        moveCursor(r, c, moveDir, true);
         if (checkIsComplete(newGrid)) handleSolve();
       }
-    };
+    }
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [selectedCell, direction, gridValues, isSolved, isRunning, moveCursor, checkIsComplete, handleSolve, handleNextClue]);
+  }, [
+    selectedCell,
+    direction,
+    gridValues,
+    isSolved,
+    isRunning,
+    moveCursor,
+    checkIsComplete,
+    handleSolve,
+    handleNextClue,
+    puzzle,
+    hasWordAt,
+    toggleDirectionIfPossible,
+    setSelectedCell,
+    setDirection,
+  ]);
 
   const handleVirtualKey = (key: string) => {
     if (!selectedCell || isSolved || !isRunning) return;
@@ -272,7 +301,7 @@ export default function PuzzleInterface({
         return next;
       });
     } else if (key === "SWITCH") {
-      setDirection((prev) => (prev === "across" ? "down" : "across"));
+      toggleDirectionIfPossible();
     } else {
       const newGrid = gridValues.map((row) => [...row]);
       newGrid[r][c] = key;
@@ -282,47 +311,17 @@ export default function PuzzleInterface({
         next.delete(`${r},${c}`);
         return next;
       });
-      moveCursor(r, c, direction, true);
+
+      const hasAcross = hasWordAt(r, c, "across");
+      const hasDown = hasWordAt(r, c, "down");
+
+      let moveDir = direction;
+      if (hasAcross && !hasDown) moveDir = "across";
+      else if (!hasAcross && hasDown) moveDir = "down";
+
+      moveCursor(r, c, moveDir, true);
       if (checkIsComplete(newGrid)) handleSolve();
     }
-  };
-
-  const handleCheckPuzzle = () => {
-    const errors = new Set<string>();
-    for (let r = 0; r < puzzle.height; r++) {
-      for (let c = 0; c < puzzle.width; c++) {
-        if (puzzle.grid[r][c] !== " ") {
-          const val = gridValues[r][c];
-          if (val && val !== puzzle.grid[r][c]) {
-            errors.add(`${r},${c}`);
-          }
-        }
-      }
-    }
-    setIncorrectCells(errors);
-  };
-
-  const handleRevealWord = () => {
-    if (!activeClue) return;
-    const newGrid = gridValues.map((row) => [...row]);
-    const isAcross = activeClue.direction === "across";
-    for (let i = 0; i < activeClue.length; i++) {
-      const r = isAcross ? activeClue.row : activeClue.row + i;
-      const c = isAcross ? activeClue.col + i : activeClue.col;
-      newGrid[r][c] = puzzle.grid[r][c];
-    }
-    setGridValues(newGrid);
-    if (checkIsComplete(newGrid)) handleSolve();
-  };
-
-  const handleResetPuzzle = () => {
-    if (puzzle.initialGrid) {
-      setGridValues(puzzle.initialGrid.map((row) => [...row]));
-    }
-    setIncorrectCells(new Set());
-    setElapsedSeconds(0);
-    setIsRunning(true);
-    setIsSolved(false);
   };
 
   return (
@@ -373,7 +372,7 @@ export default function PuzzleInterface({
                     key={`${rowIndex}-${colIndex}`}
                     onClick={() => handleCellClick(rowIndex, colIndex)}
                     className={cn(
-                      "relative w-full h-full flex items-center justify-center border border-[#121212]/20 font-sans font-bold text-xl md:text-2xl transition-colors duration-100 cursor-pointer",
+                      "relative w-full h-full flex items-center justify-center border border-[#121212]/20 font-sans font-bold text-xl md:text-2xl cursor-pointer",
                       isBlock && "bg-[#121212] cursor-default border-none",
                       !isBlock && "bg-white text-[#171717]",
                       !isBlock && isInActiveWord && "bg-[#A8D8FF]",
@@ -384,7 +383,7 @@ export default function PuzzleInterface({
                   >
                     {cellNumber && (
                       <span className="absolute top-0.5 left-1 text-[10px] md:text-[11px] font-semibold text-[#4A3E36] pointer-events-none">
-                        {cellNumber}
+                      {cellNumber}
                       </span>
                     )}
                     <span className="uppercase select-none leading-none">
@@ -430,13 +429,4 @@ export default function PuzzleInterface({
       />
     </div>
   );
-}
-
-function findFirstPlayableCell(puzzle: CrosswordPuzzle): [number, number] | null {
-  for (let r = 0; r < puzzle.height; r++) {
-    for (let c = 0; c < puzzle.width; c++) {
-      if (puzzle.grid[r][c] !== " ") return [r, c];
-    }
-  }
-  return null;
 }
