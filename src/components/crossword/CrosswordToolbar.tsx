@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, Pause, Play, RotateCcw, CheckCircle2, Eye, Share2, Shuffle } from 'lucide-react';
+import { Clock, Pause, Play, RotateCcw, CheckCircle2, Eye, Share2, Shuffle, Eraser } from 'lucide-react';
 import { CrosswordPuzzle } from '@/types/playminicrossword';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -9,6 +9,7 @@ interface CrosswordToolbarProps {
   isRunning: boolean;
   onToggleTimer: () => void;
   onCheckPuzzle: () => void;
+  onClearIncorrect: () => void;
   onRevealWord: () => void;
   onResetPuzzle: () => void;
   isSolved: boolean;
@@ -22,6 +23,7 @@ export default function CrosswordToolbar({
   isRunning,
   onToggleTimer,
   onCheckPuzzle,
+  onClearIncorrect,
   onRevealWord,
   onResetPuzzle,
   isSolved,
@@ -64,6 +66,14 @@ export default function CrosswordToolbar({
         >
           <CheckCircle2 className="w-3.5 h-3.5" />
           Check
+        </button>
+
+        <button
+          onClick={onClearIncorrect}
+          className="flex items-center gap-1 px-2.5 py-1.5 rounded-md hover:bg-neutral-200 text-neutral-700 transition-colors font-medium"
+        >
+          <Eraser className="w-3.5 h-3.5" />
+          Clear
         </button>
 
         <button

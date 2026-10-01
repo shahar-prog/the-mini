@@ -22,6 +22,9 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
   const [isSolved, setIsSolved] = useState(false);
   const [incorrectCells, setIncorrectCells] = useState<Set<string>>(new Set());
   const [correctCells, setCorrectCells] = useState<Set<string>>(new Set());
+  const [showIncorrectPopup, setShowIncorrectPopup] = useState(false);
+  const [hasShownIncorrectPopup, setHasShownIncorrectPopup] = useState(false);
+
 
   // Timer Effect
   useEffect(() => {
@@ -82,7 +85,6 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
 
     if (hasChanged) {
       setHistory(prev => {
-        // Check if the state we are about to insert is the same as the current top of the stack
         if (prev.length > 0 && JSON.stringify(prev[prev.length - 1]) === JSON.stringify(currentGrid)) {
           return prev;
         }
@@ -92,8 +94,50 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
       });
       setRedoStack([]);
       setGridValues(newGrid);
+
+      // Check if the board is fully filled
+      let isFullyFilled = true;
+      for (let r = 0; r < puzzle.height; r++) {
+        for (let c = 0; c < puzzle.width; c++) {
+          if (puzzle.grid[r][c] !== ' ' && newGrid[r][c] === '') {
+            isFullyFilled = false;
+            break;
+          }
+        }
+        if (!isFullyFilled) break;
+      }
+
+      if (isFullyFilled) {
+        if (checkIsComplete(newGrid)) {
+          handleSolve();
+        } else {
+          // Trigger the "check" logic to show incorrect cells
+          const errors = new Set<string>();
+          const corrects = new Set<string>();
+          for (let r = 0; r < puzzle.height; r++) {
+            for (let c = 0; c < puzzle.width; c++) {
+              if (puzzle.grid[r][c] !== ' ') {
+                const val = newGrid[r][c];
+                if (val && val !== puzzle.grid[r][c]) {
+                  errors.add(`${r},${c}`);
+                } else if (val && val === puzzle.grid[r][c]) {
+                  corrects.add(`${r},${c}`);
+                }
+              }
+            }
+          }
+          setIncorrectCells(errors);
+          setCorrectCells(corrects);
+
+          // Show popup only the first time it's fully filled but incorrect
+          if (!hasShownIncorrectPopup) {
+            setShowIncorrectPopup(true);
+            setHasShownIncorrectPopup(true);
+          }
+        }
+      }
     }
-  }, []);
+  }, [puzzle, checkIsComplete, handleSolve, hasShownIncorrectPopup]);
 
   const handleUndo = useCallback(() => {
     setHistory(prev => {
@@ -168,6 +212,37 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
     setIsSolved(false);
     setHistory([]);
     setRedoStack([]);
+    setHasShownIncorrectPopup(false);
+  }, [puzzle]);
+
+  const handleClearIncorrect = useCallback(() => {
+    // 1. Re-evaluate the board to get the most current set of incorrect cells
+    const currentGrid = gridValuesRef.current;
+    const currentErrors = new Set<string>();
+
+    for (let r = 0; r < puzzle.height; r++) {
+      for (let c = 0; c < puzzle.width; c++) {
+        if (puzzle.grid[r][c] !== ' ') {
+          const val = currentGrid[r][c];
+          if (val && val !== puzzle.grid[r][c]) {
+            currentErrors.add(`${r},${c}`);
+          }
+        }
+      }
+    }
+
+    // 2. Clear only the cells that are currently incorrect
+    const newGrid = currentGrid.map((row, r) =>
+      row.map((cell, c) => {
+        if (currentErrors.has(`${r},${c}`)) {
+          return '';
+        }
+        return cell;
+      })
+    );
+
+    setGridValues(newGrid);
+    setIncorrectCells(new Set());
   }, [puzzle]);
 
   return {
@@ -189,7 +264,10 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
     checkIsComplete,
     handleSolve,
     handleCheckPuzzle,
+    handleClearIncorrect,
     handleRevealWord,
     handleResetPuzzle,
+    showIncorrectPopup,
+    setShowIncorrectPopup,
   };
 }

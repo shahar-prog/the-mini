@@ -23,6 +23,9 @@ export function usePuzzleInput(
     setIncorrectCells: (cells: Set<string>) => void;
     checkIsComplete: (grid: string[][]) => boolean;
     handleSolve: () => void;
+    showIncorrectPopup: boolean;
+    handleCheckPuzzle: () => void;
+    handleClearIncorrect: () => void;
   },
   handleNextClue: (delta: 1 | -1) => void
 ) {
@@ -40,8 +43,23 @@ export function usePuzzleInput(
     if (
       isSolved ||
       !isRunning ||
+      game.showIncorrectPopup ||
       ["INPUT", "TEXTAREA"].includes((e.target as HTMLElement)?.tagName)
     ) {
+      return;
+    }
+
+    // Handle Check (Ctrl+S)
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') {
+      e.preventDefault();
+      game.handleCheckPuzzle();
+      return;
+    }
+
+    // Handle Clear Incorrect (Ctrl+D)
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'd') {
+      e.preventDefault();
+      game.handleClearIncorrect();
       return;
     }
 
@@ -213,7 +231,7 @@ export function usePuzzleInput(
   ]);
 
   const handleVirtualKey = useCallback((key: string) => {
-    if (!selectedCell || isSolved || !isRunning) return;
+    if (!selectedCell || isSolved || !isRunning || game.showIncorrectPopup) return;
     const [r, c] = selectedCell;
     if (key === "BACKSPACE") {
       const currentVal = gridValues[r][c];
