@@ -130,10 +130,6 @@ export default function CrosswordPageView({
       <div id="how-to-play">
         <HowToPlay />
       </div>
-      <PickYourSize />
-      <AboutSection />
-      <FAQSection />
-      <Footer />
 
       {showModal && (
         <OnboardingModal

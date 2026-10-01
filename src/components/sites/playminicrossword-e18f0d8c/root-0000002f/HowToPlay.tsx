@@ -18,7 +18,7 @@ export default function HowToPlay() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Five Rules */}
           <div className="flex flex-col gap-4">
             <h3 className="font-serif text-xl font-medium text-foreground mb-2">Five rules</h3>
@@ -54,24 +54,6 @@ export default function HowToPlay() {
                 </li>
               ))}
             </ul>
-          </div>
-
-          {/* How Clues Work */}
-          <div className="flex flex-col gap-4">
-            <h3 className="font-serif text-xl font-medium text-foreground mb-2">How clues work</h3>
-            <div className="space-y-3 text-sm text-foreground">
-              <div className="flex gap-2">
-                <span className="font-bold">Across</span>
-                <span className="text-muted-foreground">· left to right</span>
-              </div>
-              <div className="flex gap-2">
-                <span className="font-bold">Down</span>
-                <span className="text-muted-foreground">· top to bottom</span>
-              </div>
-              <p className="text-muted-foreground leading-relaxed mt-2">
-                Cells where across and down answers cross share the same letter — use that constraint to confirm guesses.
-              </p>
-            </div>
           </div>
         </div>
       </div>

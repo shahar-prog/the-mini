@@ -5,10 +5,9 @@ import Link from "next/link";
 import { Menu, X } from "@/components/sites/playminicrossword-e18f0d8c/shared/icons";
 
 const NAV_LINKS = [
-  { label: "Daily", href: "/" },
+  { label: "Daily", href: "/daily" },
   { label: "Archive", href: "/archive" },
   { label: "Unlimited", href: "/unlimited" },
-  { label: "How to Play", href: "/how-to-play" },
 ];
 
 export default function GlobalHeader() {

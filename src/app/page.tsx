@@ -28,7 +28,7 @@ export default function LandingPage() {
       <main className="flex-1">
         <HeroIntro />
 
-        <div className="max-w-4xl mx-auto px-4 py-20 flex flex-col items-center gap-12 text-center">
+        <div className="max-w-4xl mx-auto px-4 pb-10 pt-0 flex flex-col items-center gap-12 text-center">
           <div className="space-y-4">
             <h2 className="font-serif text-4xl md:text-5xl font-medium text-foreground">
               Ready for a challenge?
@@ -57,8 +57,6 @@ export default function LandingPage() {
           </div>
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 }
