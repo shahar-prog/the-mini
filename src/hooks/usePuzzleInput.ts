@@ -165,6 +165,8 @@ export function usePuzzleInput(
       if (currentVal !== "") {
         newGrid[r][c] = "";
         updateGridValues(newGrid);
+        // After deleting, move cursor back one position for a more natural feel
+        moveCursor(r, c, direction, false);
       } else {
         moveCursor(r, c, direction, false);
       }
@@ -239,6 +241,8 @@ export function usePuzzleInput(
       if (currentVal !== "") {
         newGrid[r][c] = "";
         updateGridValues(newGrid);
+        // After deleting, move cursor back one position for a more natural feel
+        moveCursor(r, c, direction, false);
       } else {
         moveCursor(r, c, direction, false);
       }
