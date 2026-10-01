@@ -30,7 +30,7 @@ export default function ArchivePage() {
       formattedDate,
       dayOfWeek,
       isToday: i === 0,
-      href: i === 0 ? '/' : `/daily/${dateStr}`,
+      href: i === 0 ? '/daily' : `/daily/${dateStr}`,
     });
   }
 
