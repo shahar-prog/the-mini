@@ -100,7 +100,7 @@ export default function CrosswordPageView({
               {mode === 'daily' ? (
                 <>
                   <Calendar className="w-3.5 h-3.5 text-[#F17127]" />
-                  <span>Daily Puzzle • {puzzle.date}</span>
+                  <span>Daily Challenge • {puzzle.date}</span>
                 </>
               ) : (
                 <>
