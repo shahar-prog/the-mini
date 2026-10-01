@@ -121,6 +121,23 @@ export function useCrosswordNavigation(puzzle: CrosswordPuzzle) {
     [puzzle.clues, activeClue, handleClueClick],
   );
 
+  const jumpToWordEdge = useCallback(
+    (toEnd: boolean) => {
+      if (!selectedCell || !activeClue) return;
+      const [r, c] = selectedCell;
+      const isAcross = activeClue.direction === 'across';
+
+      if (isAcross) {
+        const targetCol = toEnd ? activeClue.col + activeClue.length - 1 : activeClue.col;
+        setSelectedCell([r, targetCol]);
+      } else {
+        const targetRow = toEnd ? activeClue.row + activeClue.length - 1 : activeClue.row;
+        setSelectedCell([targetRow, c]);
+      }
+    },
+    [selectedCell, activeClue, setSelectedCell],
+  );
+
   const handleCellClick = useCallback((r: number, c: number) => {
     if (puzzle.grid[r][c] === ' ') return;
 
@@ -147,6 +164,7 @@ export function useCrosswordNavigation(puzzle: CrosswordPuzzle) {
     hasWordAt,
     toggleDirectionIfPossible,
     moveCursor,
+    jumpToWordEdge,
     activeClue,
     activeWordCells,
     handleClueClick,

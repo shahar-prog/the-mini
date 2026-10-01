@@ -71,11 +71,21 @@ export default function CrosswordGame({
         game.setShowIncorrectPopup(false);
         return;
       }
+      if (e.key === 'Home') {
+        e.preventDefault();
+        nav.jumpToWordEdge(false);
+        return;
+      }
+      if (e.key === 'End') {
+        e.preventDefault();
+        nav.jumpToWordEdge(true);
+        return;
+      }
       handleKeyDown(e);
     };
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [handleKeyDown, game.showIncorrectPopup]);
+  }, [handleKeyDown, game.showIncorrectPopup, nav.jumpToWordEdge]);
 
   return (
     <div className="w-full max-w-4xl mx-auto flex flex-col items-center select-none relative">
