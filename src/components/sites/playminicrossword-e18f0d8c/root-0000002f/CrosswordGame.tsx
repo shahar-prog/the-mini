@@ -205,6 +205,7 @@ export default function CrosswordGame({
         isOpen={showShareModal}
         puzzle={puzzle}
         elapsedSeconds={game.elapsedSeconds}
+        revealsUsed={game.revealsUsed}
         onClose={() => setShowShareModal(false)}
         onNewRandomPuzzle={onNewRandomPuzzle}
       />

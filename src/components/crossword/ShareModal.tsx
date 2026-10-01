@@ -9,6 +9,7 @@ interface ShareModalProps {
   isOpen: boolean;
   puzzle: CrosswordPuzzle;
   elapsedSeconds: number;
+  revealsUsed: number;
   onClose: () => void;
   onNewRandomPuzzle?: () => void;
 }
@@ -17,6 +18,7 @@ export default function ShareModal({
   isOpen,
   puzzle,
   elapsedSeconds,
+  revealsUsed,
   onClose,
   onNewRandomPuzzle,
 }: ShareModalProps) {
@@ -48,7 +50,7 @@ export default function ShareModal({
       ? `Mini Crossword (Daily - ${puzzle.date})`
       : `Mini Crossword (#${puzzle.seed})`;
 
-  const shareText = `${puzzleTitle}\n⏱️ ${timeFormatted}\n\n${emojiGridText}\n\nPlay here: ${shareUrl}`;
+  const shareText = `${puzzleTitle}\n⏱️ ${timeFormatted}${revealsUsed === 0 ? '\n✨ No hints used!' : ''}\n\n${emojiGridText}\n\nPlay here: ${shareUrl}`;
 
   const handleCopy = async () => {
     try {
@@ -87,8 +89,14 @@ export default function ShareModal({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-in fade-in duration-200">
-      <div className="relative w-full max-w-md bg-white rounded-2xl shadow-2xl border border-border p-6 text-center overflow-hidden">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-in fade-in duration-200"
+      onClick={onClose}
+    >
+      <div
+        className="relative w-full max-w-md bg-white rounded-2xl shadow-2xl border border-border p-6 text-center overflow-hidden"
+        onClick={(e) => e.stopPropagation()}
+      >
         {/* Close Button */}
         <button
           onClick={onClose}

@@ -24,6 +24,7 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
   const [correctCells, setCorrectCells] = useState<Set<string>>(new Set());
   const [showIncorrectPopup, setShowIncorrectPopup] = useState(false);
   const [hasShownIncorrectPopup, setHasShownIncorrectPopup] = useState(false);
+  const [revealsUsed, setRevealsUsed] = useState(0);
 
 
   // Timer Effect
@@ -190,6 +191,7 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
 
   const handleRevealWord = useCallback((activeClue: Clue) => {
     if (!activeClue) return;
+    setRevealsUsed((prev) => prev + 1);
     const newGrid = gridValues.map((row) => [...row]);
     const isAcross = activeClue.direction === 'across';
     for (let i = 0; i < activeClue.length; i++) {
@@ -269,5 +271,6 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
     handleResetPuzzle,
     showIncorrectPopup,
     setShowIncorrectPopup,
+    revealsUsed,
   };
 }
