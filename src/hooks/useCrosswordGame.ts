@@ -14,6 +14,7 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
   const [isRunning, setIsRunning] = useState(true);
   const [isSolved, setIsSolved] = useState(false);
   const [incorrectCells, setIncorrectCells] = useState<Set<string>>(new Set());
+  const [correctCells, setCorrectCells] = useState<Set<string>>(new Set());
 
   const checkIsComplete = useCallback(
     (currentGrid: string[][]) => {
@@ -42,17 +43,21 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
 
   const handleCheckPuzzle = useCallback(() => {
     const errors = new Set<string>();
+    const corrects = new Set<string>();
     for (let r = 0; r < puzzle.height; r++) {
       for (let c = 0; c < puzzle.width; c++) {
         if (puzzle.grid[r][c] !== ' ') {
           const val = gridValues[r][c];
           if (val && val !== puzzle.grid[r][c]) {
             errors.add(`${r},${c}`);
+          } else if (val && val === puzzle.grid[r][c]) {
+            corrects.add(`${r},${c}`);
           }
         }
       }
     }
     setIncorrectCells(errors);
+    setCorrectCells(corrects);
   }, [gridValues, puzzle]);
 
   const handleRevealWord = useCallback((activeClue: any) => {
@@ -73,6 +78,7 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
       setGridValues(puzzle.initialGrid.map((row) => [...row]));
     }
     setIncorrectCells(new Set());
+    setCorrectCells(new Set());
     setElapsedSeconds(0);
     setIsRunning(true);
     setIsSolved(false);
@@ -89,6 +95,8 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
     setIsSolved,
     incorrectCells,
     setIncorrectCells,
+    correctCells,
+    setCorrectCells,
     checkIsComplete,
     handleSolve,
     handleCheckPuzzle,

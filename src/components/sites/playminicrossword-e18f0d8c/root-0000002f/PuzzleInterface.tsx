@@ -44,6 +44,8 @@ export default function PuzzleInterface({
     setIsSolved,
     incorrectCells,
     setIncorrectCells,
+    correctCells,
+    setCorrectCells,
     checkIsComplete,
     handleSolve,
     handleCheckPuzzle,
@@ -333,7 +335,7 @@ export default function PuzzleInterface({
         isRunning={isRunning}
         onToggleTimer={() => setIsRunning(!isRunning)}
         onCheckPuzzle={handleCheckPuzzle}
-        onRevealWord={handleRevealWord}
+        onRevealWord={() => handleRevealWord(activeClue)}
         onResetPuzzle={handleResetPuzzle}
         isSolved={isSolved}
         onShare={() => setShowShareModal(true)}
@@ -365,6 +367,7 @@ export default function PuzzleInterface({
                 const isInActiveWord = activeWordCells.has(`${rowIndex},${colIndex}`);
                 const cellNumber = puzzle.cellNumbers?.[rowIndex]?.[colIndex];
                 const hasError = incorrectCells.has(`${rowIndex},${colIndex}`);
+                const isCorrect = correctCells.has(`${rowIndex},${colIndex}`);
                 const userLetter = gridValues[rowIndex]?.[colIndex] || "";
 
                 return (
@@ -378,6 +381,7 @@ export default function PuzzleInterface({
                       !isBlock && isInActiveWord && "bg-[#A8D8FF]",
                       !isBlock && isSelected && "!bg-[#FFD900] shadow-inner",
                       !isBlock && hasError && "!bg-red-100 text-red-600 line-through decoration-red-500",
+                      !isBlock && isCorrect && "!bg-emerald-100 text-emerald-900",
                       isSolved && !isBlock && "!bg-emerald-100 text-emerald-900",
                     )}
                   >
