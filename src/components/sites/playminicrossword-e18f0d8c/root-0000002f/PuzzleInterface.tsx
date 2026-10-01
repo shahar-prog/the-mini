@@ -378,11 +378,11 @@ export default function PuzzleInterface({
                       "relative w-full h-full flex items-center justify-center border border-[#121212]/20 font-sans font-bold text-xl md:text-2xl cursor-pointer",
                       isBlock && "bg-[#121212] cursor-default border-none",
                       !isBlock && "bg-white text-[#171717]",
-                      !isBlock && isInActiveWord && "bg-[#A8D8FF]",
-                      !isBlock && isSelected && "!bg-[#FFD900] shadow-inner",
                       !isBlock && hasError && "!bg-red-100 text-red-600 line-through decoration-red-500",
                       !isBlock && isCorrect && "!bg-emerald-100 text-emerald-900",
                       isSolved && !isBlock && "!bg-emerald-100 text-emerald-900",
+                      !isBlock && isInActiveWord && (hasError ? "!bg-red-300" : isCorrect ? "!bg-emerald-300" : "!bg-[#A8D8FF]"),
+                      !isBlock && isSelected && "!bg-[#FFD900] shadow-inner",
                     )}
                   >
                     {cellNumber && (
