@@ -4,7 +4,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import GlobalHeader from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/GlobalHeader';
 import HeroIntro from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/HeroIntro';
-import PuzzleInterface from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/PuzzleInterface';
+import CrosswordGame from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/CrosswordGame';
 import OnboardingModal from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/OnboardingModal';
 import ArchiveSelector from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/ArchiveSelector';
 import HowToPlay from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/HowToPlay';
@@ -118,7 +118,7 @@ export default function CrosswordPageView({
           </div>
 
           {/* Interactive Playable Crossword */}
-          <PuzzleInterface
+          <CrosswordGame
             key={puzzle.id}
             puzzle={puzzle}
             onNewRandomPuzzle={handleNewRandomPuzzle}

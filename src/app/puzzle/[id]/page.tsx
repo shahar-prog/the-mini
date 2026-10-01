@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useParams } from 'next/navigation';
-import PuzzleInterface from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/PuzzleInterface';
+import CrosswordGame from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/CrosswordGame';
 import GlobalHeader from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/GlobalHeader';
 import Footer from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/Footer';
 import { generatePuzzleFromSeed } from '@/lib/puzzle-gen';
@@ -23,7 +23,7 @@ export default function RandomPuzzlePage() {
             <h1 className="font-serif text-3xl font-medium mb-2">Random Mini Crossword</h1>
             <p className="text-muted-foreground">Puzzle ID: {id}</p>
           </div>
-          <PuzzleInterface puzzle={puzzle} />
+          <CrosswordGame puzzle={puzzle} />
         </div>
       </main>
       <Footer />

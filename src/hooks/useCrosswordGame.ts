@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { CrosswordPuzzle } from '@/types/playminicrossword';
 
 export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSeconds: number) => void) {
@@ -15,6 +15,15 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
   const [isSolved, setIsSolved] = useState(false);
   const [incorrectCells, setIncorrectCells] = useState<Set<string>>(new Set());
   const [correctCells, setCorrectCells] = useState<Set<string>>(new Set());
+
+  // Timer Effect
+  useEffect(() => {
+    if (!isRunning || isSolved) return;
+    const interval = setInterval(() => {
+      setElapsedSeconds((prev) => prev + 1);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [isRunning, isSolved]);
 
   const checkIsComplete = useCallback(
     (currentGrid: string[][]) => {
@@ -60,7 +69,7 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
     setCorrectCells(corrects);
   }, [gridValues, puzzle]);
 
-  const handleRevealWord = useCallback((activeClue: any) => {
+  const handleRevealWord = useCallback((activeClue: Clue) => {
     if (!activeClue) return;
     const newGrid = gridValues.map((row) => [...row]);
     const isAcross = activeClue.direction === 'across';

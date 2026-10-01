@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import PuzzleInterface from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/PuzzleInterface';
+import CrosswordGame from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/CrosswordGame';
 import GlobalHeader from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/GlobalHeader';
 import Footer from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/Footer';
 import { generatePuzzleFromSeed, getDailySeed } from '@/lib/puzzle-gen';
@@ -19,7 +19,7 @@ export default function DailyPuzzlePage() {
             <h1 className="font-serif text-3xl font-medium mb-2">Daily Mini Crossword</h1>
             <p className="text-muted-foreground">{seed}</p>
           </div>
-          <PuzzleInterface puzzle={puzzle} />
+          <CrosswordGame puzzle={puzzle} />
         </div>
       </main>
       <Footer />

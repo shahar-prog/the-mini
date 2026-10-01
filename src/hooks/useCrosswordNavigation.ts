@@ -1,5 +1,5 @@
-import { useState, useCallback, useEffect } from 'react';
-import { CrosswordPuzzle } from '@/types/playminicrossword';
+import { useState, useCallback, useEffect, useMemo } from 'react';
+import { CrosswordPuzzle, Clue } from '@/types/playminicrossword';
 
 export function useCrosswordNavigation(puzzle: CrosswordPuzzle) {
   const [selectedCell, setSelectedCell] = useState<[number, number] | null>(() => {
@@ -11,13 +11,11 @@ export function useCrosswordNavigation(puzzle: CrosswordPuzzle) {
     return null;
   });
 
-  // We use a function for the initial state to ensure it's calculated once
   const [direction, setDirection] = useState<'across' | 'down'>(() => {
     const firstCell = findFirstPlayableCell(puzzle);
     if (!firstCell) return 'across';
     const [r, c] = firstCell;
 
-    // Check for across word first
     const hasAcross = puzzle.clues.across.some(clue =>
       clue.row === r && c >= clue.col && c < clue.col + clue.length
     );
@@ -71,6 +69,76 @@ export function useCrosswordNavigation(puzzle: CrosswordPuzzle) {
     [puzzle],
   );
 
+  const handleClueClick = useCallback((clue: Clue) => {
+    setDirection(clue.direction);
+    setSelectedCell([clue.row, clue.col]);
+  }, [setDirection, setSelectedCell]);
+
+  const activeClue = useMemo<Clue | null>(() => {
+    if (!selectedCell) return null;
+    const [r, c] = selectedCell;
+
+    const list = direction === 'across' ? puzzle.clues.across : puzzle.clues.down;
+    for (const clue of list) {
+      if (direction === 'across') {
+        if (clue.row === r && c >= clue.col && c < clue.col + clue.length) {
+          return clue;
+        }
+      } else {
+        if (clue.col === c && r >= clue.row && r < clue.row + clue.length) {
+          return clue;
+        }
+      }
+    }
+    return null;
+  }, [selectedCell, direction, puzzle.clues]);
+
+  const activeWordCells = useMemo<Set<string>>(() => {
+    const set = new Set<string>();
+    if (!activeClue) return set;
+    const isAcross = activeClue.direction === 'across';
+    for (let i = 0; i < activeClue.length; i++) {
+      const r = isAcross ? activeClue.row : activeClue.row + i;
+      const c = isAcross ? activeClue.col + i : activeClue.col;
+      set.add(`${r},${c}`);
+    }
+    return set;
+  }, [activeClue]);
+
+  const handleNextClue = useCallback(
+    (delta: 1 | -1) => {
+      const allClues = [...puzzle.clues.across, ...puzzle.clues.down];
+      if (allClues.length === 0) return;
+      const curIdx = allClues.findIndex(
+        (c) =>
+          c.direction === activeClue?.direction &&
+          c.number === activeClue?.number,
+      );
+      const nextIdx = (curIdx + delta + allClues.length) % allClues.length;
+      const target = allClues[nextIdx];
+      handleClueClick(target);
+    },
+    [puzzle.clues, activeClue, handleClueClick],
+  );
+
+  const handleCellClick = useCallback((r: number, c: number) => {
+    if (puzzle.grid[r][c] === ' ') return;
+
+    if (selectedCell && selectedCell[0] === r && selectedCell[1] === c) {
+      toggleDirectionIfPossible();
+    } else {
+      setSelectedCell([r, c]);
+      const hasAcross = hasWordAt(r, c, 'across');
+      const hasDown = hasWordAt(r, c, 'down');
+
+      if (hasAcross && !hasDown) {
+        setDirection('across');
+      } else if (!hasAcross && hasDown) {
+        setDirection('down');
+      }
+    }
+  }, [puzzle.grid, selectedCell, toggleDirectionIfPossible, setSelectedCell, hasWordAt, setDirection]);
+
   return {
     selectedCell,
     setSelectedCell,
@@ -79,6 +147,11 @@ export function useCrosswordNavigation(puzzle: CrosswordPuzzle) {
     hasWordAt,
     toggleDirectionIfPossible,
     moveCursor,
+    activeClue,
+    activeWordCells,
+    handleClueClick,
+    handleNextClue,
+    handleCellClick,
   };
 }
 
