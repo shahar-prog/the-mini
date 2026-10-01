@@ -14,8 +14,10 @@ export default function GlobalHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 h-16 w-full bg-transparent">
-      <div className="mx-auto max-w-[1152px] h-full px-4 flex items-center justify-between">
+    <header className="sticky top-0 z-50 h-24 w-full">
+      <div className="absolute inset-0 bg-gradient-to-b from-background/40 to-transparent -z-10" />
+      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,black_60%,transparent)] backdrop-blur-md -z-10" />
+      <div className="relative mx-auto max-w-[1152px] h-16 px-4 flex items-center justify-between mt-2">
         {/* Logo */}
         <Link
           href="/"

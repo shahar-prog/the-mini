@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import GlobalHeader from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/GlobalHeader';
-import Footer from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/Footer';
 import { Calendar, Play, ArrowLeft } from 'lucide-react';
 
 export default function ArchivePage() {
@@ -83,8 +82,6 @@ export default function ArchivePage() {
           ))}
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 }
