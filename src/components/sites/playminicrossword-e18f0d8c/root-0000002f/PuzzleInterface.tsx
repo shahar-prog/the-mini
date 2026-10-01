@@ -262,7 +262,33 @@ export default function PuzzleInterface({
         if (currentHasAcross && !currentHasDown) moveDir = "across";
         else if (!currentHasAcross && currentHasDown) moveDir = "down";
 
-        moveCursor(r, c, moveDir, true);
+        // Skip filled cells when typing letters
+        let nextR = r;
+        let nextC = c;
+        let foundNext = false;
+
+        while (!foundNext) {
+          if (moveDir === "across") {
+            nextC++;
+            if (nextC >= puzzle.width || puzzle.grid[nextR][nextC] === " ") break;
+            if (newGrid[nextR][nextC] === "") {
+              foundNext = true;
+            }
+          } else {
+            nextR++;
+            if (nextR >= puzzle.height || puzzle.grid[nextR][nextC] === " ") break;
+            if (newGrid[nextR][nextC] === "") {
+              foundNext = true;
+            }
+          }
+        }
+
+        if (foundNext) {
+          setSelectedCell([nextR, nextC]);
+        } else {
+          moveCursor(r, c, moveDir, true);
+        }
+
         if (checkIsComplete(newGrid)) handleSolve();
       }
     }
@@ -321,7 +347,32 @@ export default function PuzzleInterface({
       if (hasAcross && !hasDown) moveDir = "across";
       else if (!hasAcross && hasDown) moveDir = "down";
 
-      moveCursor(r, c, moveDir, true);
+      // Skip filled cells when typing letters
+      let nextR = r;
+      let nextC = c;
+      let foundNext = false;
+
+      while (!foundNext) {
+        if (moveDir === "across") {
+          nextC++;
+          if (nextC >= puzzle.width || puzzle.grid[nextR][nextC] === " ") break;
+          if (newGrid[nextR][nextC] === "") {
+            foundNext = true;
+          }
+        } else {
+          nextR++;
+          if (nextR >= puzzle.height || puzzle.grid[nextR][nextC] === " ") break;
+          if (newGrid[nextR][nextC] === "") {
+            foundNext = true;
+          }
+        }
+      }
+
+      if (foundNext) {
+        setSelectedCell([nextR, nextC]);
+      } else {
+        moveCursor(r, c, moveDir, true);
+      }
       if (checkIsComplete(newGrid)) handleSolve();
     }
   };
