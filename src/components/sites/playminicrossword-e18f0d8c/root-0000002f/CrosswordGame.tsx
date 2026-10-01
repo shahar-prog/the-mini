@@ -59,6 +59,12 @@ export default function CrosswordGame({
   );
 
   useEffect(() => {
+    if (game.isSolved) {
+      setShowShareModal(true);
+    }
+  }, [game.isSolved]);
+
+  useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
       if (game.showIncorrectPopup && (e.key === 'Enter' || e.key === 'Escape')) {
         e.preventDefault();
