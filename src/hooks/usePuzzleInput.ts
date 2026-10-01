@@ -15,6 +15,9 @@ export function usePuzzleInput(
   game: {
     gridValues: string[][];
     setGridValues: (grid: string[][]) => void;
+    updateGridValues: (grid: string[][]) => void;
+    handleUndo: () => void;
+    handleRedo: () => void;
     isSolved: boolean;
     isRunning: boolean;
     setIncorrectCells: (cells: Set<string>) => void;
@@ -29,7 +32,7 @@ export function usePuzzleInput(
   } = nav;
 
   const {
-    gridValues, setGridValues, isSolved, isRunning,
+    gridValues, setGridValues, updateGridValues, handleUndo, handleRedo, isSolved, isRunning,
     setIncorrectCells, checkIsComplete, handleSolve
   } = game;
 
@@ -41,6 +44,21 @@ export function usePuzzleInput(
     ) {
       return;
     }
+
+    // Handle Undo (Ctrl+Z or Cmd+Z)
+    if ((e.ctrlKey || e.metaKey) && e.key === 'z') {
+      e.preventDefault();
+      handleUndo();
+      return;
+    }
+
+    // Handle Redo (Ctrl+Y or Ctrl+Shift+Z / Cmd+Shift+Z)
+    if ((e.ctrlKey || e.metaKey) && (e.key === 'y' || (e.shiftKey && e.key === 'Z'))) {
+      e.preventDefault();
+      handleRedo();
+      return;
+    }
+
     if (!selectedCell) return;
     const [r, c] = selectedCell;
 
@@ -128,7 +146,7 @@ export function usePuzzleInput(
       const newGrid = gridValues.map((row) => [...row]);
       if (currentVal !== "") {
         newGrid[r][c] = "";
-        setGridValues(newGrid);
+        updateGridValues(newGrid);
       } else {
         moveCursor(r, c, direction, false);
       }
@@ -142,7 +160,7 @@ export function usePuzzleInput(
       const letter = e.key.toUpperCase();
       const newGrid = gridValues.map((row) => [...row]);
       newGrid[r][c] = letter;
-      setGridValues(newGrid);
+      updateGridValues(newGrid);
       setIncorrectCells((prev: Set<string>) => {
         const next = new Set(prev);
         next.delete(`${r},${c}`);
@@ -190,8 +208,8 @@ export function usePuzzleInput(
   }, [
     selectedCell, direction, gridValues, isSolved, isRunning,
     puzzle, hasWordAt, toggleDirectionIfPossible, setSelectedCell,
-    setDirection, moveCursor, setGridValues, setIncorrectCells,
-    checkIsComplete, handleNextClue, handleSolve
+    setDirection, moveCursor, updateGridValues, setIncorrectCells,
+    checkIsComplete, handleNextClue, handleSolve, handleUndo, handleRedo
   ]);
 
   const handleVirtualKey = useCallback((key: string) => {
@@ -202,7 +220,7 @@ export function usePuzzleInput(
       const newGrid = gridValues.map((row) => [...row]);
       if (currentVal !== "") {
         newGrid[r][c] = "";
-        setGridValues(newGrid);
+        updateGridValues(newGrid);
       } else {
         moveCursor(r, c, direction, false);
       }
@@ -216,7 +234,7 @@ export function usePuzzleInput(
     } else {
       const newGrid = gridValues.map((row) => [...row]);
       newGrid[r][c] = key;
-      setGridValues(newGrid);
+      updateGridValues(newGrid);
       setIncorrectCells((prev: Set<string>) => {
         const next = new Set(prev);
         next.delete(`${r},${c}`);
@@ -262,9 +280,9 @@ export function usePuzzleInput(
     }
   }, [
     selectedCell, isSolved, isRunning, gridValues, puzzle,
-    hasWordAt, toggleDirectionIfPossible, setGridValues,
+    hasWordAt, toggleDirectionIfPossible, updateGridValues,
     setIncorrectCells, direction, moveCursor, setSelectedCell,
-    handleNextClue, checkIsComplete, handleSolve
+    handleNextClue, checkIsComplete, handleSolve, handleUndo, handleRedo
   ]);
 
   return { handleKeyDown, handleVirtualKey };

@@ -1,5 +1,5 @@
-import { useState, useCallback, useEffect } from 'react';
-import { CrosswordPuzzle } from '@/types/playminicrossword';
+import { useState, useCallback, useEffect, useRef } from 'react';
+import { CrosswordPuzzle, Clue } from '@/types/playminicrossword';
 
 export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSeconds: number) => void) {
   const [gridValues, setGridValues] = useState<string[][]>(() =>
@@ -10,6 +10,13 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
         ),
   );
 
+  const gridValuesRef = useRef(gridValues);
+  useEffect(() => {
+    gridValuesRef.current = gridValues;
+  }, [gridValues]);
+
+  const [history, setHistory] = useState<string[][][]>([]);
+  const [redoStack, setRedoStack] = useState<string[][][]>([]);
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
   const [isRunning, setIsRunning] = useState(true);
   const [isSolved, setIsSolved] = useState(false);
@@ -69,6 +76,74 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
     setCorrectCells(corrects);
   }, [gridValues, puzzle]);
 
+  const updateGridValues = useCallback((newGrid: string[][]) => {
+    const currentGrid = gridValuesRef.current;
+    const hasChanged = JSON.stringify(newGrid) !== JSON.stringify(currentGrid);
+
+    if (hasChanged) {
+      setHistory(prev => {
+        // Check if the state we are about to insert is the same as the current top of the stack
+        if (prev.length > 0 && JSON.stringify(prev[prev.length - 1]) === JSON.stringify(currentGrid)) {
+          return prev;
+        }
+        const newHistory = [...prev, currentGrid.map(row => [...row])];
+        if (newHistory.length > 50) newHistory.shift();
+        return newHistory;
+      });
+      setRedoStack([]);
+      setGridValues(newGrid);
+    }
+  }, []);
+
+  const handleUndo = useCallback(() => {
+    setHistory(prev => {
+      if (prev.length === 0) {
+        return prev;
+      }
+      const newHistory = [...prev];
+      const previousState = newHistory.pop();
+      if (previousState) {
+        const currentGrid = gridValuesRef.current;
+        setRedoStack(redo => {
+          // Check if the state we are about to insert is the same as the current top of the stack
+          if (redo.length > 0 && JSON.stringify(redo[redo.length - 1]) === JSON.stringify(currentGrid)) {
+            return redo;
+          }
+          const newRedo = [...redo, currentGrid.map(row => [...row])];
+          if (newRedo.length > 50) newRedo.shift();
+          return newRedo;
+        });
+        setGridValues(previousState);
+      }
+      return newHistory;
+    });
+  }, []);
+
+  const handleRedo = useCallback(() => {
+    setRedoStack(prev => {
+      if (prev.length === 0) {
+        return prev;
+      }
+      const newRedo = [...prev];
+      const nextState = newRedo.pop();
+      if (nextState) {
+        // Use current state for History stack
+        const currentGrid = gridValuesRef.current;
+        setHistory(hist => {
+          // Check if the state we are about to insert is the same as the current top of the stack
+          if (hist.length > 0 && JSON.stringify(hist[hist.length - 1]) === JSON.stringify(currentGrid)) {
+            return hist;
+          }
+          const newHist = [...hist, currentGrid.map(row => [...row])];
+          if (newHist.length > 50) newHist.shift();
+          return newHist;
+        });
+        setGridValues(nextState);
+      }
+      return newRedo;
+    });
+  }, []);
+
   const handleRevealWord = useCallback((activeClue: Clue) => {
     if (!activeClue) return;
     const newGrid = gridValues.map((row) => [...row]);
@@ -78,9 +153,9 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
       const c = isAcross ? activeClue.col + i : activeClue.col;
       newGrid[r][c] = puzzle.grid[r][c];
     }
-    setGridValues(newGrid);
+    updateGridValues(newGrid);
     if (checkIsComplete(newGrid)) handleSolve();
-  }, [gridValues, puzzle, checkIsComplete, handleSolve]);
+  }, [gridValues, puzzle, checkIsComplete, handleSolve, updateGridValues]);
 
   const handleResetPuzzle = useCallback(() => {
     if (puzzle.initialGrid) {
@@ -91,11 +166,16 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
     setElapsedSeconds(0);
     setIsRunning(true);
     setIsSolved(false);
+    setHistory([]);
+    setRedoStack([]);
   }, [puzzle]);
 
   return {
     gridValues,
     setGridValues,
+    updateGridValues,
+    handleUndo,
+    handleRedo,
     elapsedSeconds,
     setElapsedSeconds,
     isRunning,
