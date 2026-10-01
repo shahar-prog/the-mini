@@ -27,7 +27,18 @@ export default function RootLayout({
       lang="en"
       className={`${outfitSans.variable} ${frauncesSerif.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col relative">
+        <div
+          className="fixed inset-0 -z-10 opacity-90 pointer-events-none"
+          style={{
+            backgroundImage: `
+              radial-gradient(70% 60% at 50% 0%, rgba(241, 113, 39, 0.1), rgba(0, 0, 0, 0) 70%),
+              radial-gradient(50% 50% at 80% 20%, rgba(37, 101, 228, 0.08), rgba(0, 0, 0, 0) 70%)
+            `,
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

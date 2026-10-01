@@ -22,7 +22,7 @@ export default function LandingPage() {
   };
 
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="min-h-screen bg-background flex flex-col relative">
       <GlobalHeader />
 
       <main className="flex-1">
