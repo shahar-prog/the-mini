@@ -2,13 +2,27 @@ import { useState, useCallback, useEffect, useRef } from 'react';
 import { CrosswordPuzzle, Clue } from '@/types/playminicrossword';
 
 export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSeconds: number) => void) {
-  const [gridValues, setGridValues] = useState<string[][]>(() =>
-    puzzle.initialGrid
+  const puzzleId = puzzle.mode === 'daily' ? `daily-${puzzle.date}` : `random-${puzzle.seed}`;
+
+  const [gridValues, setGridValues] = useState<string[][]>(() => {
+    if (typeof window === 'undefined') {
+      return puzzle.initialGrid
+        ? puzzle.initialGrid.map((row) => [...row])
+        : Array.from({ length: puzzle.height }, () =>
+            Array(puzzle.width).fill(''),
+          );
+    }
+    // Load solved state from localStorage
+    const saved = localStorage.getItem(`crossword-solved-${puzzleId}`);
+    if (saved) {
+      return puzzle.grid.map(row => [...row]);
+    }
+    return puzzle.initialGrid
       ? puzzle.initialGrid.map((row) => [...row])
       : Array.from({ length: puzzle.height }, () =>
           Array(puzzle.width).fill(''),
-        ),
-  );
+        );
+  });
 
   const gridValuesRef = useRef(gridValues);
   useEffect(() => {
@@ -17,14 +31,30 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
 
   const [history, setHistory] = useState<string[][][]>([]);
   const [redoStack, setRedoStack] = useState<string[][][]>([]);
-  const [elapsedSeconds, setElapsedSeconds] = useState(0);
-  const [isRunning, setIsRunning] = useState(true);
-  const [isSolved, setIsSolved] = useState(false);
+  const [elapsedSeconds, setElapsedSeconds] = useState(() => {
+    if (typeof window === 'undefined') return 0;
+    const saved = localStorage.getItem(`crossword-time-${puzzleId}`);
+    return saved ? parseInt(saved, 10) : 0;
+  });
+  const [isRunning, setIsRunning] = useState(() => {
+    if (typeof window === 'undefined') return true;
+    const saved = localStorage.getItem(`crossword-solved-${puzzleId}`);
+    return !saved;
+  });
+  const [isSolved, setIsSolved] = useState(() => {
+    if (typeof window === 'undefined') return false;
+    const saved = localStorage.getItem(`crossword-solved-${puzzleId}`);
+    return !!saved;
+  });
   const [incorrectCells, setIncorrectCells] = useState<Set<string>>(new Set());
   const [correctCells, setCorrectCells] = useState<Set<string>>(new Set());
   const [showIncorrectPopup, setShowIncorrectPopup] = useState(false);
   const [hasShownIncorrectPopup, setHasShownIncorrectPopup] = useState(false);
-  const [revealsUsed, setRevealsUsed] = useState(0);
+  const [revealsUsed, setRevealsUsed] = useState(() => {
+    if (typeof window === 'undefined') return 0;
+    const saved = localStorage.getItem(`crossword-reveals-${puzzleId}`);
+    return saved ? parseInt(saved, 10) : 0;
+  });
 
 
   // Timer Effect
@@ -58,8 +88,14 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
   const handleSolve = useCallback(() => {
     setIsSolved(true);
     setIsRunning(false);
+
+    // Save to localStorage
+    localStorage.setItem(`crossword-solved-${puzzleId}`, 'true');
+    localStorage.setItem(`crossword-time-${puzzleId}`, elapsedSeconds.toString());
+    localStorage.setItem(`crossword-reveals-${puzzleId}`, revealsUsed.toString());
+
     onSolve?.(elapsedSeconds);
-  }, [elapsedSeconds, onSolve]);
+  }, [elapsedSeconds, onSolve, puzzleId, revealsUsed]);
 
   const handleCheckPuzzle = useCallback(() => {
     const errors = new Set<string>();
@@ -215,7 +251,13 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
     setHistory([]);
     setRedoStack([]);
     setHasShownIncorrectPopup(false);
-  }, [puzzle]);
+    setRevealsUsed(0);
+
+    // Clear saved status
+    localStorage.removeItem(`crossword-solved-${puzzleId}`);
+    localStorage.removeItem(`crossword-time-${puzzleId}`);
+    localStorage.removeItem(`crossword-reveals-${puzzleId}`);
+  }, [puzzle, puzzleId]);
 
   const handleClearIncorrect = useCallback(() => {
     // 1. Re-evaluate the board to get the most current set of incorrect cells

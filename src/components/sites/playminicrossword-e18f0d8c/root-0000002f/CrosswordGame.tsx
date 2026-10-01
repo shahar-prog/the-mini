@@ -25,6 +25,11 @@ export default function CrosswordGame({
   onNewRandomPuzzle,
 }: CrosswordGameProps) {
   const [showShareModal, setShowShareModal] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const nav = useCrosswordNavigation(puzzle);
   const game = useCrosswordGame(puzzle, onSolve);
@@ -172,7 +177,7 @@ export default function CrosswordGame({
                         </span>
                       )}
                       <span className="uppercase select-none leading-none">
-                        {isBlock ? "" : userLetter}
+                        {isMounted ? (isBlock ? "" : userLetter) : ""}
                       </span>
                     </div>
                   );

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Clock, Pause, Play, RotateCcw, CheckCircle2, Eye, Share2, Shuffle, Eraser } from 'lucide-react';
 import { CrosswordPuzzle } from '@/types/playminicrossword';
 import { Button } from '@/components/ui/button';
@@ -31,6 +31,12 @@ export default function CrosswordToolbar({
   puzzle,
   onNewRandomPuzzle,
 }: CrosswordToolbarProps) {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const minutes = Math.floor(elapsedSeconds / 60);
   const seconds = elapsedSeconds % 60;
   const timeFormatted = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
@@ -40,7 +46,7 @@ export default function CrosswordToolbar({
       {/* Timer */}
       <div className="flex items-center gap-2 text-[#2C221B] font-mono text-sm font-semibold">
         <Clock className="w-4 h-4 text-[#F17127]" />
-        <span>{timeFormatted}</span>
+        <span>{isMounted ? timeFormatted : '0:00'}</span>
       </div>
 
       {/* Puzzle Mode & Title Badge */}
@@ -97,7 +103,7 @@ export default function CrosswordToolbar({
           </Link>
         )}
 
-        {isSolved && (
+        {isMounted && isSolved && (
           <button
             onClick={onShare}
             className="flex items-center gap-1 px-2.5 py-1.5 rounded-md bg-emerald-600 text-white hover:bg-emerald-700 transition-colors font-medium"
