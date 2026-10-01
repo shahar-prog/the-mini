@@ -1,0 +1,13 @@
+{
+  "id": "board-corners-diag",
+  "name": "Diagonal Corners",
+  "width": 5,
+  "height": 5,
+  "grid": [
+    "#....",
+    ".....",
+    ".....",
+    ".....",
+    "....#"
+  ]
+}

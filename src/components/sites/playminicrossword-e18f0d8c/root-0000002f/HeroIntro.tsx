@@ -1,14 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
-import { cn } from '@/lib/utils';
 
 const HeroIntro: React.FC = () => {
   const quickLinks = [
-    { name: 'Daily puzzle', href: '#' },
-    { name: 'Unlimited', href: '#' },
-    { name: 'Archive', href: '#' },
-    { name: 'Hints', href: '#' },
-    { name: 'Answers', href: '#' },
+    { name: 'Daily puzzle', href: '/' },
+    { name: 'Unlimited', href: '/unlimited' },
+    { name: 'Archive', href: '/archive' },
+    { name: 'How to Play', href: '#how-to-play' },
+    { name: 'FAQ', href: '#faq' },
   ];
 
   return (

@@ -1,73 +1,64 @@
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
+import { useRouter } from 'next/navigation';
 import GlobalHeader from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/GlobalHeader';
 import HeroIntro from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/HeroIntro';
-import PuzzleInterface from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/PuzzleInterface';
-import OnboardingModal from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/OnboardingModal';
-import ArchiveSelector from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/ArchiveSelector';
-import HowToPlay from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/HowToPlay';
-import PickYourSize from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/PickYourSize';
-import AboutSection from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/AboutSection';
-import FAQSection from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/FAQSection';
 import Footer from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/Footer';
+import { Button } from '@/components/ui/button';
+import { Shuffle, Calendar } from 'lucide-react';
 
-// Mock puzzle data to make the preview work
-const MOCK_PUZZLE = {
-  grid: [
-    [' ', 'P', 'L', 'A', 'Y'],
-    ['X', 'X', 'X', 'X', 'X'],
-    ['X', 'X', 'X', 'X', 'X'],
-    ['X', 'X', 'X', 'X', 'X'],
-    ['X', 'X', 'X', 'X', ' '],
-  ],
-  clues: {
-    across: [
-      { number: 1, text: "Do-it-yourself, for short" },
-    ],
-    down: [
-      { number: 1, text: "Tennis great Miss ___, or a common surname" },
-      { number: 2, text: "Apple's all-in-one desktop computer" },
-      { number: 3, text: "Yellow center of an egg" },
-      { number: 4, text: "Opposed to" },
-      { number: 5, text: "Fat used in cooking" },
-    ],
-  },
-};
+export default function LandingPage() {
+  const router = useRouter();
 
-export default function PreviewPage() {
-  const [showModal, setShowModal] = useState(true);
+  const handlePlayDaily = () => {
+    router.push('/daily');
+  };
+
+  const handlePlayRandom = () => {
+    // Generate a random 8-character ID
+    const randomId = Math.random().toString(36).substring(2, 10);
+    router.push(`/puzzle/${randomId}`);
+  };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex flex-col">
       <GlobalHeader />
 
-      <main>
+      <main className="flex-1">
         <HeroIntro />
 
-        <div className="max-w-4xl mx-auto px-4 py-12 flex flex-col items-center gap-12">
-          <section className="text-center mb-8">
-            <h2 className="font-serif text-3xl font-medium text-foreground mb-4">Try the Puzzle</h2>
-            <p className="font-sans text-muted-foreground">Experience the interaction model I've implemented.</p>
-          </section>
+        <div className="max-w-4xl mx-auto px-4 py-20 flex flex-col items-center gap-12 text-center">
+          <div className="space-y-4">
+            <h2 className="font-serif text-4xl md:text-5xl font-medium text-foreground">
+              Ready for a challenge?
+            </h2>
+            <p className="font-sans text-lg text-muted-foreground max-w-2xl mx-auto">
+              Test your vocabulary with our 5x5 mini crosswords.
+              Choose the daily challenge or generate a random puzzle.
+            </p>
+          </div>
 
-          <PuzzleInterface puzzle={MOCK_PUZZLE} />
+          <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md justify-center">
+            <Button
+              onClick={handlePlayDaily}
+              className="flex-1 h-14 text-lg font-semibold bg-[#F17127] hover:bg-[#D95F1A] text-white rounded-xl transition-all hover:scale-105"
+            >
+              <Calendar className="mr-2 h-5 w-5" />
+              Play Daily
+            </Button>
+            <Button
+              onClick={handlePlayRandom}
+              className="flex-1 h-14 text-lg font-semibold bg-white border-2 border-[#F17127] text-[#F17127] hover:bg-orange-50 rounded-xl transition-all hover:scale-105"
+            >
+              <Shuffle className="mr-2 h-5 w-5" />
+              Play Random
+            </Button>
+          </div>
         </div>
       </main>
 
-      <ArchiveSelector />
-      <HowToPlay />
-      <PickYourSize />
-      <AboutSection />
-      <FAQSection />
       <Footer />
-
-      {showModal && (
-        <OnboardingModal
-          isOpen={showModal}
-          onClose={() => setShowModal(false)}
-        />
-      )}
     </div>
   );
 }

@@ -1,0 +1,13 @@
+{
+  "id": "board-four-corners",
+  "name": "Four Corners",
+  "width": 5,
+  "height": 5,
+  "grid": [
+    "#...#",
+    ".....",
+    ".....",
+    ".....",
+    "#...#"
+  ]
+}

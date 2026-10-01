@@ -1,0 +1,13 @@
+{
+  "id": "board-corners-alt",
+  "name": "Alternative Corners",
+  "width": 5,
+  "height": 5,
+  "grid": [
+    "....#",
+    ".....",
+    ".....",
+    ".....",
+    "#...."
+  ]
+}

@@ -15,13 +15,13 @@ export default function AboutSection() {
           </h2>
           <div className="space-y-6 text-base text-muted-foreground leading-relaxed">
             <p>
-              Mini Crossword is a free 5×5 crossword you play right here in your browser. A new puzzle goes live every day at midnight Eastern Time: ten clues, five Across and five Down, sized for a one-to-three-minute break. There's nothing to install and no account to make, and your letters save in your browser as you type.
+              Mini Crossword is a free 5×5 crossword you play right here in your browser. A new puzzle goes live every day at midnight Eastern Time: ten clues, five Across and five Down, sized for a one-to-three-minute break. There&apos;s nothing to install and no account to make, and your letters save in your browser as you type.
             </p>
             <p>
               Want a longer solve? Every day also also brings a 6×6 with 12 clues and a 7×7 with 14 or 16, and Unlimited mode serves one mini after another from our library in all three sizes. If a clue has you stuck, each daily 5×5 has a hints page with three hints per clue, plus an answer key that reveals one answer at a time.
             </p>
             <p>
-              Every puzzle here is our own, made by our own puzzle generator, and the site isn't affiliated with any newspaper. Missed a day? The archive keeps the last 90 days of daily puzzles.
+              Every puzzle here is our own, made by our own puzzle generator, and the site isn&apos;t affiliated with any newspaper. Missed a day? The archive keeps the last 90 days of daily puzzles.
             </p>
           </div>
         </div>

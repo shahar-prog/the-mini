@@ -1,0 +1,13 @@
+{
+  "id": "board-edges-split",
+  "name": "Split Edges",
+  "width": 5,
+  "height": 5,
+  "grid": [
+    "....#",
+    ".....",
+    ".....",
+    ".....",
+    "#...."
+  ]
+}

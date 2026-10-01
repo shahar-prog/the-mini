@@ -1,0 +1,13 @@
+{
+  "id": "classic-open",
+  "name": "Classic Open 5x5",
+  "width": 5,
+  "height": 5,
+  "grid": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ]
+}

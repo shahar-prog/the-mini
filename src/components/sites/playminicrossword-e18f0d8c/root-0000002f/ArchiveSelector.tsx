@@ -2,27 +2,26 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { cn } from '@/lib/utils';
-
-const ARCHIVE_DATES = [
-  { date: "Today", href: "/daily" },
-  { date: "Sep 27", href: "/daily/2026-09-27" },
-  { date: "Sep 26", href: "/daily/2026-09-26" },
-  { date: "Sep 25", href: "/daily/2026-09-25" },
-  { date: "Sep 24", href: "/daily/2026-09-24" },
-  { date: "Sep 23", href: "/daily/2026-09-23" },
-  { date: "Sep 22", href: "/daily/2026-09-22" },
-  { date: "Sep 21", href: "/daily/2026-09-21" },
-  { date: "Sep 20", href: "/daily/2026-09-20" },
-  { date: "Sep 19", href: "/daily/2026-09-19" },
-  { date: "Sep 18", href: "/daily/2026-09-18" },
-  { date: "Sep 17", href: "/daily/2026-09-17" },
-  { date: "Sep 16", href: "/daily/2026-09-16" },
-  { date: "Sep 15", href: "/daily/2026-09-15" },
-  { date: "Sep 14", href: "/daily/2026-09-14" },
-];
 
 export default function ArchiveSelector() {
+  const archiveDates = React.useMemo(() => {
+    const dates = [{ date: "Today", href: "/" }];
+    const today = new Date();
+    for (let i = 1; i <= 14; i++) {
+      const d = new Date(today);
+      d.setDate(today.getDate() - i);
+      const year = d.getFullYear();
+      const month = String(d.getMonth() + 1).padStart(2, '0');
+      const day = String(d.getDate()).padStart(2, '0');
+      const dateStr = `${year}-${month}-${day}`;
+      const label = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      dates.push({
+        date: label,
+        href: `/daily/${dateStr}`,
+      });
+    }
+    return dates;
+  }, []);
   return (
     <section className="py-12 bg-background">
       <div className="max-w-4xl mx-auto px-4">
@@ -39,7 +38,7 @@ export default function ArchiveSelector() {
         </div>
 
         <div className="flex gap-2 overflow-x-auto pb-2 no-scrollbar">
-          {ARCHIVE_DATES.map((item, index) => (
+          {archiveDates.map((item, index) => (
             <Link
               key={index}
               href={item.href}

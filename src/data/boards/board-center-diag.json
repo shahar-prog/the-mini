@@ -1,0 +1,13 @@
+{
+  "id": "board-center-diag",
+  "name": "Center Diagonal Spots",
+  "width": 5,
+  "height": 5,
+  "grid": [
+    ".....",
+    ".#...",
+    ".....",
+    "...#.",
+    "....."
+  ]
+}

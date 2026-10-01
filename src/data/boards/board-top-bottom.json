@@ -1,0 +1,13 @@
+{
+  "id": "board-top-bottom",
+  "name": "Top and Bottom Edge Spots",
+  "width": 5,
+  "height": 5,
+  "grid": [
+    "..#..",
+    ".....",
+    ".....",
+    ".....",
+    "..#.."
+  ]
+}

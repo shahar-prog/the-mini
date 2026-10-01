@@ -6,7 +6,13 @@ interface TutorialGridProps {
 }
 
 export default function TutorialGrid({ step }: TutorialGridProps) {
-  const stepStates = {
+  interface StepState {
+    grid: string[][];
+    highlights: number[][];
+    activeCell: number[] | null;
+  }
+
+  const stepStates: Record<number, StepState> = {
     1: {
       grid: [
         [' ', 'P', 'L', 'A', 'Y'],
@@ -64,10 +70,10 @@ export default function TutorialGrid({ step }: TutorialGridProps) {
           gridTemplateRows: 'repeat(5, 27px)',
         }}
       >
-        {state.grid.map((row, rowIndex) =>
-          row.map((cell, colIndex) => {
+        {state.grid.map((row: string[], rowIndex: number) =>
+          row.map((cell: string, colIndex: number) => {
             const isBlock = cell === ' ';
-            const isHighlighted = state.highlights.some(([r, c]) => r === rowIndex && c === colIndex);
+            const isHighlighted = state.highlights.some(([r, c]: number[]) => r === rowIndex && c === colIndex);
             const isActive = state.activeCell && state.activeCell[0] === rowIndex && state.activeCell[1] === colIndex;
 
             return (
