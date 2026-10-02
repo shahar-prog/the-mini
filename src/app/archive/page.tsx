@@ -42,7 +42,7 @@ export default function ArchivePage() {
         {/* Back Link & Title */}
         <div className="mb-8">
           <Link
-            href="/"
+            href="/daily"
             className="inline-flex items-center gap-1.5 text-xs font-semibold text-muted-foreground hover:text-foreground mb-4 transition-colors"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
