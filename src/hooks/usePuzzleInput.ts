@@ -184,6 +184,26 @@ export function usePuzzleInput(
         next.delete(`${r},${c}`);
         return next;
       });
+    } else if (e.key === "Delete") {
+      e.preventDefault();
+      const currentVal = gridValues[r][c];
+      const newGrid = gridValues.map((row) => [...row]);
+      if (currentVal !== "") {
+        newGrid[r][c] = "";
+        updateGridValues(newGrid, {
+          selectedCell,
+          direction,
+        });
+        // After deleting, move cursor forward one position
+        moveCursor(r, c, direction, true);
+      } else {
+        moveCursor(r, c, direction, true);
+      }
+      setIncorrectCells((prev: Set<string>) => {
+        const next = new Set(prev);
+        next.delete(`${r},${c}`);
+        return next;
+      });
     } else if (e.key.length === 1 && /^[a-zA-Z]$/.test(e.key)) {
       e.preventDefault();
       const letter = e.key.toUpperCase();

@@ -146,6 +146,30 @@ export function useCrosswordGame(
       setRedoStack([]);
       setGridValues(newGrid);
 
+      // Clear painting for cells that were removed or changed
+      setIncorrectCells(prev => {
+        const next = new Set(prev);
+        for (let r = 0; r < puzzle.height; r++) {
+          for (let c = 0; c < puzzle.width; c++) {
+            if (newGrid[r][c] === '' || newGrid[r][c] !== currentGrid[r][c]) {
+              next.delete(`${r},${c}`);
+            }
+          }
+        }
+        return next;
+      });
+      setCorrectCells(prev => {
+        const next = new Set(prev);
+        for (let r = 0; r < puzzle.height; r++) {
+          for (let c = 0; c < puzzle.width; c++) {
+            if (newGrid[r][c] === '' || newGrid[r][c] !== currentGrid[r][c]) {
+              next.delete(`${r},${c}`);
+            }
+          }
+        }
+        return next;
+      });
+
       // Check if the board is fully filled
       let isFullyFilled = true;
       for (let r = 0; r < puzzle.height; r++) {
@@ -216,6 +240,30 @@ export function useCrosswordGame(
 
         setGridValues(previousState.gridValues);
 
+        // Clear painting for cells that changed during undo
+        setIncorrectCells(prev => {
+          const next = new Set(prev);
+          for (let r = 0; r < puzzle.height; r++) {
+            for (let c = 0; c < puzzle.width; c++) {
+              if (previousState.gridValues[r][c] !== currentGrid[r][c]) {
+                next.delete(`${r},${c}`);
+              }
+            }
+          }
+          return next;
+        });
+        setCorrectCells(prev => {
+          const next = new Set(prev);
+          for (let r = 0; r < puzzle.height; r++) {
+            for (let c = 0; c < puzzle.width; c++) {
+              if (previousState.gridValues[r][c] !== currentGrid[r][c]) {
+                next.delete(`${r},${c}`);
+              }
+            }
+          }
+          return next;
+        });
+
         if (navigationSetters) {
           if (previousState.selectedCell) {
             navigationSetters.setSelectedCell(previousState.selectedCell);
@@ -225,7 +273,7 @@ export function useCrosswordGame(
       }
       return newHistory;
     });
-  }, [navigationSetters]);
+  }, [navigationSetters, puzzle]);
 
   const handleRedo = useCallback((currentNav?: { selectedCell: [number, number] | null; direction: 'across' | 'down' }) => {
     setRedoStack(prev => {
@@ -251,6 +299,30 @@ export function useCrosswordGame(
         });
         setGridValues(nextState.gridValues);
 
+        // Clear painting for cells that changed during redo
+        setIncorrectCells(prev => {
+          const next = new Set(prev);
+          for (let r = 0; r < puzzle.height; r++) {
+            for (let c = 0; c < puzzle.width; c++) {
+              if (nextState.gridValues[r][c] !== currentGrid[r][c]) {
+                next.delete(`${r},${c}`);
+              }
+            }
+          }
+          return next;
+        });
+        setCorrectCells(prev => {
+          const next = new Set(prev);
+          for (let r = 0; r < puzzle.height; r++) {
+            for (let c = 0; c < puzzle.width; c++) {
+              if (nextState.gridValues[r][c] !== currentGrid[r][c]) {
+                next.delete(`${r},${c}`);
+              }
+            }
+          }
+          return next;
+        });
+
         if (navigationSetters) {
           if (nextState.selectedCell) {
             navigationSetters.setSelectedCell(nextState.selectedCell);
@@ -260,7 +332,7 @@ export function useCrosswordGame(
       }
       return newRedo;
     });
-  }, [navigationSetters]);
+  }, [navigationSetters, puzzle]);
 
   const handleRevealWord = useCallback((activeClue: Clue) => {
     if (!activeClue) return;
