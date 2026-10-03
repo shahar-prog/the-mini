@@ -66,14 +66,20 @@ export function usePuzzleInput(
     // Handle Undo (Ctrl+Z or Cmd+Z)
     if ((e.ctrlKey || e.metaKey) && e.key === 'z') {
       e.preventDefault();
-      handleUndo();
+      handleUndo({
+        selectedCell: selectedCell,
+        direction: direction,
+      });
       return;
     }
 
     // Handle Redo (Ctrl+Y or Ctrl+Shift+Z / Cmd+Shift+Z)
     if ((e.ctrlKey || e.metaKey) && (e.key === 'y' || (e.shiftKey && e.key === 'Z'))) {
       e.preventDefault();
-      handleRedo();
+      handleRedo({
+        selectedCell: selectedCell,
+        direction: direction,
+      });
       return;
     }
 
@@ -164,7 +170,10 @@ export function usePuzzleInput(
       const newGrid = gridValues.map((row) => [...row]);
       if (currentVal !== "") {
         newGrid[r][c] = "";
-        updateGridValues(newGrid);
+        updateGridValues(newGrid, {
+          selectedCell,
+          direction,
+        });
         // After deleting, move cursor back one position for a more natural feel
         moveCursor(r, c, direction, false);
       } else {
@@ -180,7 +189,10 @@ export function usePuzzleInput(
       const letter = e.key.toUpperCase();
       const newGrid = gridValues.map((row) => [...row]);
       newGrid[r][c] = letter;
-      updateGridValues(newGrid);
+      updateGridValues(newGrid, {
+        selectedCell,
+        direction,
+      });
       setIncorrectCells((prev: Set<string>) => {
         const next = new Set(prev);
         next.delete(`${r},${c}`);
@@ -240,7 +252,10 @@ export function usePuzzleInput(
       const newGrid = gridValues.map((row) => [...row]);
       if (currentVal !== "") {
         newGrid[r][c] = "";
-        updateGridValues(newGrid);
+        updateGridValues(newGrid, {
+          selectedCell,
+          direction,
+        });
         // After deleting, move cursor back one position for a more natural feel
         moveCursor(r, c, direction, false);
       } else {
@@ -256,7 +271,10 @@ export function usePuzzleInput(
     } else {
       const newGrid = gridValues.map((row) => [...row]);
       newGrid[r][c] = key;
-      updateGridValues(newGrid);
+      updateGridValues(newGrid, {
+        selectedCell,
+        direction,
+      });
       setIncorrectCells((prev: Set<string>) => {
         const next = new Set(prev);
         next.delete(`${r},${c}`);

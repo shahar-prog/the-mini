@@ -1,7 +1,14 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import { CrosswordPuzzle, Clue } from '@/types/playminicrossword';
 
-export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSeconds: number) => void) {
+export function useCrosswordGame(
+  puzzle: CrosswordPuzzle,
+  onSolve?: (timeInSeconds: number) => void,
+  navigationSetters?: {
+    setSelectedCell: (cell: [number, number]) => void;
+    setDirection: (dir: 'across' | 'down') => void;
+  },
+) {
   const puzzleId = puzzle.mode === 'daily' ? `daily-${puzzle.date}` : `random-${puzzle.seed}`;
 
   const [gridValues, setGridValues] = useState<string[][]>(() => {
@@ -29,8 +36,8 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
     gridValuesRef.current = gridValues;
   }, [gridValues]);
 
-  const [history, setHistory] = useState<string[][][]>([]);
-  const [redoStack, setRedoStack] = useState<string[][][]>([]);
+  const [history, setHistory] = useState<{ gridValues: string[][]; selectedCell: [number, number] | null; direction: 'across' | 'down' }[]>([]);
+  const [redoStack, setRedoStack] = useState<{ gridValues: string[][]; selectedCell: [number, number] | null; direction: 'across' | 'down' }[]>([]);
   const [elapsedSeconds, setElapsedSeconds] = useState(() => {
     if (typeof window === 'undefined') return 0;
     const saved = localStorage.getItem(`crossword-time-${puzzleId}`);
@@ -116,16 +123,23 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
     setCorrectCells(corrects);
   }, [gridValues, puzzle]);
 
-  const updateGridValues = useCallback((newGrid: string[][]) => {
+  const updateGridValues = useCallback((newGrid: string[][], currentNav?: { selectedCell: [number, number] | null; direction: 'across' | 'down' }) => {
     const currentGrid = gridValuesRef.current;
     const hasChanged = JSON.stringify(newGrid) !== JSON.stringify(currentGrid);
 
     if (hasChanged) {
       setHistory(prev => {
-        if (prev.length > 0 && JSON.stringify(prev[prev.length - 1]) === JSON.stringify(currentGrid)) {
+        if (prev.length > 0 && JSON.stringify(prev[prev.length - 1].gridValues) === JSON.stringify(currentGrid)) {
           return prev;
         }
-        const newHistory = [...prev, currentGrid.map(row => [...row])];
+
+        const historyEntry = {
+          gridValues: currentGrid.map(row => [...row]),
+          selectedCell: currentNav?.selectedCell ?? null,
+          direction: currentNav?.direction ?? 'across',
+        };
+
+        const newHistory = [...prev, historyEntry];
         if (newHistory.length > 50) newHistory.shift();
         return newHistory;
       });
@@ -176,7 +190,7 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
     }
   }, [puzzle, checkIsComplete, handleSolve, hasShownIncorrectPopup]);
 
-  const handleUndo = useCallback(() => {
+  const handleUndo = useCallback((currentNav?: { selectedCell: [number, number] | null; direction: 'across' | 'down' }) => {
     setHistory(prev => {
       if (prev.length === 0) {
         return prev;
@@ -185,22 +199,35 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
       const previousState = newHistory.pop();
       if (previousState) {
         const currentGrid = gridValuesRef.current;
+
         setRedoStack(redo => {
-          // Check if the state we are about to insert is the same as the current top of the stack
-          if (redo.length > 0 && JSON.stringify(redo[redo.length - 1]) === JSON.stringify(currentGrid)) {
+          const currentGridCopy = currentGrid.map(row => [...row]);
+          if (redo.length > 0 && JSON.stringify(redo[redo.length - 1].gridValues) === JSON.stringify(currentGridCopy)) {
             return redo;
           }
-          const newRedo = [...redo, currentGrid.map(row => [...row])];
+          const newRedo = [...redo, {
+            gridValues: currentGridCopy,
+            selectedCell: currentNav?.selectedCell ?? null,
+            direction: currentNav?.direction ?? 'across'
+          }];
           if (newRedo.length > 50) newRedo.shift();
           return newRedo;
         });
-        setGridValues(previousState);
+
+        setGridValues(previousState.gridValues);
+
+        if (navigationSetters) {
+          if (previousState.selectedCell) {
+            navigationSetters.setSelectedCell(previousState.selectedCell);
+          }
+          navigationSetters.setDirection(previousState.direction);
+        }
       }
       return newHistory;
     });
-  }, []);
+  }, [navigationSetters]);
 
-  const handleRedo = useCallback(() => {
+  const handleRedo = useCallback((currentNav?: { selectedCell: [number, number] | null; direction: 'across' | 'down' }) => {
     setRedoStack(prev => {
       if (prev.length === 0) {
         return prev;
@@ -208,22 +235,32 @@ export function useCrosswordGame(puzzle: CrosswordPuzzle, onSolve?: (timeInSecon
       const newRedo = [...prev];
       const nextState = newRedo.pop();
       if (nextState) {
-        // Use current state for History stack
         const currentGrid = gridValuesRef.current;
         setHistory(hist => {
-          // Check if the state we are about to insert is the same as the current top of the stack
-          if (hist.length > 0 && JSON.stringify(hist[hist.length - 1]) === JSON.stringify(currentGrid)) {
+          const currentGridCopy = currentGrid.map(row => [...row]);
+          if (hist.length > 0 && JSON.stringify(hist[hist.length - 1].gridValues) === JSON.stringify(currentGridCopy)) {
             return hist;
           }
-          const newHist = [...hist, currentGrid.map(row => [...row])];
+          const newHist = [...hist, {
+            gridValues: currentGridCopy,
+            selectedCell: currentNav?.selectedCell ?? null,
+            direction: currentNav?.direction ?? 'across'
+          }];
           if (newHist.length > 50) newHist.shift();
           return newHist;
         });
-        setGridValues(nextState);
+        setGridValues(nextState.gridValues);
+
+        if (navigationSetters) {
+          if (nextState.selectedCell) {
+            navigationSetters.setSelectedCell(nextState.selectedCell);
+          }
+          navigationSetters.setDirection(nextState.direction);
+        }
       }
       return newRedo;
     });
-  }, []);
+  }, [navigationSetters]);
 
   const handleRevealWord = useCallback((activeClue: Clue) => {
     if (!activeClue) return;

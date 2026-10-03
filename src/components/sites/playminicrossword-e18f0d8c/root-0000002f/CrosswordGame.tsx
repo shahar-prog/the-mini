@@ -32,7 +32,10 @@ export default function CrosswordGame({
   }, []);
 
   const nav = useCrosswordNavigation(puzzle);
-  const game = useCrosswordGame(puzzle, onSolve);
+  const game = useCrosswordGame(puzzle, onSolve, {
+    setSelectedCell: nav.setSelectedCell,
+    setDirection: nav.setDirection,
+  });
 
   const { handleKeyDown, handleVirtualKey } = usePuzzleInput(
     puzzle,
