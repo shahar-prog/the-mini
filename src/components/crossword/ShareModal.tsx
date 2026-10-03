@@ -81,6 +81,9 @@ export default function ShareModal({
 
     try {
       const dataUrl = await domtoimage.toPng(imageRef.current, {
+        width: 1200,
+        height: 1500,
+        bgcolor: 'white',
         style: {
           position: 'fixed',
           left: '0',
@@ -88,6 +91,8 @@ export default function ShareModal({
           visibility: 'visible',
           opacity: '1',
           zIndex: '-1000',
+          transform: 'scale(3)',
+          transformOrigin: 'top left',
         }
       });
 

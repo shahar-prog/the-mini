@@ -24,7 +24,7 @@ export default function ShareImageCard({
   return (
     <div
       className="w-[400px] p-8 bg-white text-[#2C221B] flex flex-col items-center justify-center gap-8 font-sans"
-      style={{ colorScheme: 'light' }}
+      style={{ colorScheme: 'light', backgroundColor: 'white' }}
     >
       {/* Header */}
       <div className="text-center space-y-1">
