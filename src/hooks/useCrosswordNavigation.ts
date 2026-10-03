@@ -69,8 +69,21 @@ export function useCrosswordNavigation(puzzle: CrosswordPuzzle) {
     [puzzle],
   );
 
-  const handleClueClick = useCallback((clue: Clue) => {
+  const handleClueClick = useCallback((clue: Clue, gridValues?: string[][]) => {
     setDirection(clue.direction);
+
+    if (gridValues) {
+      const isAcross = clue.direction === 'across';
+      for (let i = 0; i < clue.length; i++) {
+        const r = isAcross ? clue.row : clue.row + i;
+        const c = isAcross ? clue.col + i : clue.col;
+        if (!gridValues[r][c]) {
+          setSelectedCell([r, c]);
+          return;
+        }
+      }
+    }
+
     setSelectedCell([clue.row, clue.col]);
   }, [setDirection, setSelectedCell]);
 
@@ -106,7 +119,7 @@ export function useCrosswordNavigation(puzzle: CrosswordPuzzle) {
   }, [activeClue]);
 
   const handleNextClue = useCallback(
-    (delta: 1 | -1) => {
+    (delta: 1 | -1, gridValues?: string[][]) => {
       const allClues = [...puzzle.clues.across, ...puzzle.clues.down];
       if (allClues.length === 0) return;
       const curIdx = allClues.findIndex(
@@ -116,7 +129,7 @@ export function useCrosswordNavigation(puzzle: CrosswordPuzzle) {
       );
       const nextIdx = (curIdx + delta + allClues.length) % allClues.length;
       const target = allClues[nextIdx];
-      handleClueClick(target);
+      handleClueClick(target, gridValues);
     },
     [puzzle.clues, activeClue, handleClueClick],
   );

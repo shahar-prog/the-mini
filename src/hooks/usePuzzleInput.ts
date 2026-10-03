@@ -91,7 +91,7 @@ export function usePuzzleInput(
       toggleDirectionIfPossible();
     } else if (e.key === "Tab") {
       e.preventDefault();
-      handleNextClue(e.shiftKey ? -1 : 1);
+      handleNextClue(e.shiftKey ? -1 : 1, gridValues);
     } else if (e.key === "ArrowRight") {
       e.preventDefault();
       if (direction === "across") {
@@ -250,7 +250,7 @@ export function usePuzzleInput(
       if (foundNext) {
         setSelectedCell([nextR, nextC]);
       } else {
-        handleNextClue(1);
+        handleNextClue(1, gridValues);
       }
 
       if (checkIsComplete(newGrid)) {
@@ -332,7 +332,7 @@ export function usePuzzleInput(
       if (foundNext) {
         setSelectedCell([nextR, nextC]);
       } else {
-        handleNextClue(1);
+        handleNextClue(1, gridValues);
       }
       if (checkIsComplete(newGrid)) {
         handleSolve();
