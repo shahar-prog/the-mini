@@ -7,6 +7,7 @@ import HeroIntro from '@/components/sites/playminicrossword-e18f0d8c/root-000000
 import Footer from '@/components/sites/playminicrossword-e18f0d8c/root-0000002f/Footer';
 import { Button } from '@/components/ui/button';
 import { Shuffle, Calendar } from 'lucide-react';
+import { generateRandomSeed } from '@/lib/crossword/generator';
 
 export default function LandingPage() {
   const router = useRouter();
@@ -16,9 +17,8 @@ export default function LandingPage() {
   };
 
   const handlePlayRandom = () => {
-    // Generate a random 8-character ID
-    const randomId = Math.random().toString(36).substring(2, 10);
-    router.push(`/puzzle/${randomId}`);
+    const randomSeed = generateRandomSeed();
+    router.push(`/${randomSeed}`);
   };
 
   return (
