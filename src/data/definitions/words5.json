@@ -5386,5 +5386,1257 @@
     {
         "word": "RHINO",
         "clue": "Large horned African animal"
+    },
+    {
+        "word": "SCENE",
+        "clue": "part of a movie"
+    },
+    {
+        "word": "HOMER",
+        "clue": "poet with an epic legacy"
+    },
+    {
+        "word": "UNTIE",
+        "clue": "loosen, as laces"
+    },
+    {
+        "word": "IDOLS",
+        "clue": "forbidden things to worship in the ten commandments"
+    },
+    {
+        "word": "SAUDI",
+        "clue": "___ arabia"
+    },
+    {
+        "word": "IMAGE",
+        "clue": "public persona"
+    },
+    {
+        "word": "ALPHA",
+        "clue": "dominant personality"
+    },
+    {
+        "word": "PARIS",
+        "clue": "home to the louvre museum"
+    },
+    {
+        "word": "LLAMA",
+        "clue": "animal that will spit on you when annoyed"
+    },
+    {
+        "word": "APRIL",
+        "clue": "fourth month"
+    },
+    {
+        "word": "CHILE",
+        "clue": "country that's around 2,650 miles tall but only averages 110 miles in width"
+    },
+    {
+        "word": "SMILE",
+        "clue": "\"say cheese!\""
+    },
+    {
+        "word": "SHAFT",
+        "clue": "passageway for elevator cars"
+    },
+    {
+        "word": "INBOX",
+        "clue": "collection of unread emails"
+    },
+    {
+        "word": "PITAS",
+        "clue": "hummus scooper-uppers"
+    },
+    {
+        "word": "HANOI",
+        "clue": "capital of vietnam"
+    },
+    {
+        "word": "LAUGH",
+        "clue": "audibly show happiness"
+    },
+    {
+        "word": "SMILE",
+        "clue": "visually show happiness"
+    },
+    {
+        "word": "GAMES",
+        "clue": "a tennis set has six at a minimum"
+    },
+    {
+        "word": "GUIDE",
+        "clue": "leader of a museum tour"
+    },
+    {
+        "word": "GENRE",
+        "clue": "punk, rock or folk"
+    },
+    {
+        "word": "PANEL",
+        "clue": "segment of a comic strip"
+    },
+    {
+        "word": "SLACK",
+        "clue": "popular office communication software"
+    },
+    {
+        "word": "REALM",
+        "clue": "king's domain"
+    },
+    {
+        "word": "WRECK",
+        "clue": "demolish"
+    },
+    {
+        "word": "TRIOS",
+        "clue": "three-part bands"
+    },
+    {
+        "word": "SLURP",
+        "clue": "sound heard at a ramen restaurant"
+    },
+    {
+        "word": "PASTA",
+        "clue": "popular meal the night before a marathon"
+    },
+    {
+        "word": "ALLIN",
+        "clue": "100% committed"
+    },
+    {
+        "word": "BLUNT",
+        "clue": "untactful to a fault"
+    },
+    {
+        "word": "TYPES",
+        "clue": "goes tap-tap-tap in a texting app"
+    },
+    {
+        "word": "ASKED",
+        "clue": "\"all right, you ___ for it!\""
+    },
+    {
+        "word": "LOLED",
+        "clue": "reacted to a meme, informally"
+    },
+    {
+        "word": "OKAYS",
+        "clue": "approving responses"
+    },
+    {
+        "word": "CAMEO",
+        "clue": "brief acting role"
+    },
+    {
+        "word": "ACING",
+        "clue": "getting 100% on"
+    },
+    {
+        "word": "EIGHT",
+        "clue": "the first number alphabetically"
+    },
+    {
+        "word": "SIGHT",
+        "clue": "tourist attraction"
+    },
+    {
+        "word": "ROUTE",
+        "clue": "gps suggestion"
+    },
+    {
+        "word": "SERFS",
+        "clue": "medieval laborers"
+    },
+    {
+        "word": "GRAMS",
+        "clue": "metric weight units"
+    },
+    {
+        "word": "EMOJI",
+        "clue": "upside-down smiley face, e.g."
+    },
+    {
+        "word": "EXERT",
+        "clue": "push (oneself)"
+    },
+    {
+        "word": "ICILY",
+        "clue": "unfriendly way to respond"
+    },
+    {
+        "word": "WHATS",
+        "clue": "\"___ your problem?\""
+    },
+    {
+        "word": "NORMS",
+        "clue": "usual practices"
+    },
+    {
+        "word": "DREAM",
+        "clue": "frequent occurrence during rem sleep"
+    },
+    {
+        "word": "OBIES",
+        "clue": "theater awards for off broadway productions"
+    },
+    {
+        "word": "ABIDE",
+        "clue": "put up with"
+    },
+    {
+        "word": "ALGAE",
+        "clue": "deterrent to pond swimming"
+    },
+    {
+        "word": "DELHI",
+        "clue": "world's second most populous city, per the u.n."
+    },
+    {
+        "word": "BOING",
+        "clue": "sound of spring?"
+    },
+    {
+        "word": "SINCE",
+        "clue": "\"well, ___ you asked \u2026\""
+    },
+    {
+        "word": "LANES",
+        "clue": "bowling alley reservations"
+    },
+    {
+        "word": "JANKY",
+        "clue": "of poor quality, slangily"
+    },
+    {
+        "word": "INANE",
+        "clue": "ridiculous"
+    },
+    {
+        "word": "GECKO",
+        "clue": "sticky-toed lizard"
+    },
+    {
+        "word": "ROACH",
+        "clue": "bug targeted by an exterminator"
+    },
+    {
+        "word": "TOKYO",
+        "clue": "city trampled by godzilla"
+    },
+    {
+        "word": "SPEAR",
+        "clue": "piece of asparagus"
+    },
+    {
+        "word": "CRISP",
+        "clue": "descriptor for potato chips and autumn air"
+    },
+    {
+        "word": "LUNAR",
+        "clue": "like the hebrew and chinese calendars"
+    },
+    {
+        "word": "CORNY",
+        "clue": "groanworthy, as a joke"
+    },
+    {
+        "word": "CLUCK",
+        "clue": "hen's sound"
+    },
+    {
+        "word": "DAVID",
+        "clue": "star of ___ (symbol of judaism)"
+    },
+    {
+        "word": "GLASS",
+        "clue": "windowpane material"
+    },
+    {
+        "word": "EERIE",
+        "clue": "like mysterious sounds in the night"
+    },
+    {
+        "word": "AHEAD",
+        "clue": "in the lead"
+    },
+    {
+        "word": "KNACK",
+        "clue": "special talent"
+    },
+    {
+        "word": "FIFTY",
+        "clue": "3^2 + 4^2 + 5^2"
+    },
+    {
+        "word": "INAWE",
+        "clue": "astounded"
+    },
+    {
+        "word": "CAROL",
+        "clue": "\"a christmas ___\" (tale of scrooge)"
+    },
+    {
+        "word": "UNCAP",
+        "clue": "open, as a toothpaste tube"
+    },
+    {
+        "word": "SEEMS",
+        "clue": "appears to be"
+    },
+    {
+        "word": "INANE",
+        "clue": "ridiculous"
+    },
+    {
+        "word": "ZEBRA",
+        "clue": "final animal on the ark, if noah went by alphabetical order"
+    },
+    {
+        "word": "LORAX",
+        "clue": "environmental seuss character, with \"the\""
+    },
+    {
+        "word": "ALONE",
+        "clue": "how you shouldn't watch a scary movie"
+    },
+    {
+        "word": "VINYL",
+        "clue": "material for music records"
+    },
+    {
+        "word": "ALIST",
+        "clue": "group of top celebrities"
+    },
+    {
+        "word": "CONCH",
+        "clue": "spiral seashell"
+    },
+    {
+        "word": "ONYOU",
+        "clue": "\"the joke's ___!\""
+    },
+    {
+        "word": "SYRIA",
+        "clue": "its capital is damascus"
+    },
+    {
+        "word": "ANGEL",
+        "clue": "halo wearer"
+    },
+    {
+        "word": "STORE",
+        "clue": "apple ___ (site of a genius bar)"
+    },
+    {
+        "word": "ALERT",
+        "clue": "tip off"
+    },
+    {
+        "word": "SCRAP",
+        "clue": "toss in the trash"
+    },
+    {
+        "word": "PHOTO",
+        "clue": "feature of a driver's license"
+    },
+    {
+        "word": "SPLIT",
+        "clue": "go halfsies on"
+    },
+    {
+        "word": "POSTS",
+        "clue": "social media updates"
+    },
+    {
+        "word": "SOLAR",
+        "clue": "renewable energy type"
+    },
+    {
+        "word": "ROLLS",
+        "clue": "takes a turn in yahtzee"
+    },
+    {
+        "word": "WHENI",
+        "clue": "\"___ was your age ...\""
+    },
+    {
+        "word": "SLEEP",
+        "clue": "get some z's"
+    },
+    {
+        "word": "ZETAS",
+        "clue": "greek letters that you might think are alphabetically last, but aren't"
+    },
+    {
+        "word": "SUSHI",
+        "clue": "food often served with ginger and wasabi"
+    },
+    {
+        "word": "ASSET",
+        "clue": "valued possession"
+    },
+    {
+        "word": "SHORE",
+        "clue": "beach"
+    },
+    {
+        "word": "ORBIT",
+        "clue": "path around the sun"
+    },
+    {
+        "word": "CHEMO",
+        "clue": "common cancer treatment, for short"
+    },
+    {
+        "word": "COLON",
+        "clue": ":"
+    },
+    {
+        "word": "UNIFY",
+        "clue": "bring together"
+    },
+    {
+        "word": "REEFS",
+        "clue": "habitats for tropical fish"
+    },
+    {
+        "word": "OCCUR",
+        "clue": "take place"
+    },
+    {
+        "word": "TIGER",
+        "clue": "one of the 12 chinese zodiac animals"
+    },
+    {
+        "word": "BOOTH",
+        "clue": "diner seating option"
+    },
+    {
+        "word": "TORSO",
+        "clue": "middle section"
+    },
+    {
+        "word": "BERGS",
+        "clue": "large chunks of floating ice"
+    },
+    {
+        "word": "MURAL",
+        "clue": "wall painting"
+    },
+    {
+        "word": "RERAN",
+        "clue": "played again on tv"
+    },
+    {
+        "word": "ALOES",
+        "clue": "healing succulent plants"
+    },
+    {
+        "word": "EFLAT",
+        "clue": "note equivalent to d#"
+    },
+    {
+        "word": "ATONE",
+        "clue": "make up for one's past sins"
+    },
+    {
+        "word": "THETA",
+        "clue": "this greek letter: \u03b8"
+    },
+    {
+        "word": "HINDI",
+        "clue": "language of india"
+    },
+    {
+        "word": "OFTEN",
+        "clue": "frequently"
+    },
+    {
+        "word": "STALE",
+        "clue": "like week-old bread"
+    },
+    {
+        "word": "IGLOO",
+        "clue": "white house?"
+    },
+    {
+        "word": "OBEYS",
+        "clue": "does as told"
+    },
+    {
+        "word": "SEVEN",
+        "clue": "sum of any two opposite faces on a standard die"
+    },
+    {
+        "word": "APLUS",
+        "clue": "grade point average booster"
+    },
+    {
+        "word": "HELPS",
+        "clue": "lends a hand"
+    },
+    {
+        "word": "GETUP",
+        "clue": "\"c'mon, sleepyhead!\""
+    },
+    {
+        "word": "OCEAN",
+        "clue": "place for saltwater"
+    },
+    {
+        "word": "HASTY",
+        "clue": "not well-thought-out"
+    },
+    {
+        "word": "MUSIC",
+        "clue": "\u266b \u266b \u266b"
+    },
+    {
+        "word": "CAUSE",
+        "clue": "effect's counterpart"
+    },
+    {
+        "word": "ESSAY",
+        "clue": "english class assignment"
+    },
+    {
+        "word": "ATIME",
+        "clue": "\"once upon ___ ...\""
+    },
+    {
+        "word": "TASTY",
+        "clue": "scrumptious"
+    },
+    {
+        "word": "SCARS",
+        "clue": "battle reminders"
+    },
+    {
+        "word": "SCARE",
+        "clue": "spook"
+    },
+    {
+        "word": "FROYO",
+        "clue": "cold treat that comes in a swirl"
+    },
+    {
+        "word": "XRAYS",
+        "clue": "features of dental exams"
+    },
+    {
+        "word": "HEART",
+        "clue": "artichoke center"
+    },
+    {
+        "word": "TENTS",
+        "clue": "shelters near a fire"
+    },
+    {
+        "word": "NIGHT",
+        "clue": "\"see ya in the morning\""
+    },
+    {
+        "word": "AGREE",
+        "clue": "be of the same mind"
+    },
+    {
+        "word": "ALOAN",
+        "clue": "take out ___ (borrow money)"
+    },
+    {
+        "word": "COURT",
+        "clue": "place for a suit case?"
+    },
+    {
+        "word": "POTTS",
+        "clue": "mrs. ___ (porcelain character in \"beauty and the beast\")"
+    },
+    {
+        "word": "BELLE",
+        "clue": "\"beauty and the beast\" protagonist"
+    },
+    {
+        "word": "ATTIC",
+        "clue": "room on top"
+    },
+    {
+        "word": "TOPAZ",
+        "clue": "november birthstone"
+    },
+    {
+        "word": "EASEL",
+        "clue": "painter's stand"
+    },
+    {
+        "word": "ISLES",
+        "clue": "parts of an archipelago"
+    },
+    {
+        "word": "MELEE",
+        "clue": "all-out brawl"
+    },
+    {
+        "word": "CHESS",
+        "clue": "game that can begin 1. e4 e5"
+    },
+    {
+        "word": "ASKED",
+        "clue": "inquired"
+    },
+    {
+        "word": "KENYA",
+        "clue": "country from which many marathon winners hail"
+    },
+    {
+        "word": "TROPE",
+        "clue": "figure of speech"
+    },
+    {
+        "word": "RECON",
+        "clue": "info-gathering mission"
+    },
+    {
+        "word": "LEAVE",
+        "clue": "depart"
+    },
+    {
+        "word": "OASIS",
+        "clue": "camel's drinking spot"
+    },
+    {
+        "word": "PRESS",
+        "clue": "newspapers collectively, with \"the\""
+    },
+    {
+        "word": "CEASE",
+        "clue": "bring to an end"
+    },
+    {
+        "word": "WILLY",
+        "clue": "___ wonka"
+    },
+    {
+        "word": "ISLAM",
+        "clue": "fastest-growing religion in the world"
+    },
+    {
+        "word": "WISER",
+        "clue": "older but ___"
+    },
+    {
+        "word": "SLAYS",
+        "clue": "is outstanding, in modern slang"
+    },
+    {
+        "word": "RIGHT",
+        "clue": "dominant hand for roughly 90% of people"
+    },
+    {
+        "word": "CHEEP",
+        "clue": "sound from a baby bird"
+    },
+    {
+        "word": "SNORE",
+        "clue": "go \"zzzzzz\""
+    },
+    {
+        "word": "OLDER",
+        "clue": "like sharks compared to trees, in earth's biological history"
+    },
+    {
+        "word": "GLASS",
+        "clue": "modern skyscraper material"
+    },
+    {
+        "word": "FRIES",
+        "clue": "burger go-with"
+    },
+    {
+        "word": "YEARS",
+        "clue": "there are 10 in a decade"
+    },
+    {
+        "word": "HARRY",
+        "clue": "hogwarts's most famous student"
+    },
+    {
+        "word": "AIMED",
+        "clue": "aligned the cross hairs"
+    },
+    {
+        "word": "WALES",
+        "clue": "land between england and ireland"
+    },
+    {
+        "word": "WRITE",
+        "clue": "jot (down)"
+    },
+    {
+        "word": "CAIRO",
+        "clue": "capital of egypt"
+    },
+    {
+        "word": "SHADE",
+        "clue": "thinly veiled criticism, in modern lingo"
+    },
+    {
+        "word": "WAHOO",
+        "clue": "\"yippee!\""
+    },
+    {
+        "word": "GADOT",
+        "clue": "gal seen in movies"
+    },
+    {
+        "word": "SAUCE",
+        "clue": "lost in the ___ (bewildered, in slang)"
+    },
+    {
+        "word": "VITAL",
+        "clue": "crucial"
+    },
+    {
+        "word": "SALSA",
+        "clue": "dip for tortilla chips"
+    },
+    {
+        "word": "CLEAR",
+        "clue": "what \"c\" on a calculator stands for"
+    },
+    {
+        "word": "ALARM",
+        "clue": "ring around the dozy?"
+    },
+    {
+        "word": "LINGO",
+        "clue": "specialized jargon"
+    },
+    {
+        "word": "ENTER",
+        "clue": "opposite of exit"
+    },
+    {
+        "word": "SCALE",
+        "clue": "simple piano exercise"
+    },
+    {
+        "word": "ALLIN",
+        "clue": "100% committed"
+    },
+    {
+        "word": "LEANT",
+        "clue": "inclined"
+    },
+    {
+        "word": "ARMOR",
+        "clue": "protective metal plating"
+    },
+    {
+        "word": "TRASH",
+        "clue": "what the wastebasket icon represents"
+    },
+    {
+        "word": "NAIVE",
+        "clue": "unaware of how the world really works"
+    },
+    {
+        "word": "ASSET",
+        "clue": "something in the plus column"
+    },
+    {
+        "word": "ORGAN",
+        "clue": "heart or lung"
+    },
+    {
+        "word": "DREAM",
+        "clue": "something you can do in your sleep"
+    },
+    {
+        "word": "RUBLE",
+        "clue": "russian currency"
+    },
+    {
+        "word": "SIREN",
+        "clue": "sound of an approaching ambulance"
+    },
+    {
+        "word": "GOTBY",
+        "clue": "managed to survive"
+    },
+    {
+        "word": "ASHES",
+        "clue": "campfire remains"
+    },
+    {
+        "word": "YEAST",
+        "clue": "what the jewish bread matzo lacks"
+    },
+    {
+        "word": "ORGAN",
+        "clue": "\"pipe\" or \"pump\" instrument"
+    },
+    {
+        "word": "EDGES",
+        "clue": "a cube has 12 of them"
+    },
+    {
+        "word": "RULES",
+        "clue": "list included with a board game"
+    },
+    {
+        "word": "HOUSE",
+        "clue": "it's up for grabs in the 2018 midterms"
+    },
+    {
+        "word": "ATLAS",
+        "clue": "book of maps"
+    },
+    {
+        "word": "SEEKS",
+        "clue": "looks for"
+    },
+    {
+        "word": "ESSAY",
+        "clue": "component of the sat that became optional in 2016"
+    },
+    {
+        "word": "HOUSE",
+        "clue": "green monopoly purchase"
+    },
+    {
+        "word": "OFAGE",
+        "clue": "old enough"
+    },
+    {
+        "word": "GRAIN",
+        "clue": "wood pattern"
+    },
+    {
+        "word": "SNEAK",
+        "clue": "tiptoe around"
+    },
+    {
+        "word": "RAINY",
+        "clue": "like much seattle weather"
+    },
+    {
+        "word": "SWAMP",
+        "clue": "home for alligators and herons"
+    },
+    {
+        "word": "PATIO",
+        "clue": "backyard lounging locale"
+    },
+    {
+        "word": "RANCH",
+        "clue": "common dip for hot wings"
+    },
+    {
+        "word": "NEWER",
+        "clue": "more up-to-date"
+    },
+    {
+        "word": "LASER",
+        "clue": "\"pointer\" that cats love"
+    },
+    {
+        "word": "SCREW",
+        "clue": "threaded bit of hardware"
+    },
+    {
+        "word": "PRISM",
+        "clue": "light refractor"
+    },
+    {
+        "word": "DELIS",
+        "clue": "sandwich shops"
+    },
+    {
+        "word": "LIVID",
+        "clue": "super, super mad"
+    },
+    {
+        "word": "DEVIL",
+        "clue": "he's a hell of a guy"
+    },
+    {
+        "word": "TIBET",
+        "clue": "land on one side of mount everest"
+    },
+    {
+        "word": "RESTS",
+        "clue": "recharges one's batteries"
+    },
+    {
+        "word": "IQUIT",
+        "clue": "resignation declaration"
+    },
+    {
+        "word": "GAMER",
+        "clue": "many a twitch streamer"
+    },
+    {
+        "word": "TROPE",
+        "clue": "recurring theme"
+    },
+    {
+        "word": "FINNS",
+        "clue": "neighbors of swedes"
+    },
+    {
+        "word": "SHUTS",
+        "clue": "closes"
+    },
+    {
+        "word": "LUNAR",
+        "clue": "kind of eclipse"
+    },
+    {
+        "word": "CARVE",
+        "clue": "make, as a jack-o'-lantern"
+    },
+    {
+        "word": "CLICK",
+        "clue": "seat belt sound"
+    },
+    {
+        "word": "NAIVE",
+        "clue": "easily conned"
+    },
+    {
+        "word": "EQUAL",
+        "clue": "how all men are created, per the declaration of independence"
+    },
+    {
+        "word": "AGILE",
+        "clue": "light on one's feet"
+    },
+    {
+        "word": "APPLE",
+        "clue": "reply to \"siri, who created you?\""
+    },
+    {
+        "word": "STEAM",
+        "clue": "stuff shooting out of the ears of the angry, in comics"
+    },
+    {
+        "word": "SPEAR",
+        "clue": "weapon seen on the flags of kenya and swaziland"
+    },
+    {
+        "word": "SWOOP",
+        "clue": "fly like an eagle"
+    },
+    {
+        "word": "KAZOO",
+        "clue": "instrument that creates a buzzing noise"
+    },
+    {
+        "word": "EVENT",
+        "clue": "one of five in a pentathlon"
+    },
+    {
+        "word": "SHORT",
+        "clue": "something seen before a pixar film"
+    },
+    {
+        "word": "FUNGI",
+        "clue": "mushrooms and such"
+    },
+    {
+        "word": "FROST",
+        "clue": "\"stopping by woods on a snowy evening\" poet"
+    },
+    {
+        "word": "ANNOY",
+        "clue": "bother"
+    },
+    {
+        "word": "CABIN",
+        "clue": "house in the woods"
+    },
+    {
+        "word": "ALIBI",
+        "clue": "criminal suspect's excuse"
+    },
+    {
+        "word": "LINEN",
+        "clue": "bedding material"
+    },
+    {
+        "word": "ALIEN",
+        "clue": "extraterrestrial"
+    },
+    {
+        "word": "BINGE",
+        "clue": "watch eight episodes in a row, say"
+    },
+    {
+        "word": "SMITE",
+        "clue": "strike, in the bible"
+    },
+    {
+        "word": "YEARN",
+        "clue": "long (for)"
+    },
+    {
+        "word": "STRIP",
+        "clue": "get naked"
+    },
+    {
+        "word": "CORNY",
+        "clue": "like old and familiar jokes"
+    },
+    {
+        "word": "REALM",
+        "clue": "within the ___ of possibility"
+    },
+    {
+        "word": "EARLY",
+        "clue": "at 5 a.m., say"
+    },
+    {
+        "word": "TALLY",
+        "clue": "add up"
+    },
+    {
+        "word": "TYPOS",
+        "clue": "autocorrect fixes them"
+    },
+    {
+        "word": "ABYSS",
+        "clue": "deep, dark hole"
+    },
+    {
+        "word": "DROVE",
+        "clue": "completed a road test"
+    },
+    {
+        "word": "OOMPH",
+        "clue": "pizazz"
+    },
+    {
+        "word": "ADORE",
+        "clue": "have heart eyes for"
+    },
+    {
+        "word": "MAJOR",
+        "clue": "college student's selection"
+    },
+    {
+        "word": "EMOJI",
+        "clue": "face of modern communication?"
+    },
+    {
+        "word": "UNITS",
+        "clue": "miles, minutes and milliliters"
+    },
+    {
+        "word": "INAWE",
+        "clue": "completely amazed"
+    },
+    {
+        "word": "FINAL",
+        "clue": "championship game"
+    },
+    {
+        "word": "MELON",
+        "clue": "fruit salad ingredient"
+    },
+    {
+        "word": "SMELL",
+        "clue": "what skunks and gym socks do"
+    },
+    {
+        "word": "ENTRY",
+        "clue": "___-level job"
+    },
+    {
+        "word": "AROMA",
+        "clue": "scent"
+    },
+    {
+        "word": "ADOBE",
+        "clue": "software company that makes indesign and acrobat"
+    },
+    {
+        "word": "REMIX",
+        "clue": "d.j.'s creation"
+    },
+    {
+        "word": "EJECT",
+        "clue": "kick out of a game"
+    },
+    {
+        "word": "ADDUP",
+        "clue": "tally"
+    },
+    {
+        "word": "TABLE",
+        "clue": "wedding reception assignment"
+    },
+    {
+        "word": "GRASS",
+        "clue": "it isn't always greener on the other side"
+    },
+    {
+        "word": "MONTH",
+        "clue": "the \"mm\" of mm/dd/yyyy"
+    },
+    {
+        "word": "COVER",
+        "clue": "band's version of another band's song"
+    },
+    {
+        "word": "ROOFS",
+        "clue": "building tops"
+    },
+    {
+        "word": "ANVIL",
+        "clue": "blacksmith's block"
+    },
+    {
+        "word": "SHRED",
+        "clue": "tear to pieces"
+    },
+    {
+        "word": "AUDIO",
+        "clue": "sound"
+    },
+    {
+        "word": "SCREW",
+        "clue": "mess (up)"
+    },
+    {
+        "word": "TENSE",
+        "clue": "feeling stressed"
+    },
+    {
+        "word": "URGES",
+        "clue": "strong impulses"
+    },
+    {
+        "word": "PERIL",
+        "clue": "mortal danger"
+    },
+    {
+        "word": "ANGRY",
+        "clue": "furious"
+    },
+    {
+        "word": "SALSA",
+        "clue": "tortilla chip dip"
+    },
+    {
+        "word": "UNDID",
+        "clue": "reversed"
+    },
+    {
+        "word": "SMILE",
+        "clue": "\"say cheese!\""
+    },
+    {
+        "word": "AWAIT",
+        "clue": "look forward to"
+    },
+    {
+        "word": "MUTES",
+        "clue": "removes the sound from"
+    },
+    {
+        "word": "PLANE",
+        "clue": "skydiver's jumping-off point"
+    },
+    {
+        "word": "ITALY",
+        "clue": "home to rome"
+    },
+    {
+        "word": "ARGUE",
+        "clue": "bicker"
+    },
+    {
+        "word": "URGED",
+        "clue": "strongly advised"
+    },
+    {
+        "word": "SCARE",
+        "clue": "frighten"
+    },
+    {
+        "word": "ATLAS",
+        "clue": "book of world maps"
+    },
+    {
+        "word": "RECAP",
+        "clue": "summary of a sports game"
+    },
+    {
+        "word": "GULLS",
+        "clue": "birds that cry \"mine! mine! mine!,\" in \"finding nemo\""
+    },
+    {
+        "word": "SHACK",
+        "clue": "shake ___ (fast-food chain)"
+    },
+    {
+        "word": "AROMA",
+        "clue": "coffee has a strong one"
+    },
+    {
+        "word": "CODER",
+        "clue": "tech worker"
+    },
+    {
+        "word": "KNELT",
+        "clue": "prepared to propose"
+    },
+    {
+        "word": "STACK",
+        "clue": "neat pile"
+    },
+    {
+        "word": "BEIGE",
+        "clue": "quintessentially boring color"
+    },
+    {
+        "word": "BEZOS",
+        "clue": "founder of amazon"
+    },
+    {
+        "word": "PRIZE",
+        "clue": "game show contestant's hope"
+    },
+    {
+        "word": "GRAZE",
+        "clue": "eat like a cow"
+    },
+    {
+        "word": "LACED",
+        "clue": "tied, as ice skates"
+    },
+    {
+        "word": "HANDS",
+        "clue": "word hidden in \"royal flush and straight\""
+    },
+    {
+        "word": "JOUST",
+        "clue": "compete like a medieval knight"
+    },
+    {
+        "word": "TENDS",
+        "clue": "cares for, as a garden"
+    },
+    {
+        "word": "ARGUE",
+        "clue": "make the case for"
+    },
+    {
+        "word": "BARON",
+        "clue": "industry tycoon"
+    },
+    {
+        "word": "BINGE",
+        "clue": "indulge in a lot of netflix, say"
     }
 ]

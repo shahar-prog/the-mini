@@ -4118,5 +4118,669 @@
     {
         "word": "RELY",
         "clue": "Depend (on)"
+    },
+    {
+        "word": "RUST",
+        "clue": "lack of practice, metaphorically"
+    },
+    {
+        "word": "PHDS",
+        "clue": "degrees held by less than 2% of americans"
+    },
+    {
+        "word": "QUIZ",
+        "clue": "word after \"pop\" or \"pub\""
+    },
+    {
+        "word": "UNDO",
+        "clue": "command-z, on a mac"
+    },
+    {
+        "word": "VEIL",
+        "clue": "bit of bridal attire"
+    },
+    {
+        "word": "AMID",
+        "clue": "in the heart of"
+    },
+    {
+        "word": "EDGE",
+        "clue": "slight advantage"
+    },
+    {
+        "word": "DIES",
+        "clue": "runs out of battery"
+    },
+    {
+        "word": "SALE",
+        "clue": "black friday event"
+    },
+    {
+        "word": "EASY",
+        "clue": "simple"
+    },
+    {
+        "word": "EDEN",
+        "clue": "garden in the bible"
+    },
+    {
+        "word": "SEES",
+        "clue": "catches sight of"
+    },
+    {
+        "word": "GLEE",
+        "clue": "happiness"
+    },
+    {
+        "word": "PREY",
+        "clue": "salmon, to a grizzly bear"
+    },
+    {
+        "word": "ADDS",
+        "clue": "subtracts a negative number, essentially"
+    },
+    {
+        "word": "CUBE",
+        "clue": "piece of ice"
+    },
+    {
+        "word": "RARE",
+        "clue": "steak specification"
+    },
+    {
+        "word": "ACAI",
+        "clue": "healthy berry in a bowl"
+    },
+    {
+        "word": "FREE",
+        "clue": "middle square of a bingo card"
+    },
+    {
+        "word": "BLEW",
+        "clue": "huffed and puffed"
+    },
+    {
+        "word": "MATE",
+        "clue": "\"g'day ___!\""
+    },
+    {
+        "word": "BITE",
+        "clue": "chomp down on"
+    },
+    {
+        "word": "JACK",
+        "clue": "one-eyed playing card"
+    },
+    {
+        "word": "KNIT",
+        "clue": "work with yarn and needles"
+    },
+    {
+        "word": "AGES",
+        "clue": "years and years"
+    },
+    {
+        "word": "BEST",
+        "clue": "first word of every oscars category"
+    },
+    {
+        "word": "OREO",
+        "clue": "black-and-white froyo topping"
+    },
+    {
+        "word": "WARP",
+        "clue": "kind of speed, in \"star trek\""
+    },
+    {
+        "word": "MOLD",
+        "clue": "growth on old bread"
+    },
+    {
+        "word": "AMMO",
+        "clue": "firing range rounds"
+    },
+    {
+        "word": "LOOP",
+        "clue": "feature of a cursive \"k\" or \"l\""
+    },
+    {
+        "word": "CYAN",
+        "clue": "shade of blue used by printers"
+    },
+    {
+        "word": "DOSE",
+        "clue": "medicine amount"
+    },
+    {
+        "word": "AHAB",
+        "clue": "captain in \"moby-dick\""
+    },
+    {
+        "word": "FORK",
+        "clue": "knife's partner"
+    },
+    {
+        "word": "LORD",
+        "clue": "\"___ have mercy\""
+    },
+    {
+        "word": "ICKY",
+        "clue": "gross"
+    },
+    {
+        "word": "HARP",
+        "clue": "musical instrument in guinness's logo"
+    },
+    {
+        "word": "BELT",
+        "clue": "karate rank signifier"
+    },
+    {
+        "word": "EGGS",
+        "clue": "they're sold by the dozen"
+    },
+    {
+        "word": "TEAL",
+        "clue": "greenish-blue color"
+    },
+    {
+        "word": "BURJ",
+        "clue": "___ khalifa, tallest building in the world"
+    },
+    {
+        "word": "OOZE",
+        "clue": "move like honey"
+    },
+    {
+        "word": "AUTO",
+        "clue": "grand theft ___ (video game)"
+    },
+    {
+        "word": "PEAK",
+        "clue": "pinnacle"
+    },
+    {
+        "word": "BASK",
+        "clue": "lounge in the sun"
+    },
+    {
+        "word": "LUNA",
+        "clue": "moon goddess"
+    },
+    {
+        "word": "SPIN",
+        "clue": "take a turn in \"wheel of fortune\""
+    },
+    {
+        "word": "ARAB",
+        "clue": "saudi or iraqi"
+    },
+    {
+        "word": "DOOR",
+        "clue": "something that's often pulled when it should be pushed"
+    },
+    {
+        "word": "HINT",
+        "clue": "\"this answer is an anagram of thin,\" for example"
+    },
+    {
+        "word": "SHOP",
+        "clue": "black friday sale offerer"
+    },
+    {
+        "word": "HEAD",
+        "clue": "top section"
+    },
+    {
+        "word": "LEGS",
+        "clue": "bottom section"
+    },
+    {
+        "word": "PASS",
+        "clue": "fail's counterpart"
+    },
+    {
+        "word": "HOED",
+        "clue": "broke ground in a garden"
+    },
+    {
+        "word": "USER",
+        "clue": "___-friendly interface"
+    },
+    {
+        "word": "CAKE",
+        "clue": "birthday dessert"
+    },
+    {
+        "word": "KNEE",
+        "clue": "joint connecting the femur and tibia "
+    },
+    {
+        "word": "DISH",
+        "clue": "what everyone brings to a potluck dinner"
+    },
+    {
+        "word": "ROPE",
+        "clue": "swimming lane separator"
+    },
+    {
+        "word": "AKIN",
+        "clue": "similar (to)"
+    },
+    {
+        "word": "SOAP",
+        "clue": "bar in the shower"
+    },
+    {
+        "word": "MINE",
+        "clue": "where a gold digger can be found"
+    },
+    {
+        "word": "TYPE",
+        "clue": "\"sorry, you're just not my ___\""
+    },
+    {
+        "word": "FOAM",
+        "clue": "cappuccino topper"
+    },
+    {
+        "word": "IMOK",
+        "clue": "\"don't worry about me\""
+    },
+    {
+        "word": "COZY",
+        "clue": "snug"
+    },
+    {
+        "word": "TOES",
+        "clue": "there are five per foot"
+    },
+    {
+        "word": "LENS",
+        "clue": "analytic viewpoint"
+    },
+    {
+        "word": "XOXO",
+        "clue": "loving letter signoff"
+    },
+    {
+        "word": "HARE",
+        "clue": "relative of a rabbit"
+    },
+    {
+        "word": "TORE",
+        "clue": "shredded"
+    },
+    {
+        "word": "IKEA",
+        "clue": "furniture giant"
+    },
+    {
+        "word": "GENZ",
+        "clue": "demographic after millennials, by another name"
+    },
+    {
+        "word": "LOOK",
+        "clue": "\"here's the thing ...\""
+    },
+    {
+        "word": "WHIM",
+        "clue": "sudden desire"
+    },
+    {
+        "word": "WHEN",
+        "clue": "a question of time"
+    },
+    {
+        "word": "RISK",
+        "clue": "board game with a global map"
+    },
+    {
+        "word": "ONCE",
+        "clue": "a single time"
+    },
+    {
+        "word": "OKED",
+        "clue": "gave the thumbs up, for short"
+    },
+    {
+        "word": "SLOP",
+        "clue": "pig food"
+    },
+    {
+        "word": "WISH",
+        "clue": "candle blower's thought"
+    },
+    {
+        "word": "PROS",
+        "clue": "opposite of cons"
+    },
+    {
+        "word": "WIMP",
+        "clue": "chicken (out)"
+    },
+    {
+        "word": "STEP",
+        "clue": "part of a staircase"
+    },
+    {
+        "word": "CHAT",
+        "clue": "make small talk"
+    },
+    {
+        "word": "HAIR",
+        "clue": "shower drain clogger"
+    },
+    {
+        "word": "TOSS",
+        "clue": "throw in the trash"
+    },
+    {
+        "word": "WAGE",
+        "clue": "employee's pay"
+    },
+    {
+        "word": "ADAY",
+        "clue": "once every 24 hours"
+    },
+    {
+        "word": "PEEL",
+        "clue": "orange coat?"
+    },
+    {
+        "word": "SHOP",
+        "clue": "hit the mall"
+    },
+    {
+        "word": "EURO",
+        "clue": "capital of 19 countries"
+    },
+    {
+        "word": "DATA",
+        "clue": "what the cloud stores"
+    },
+    {
+        "word": "ONYX",
+        "clue": "black gemstone"
+    },
+    {
+        "word": "COOK",
+        "clue": "pan handler?"
+    },
+    {
+        "word": "ORTO",
+        "clue": "\"for here ___ go?\""
+    },
+    {
+        "word": "ASEA",
+        "clue": "on the ocean"
+    },
+    {
+        "word": "FLED",
+        "clue": "ran away from the scene"
+    },
+    {
+        "word": "SOFA",
+        "clue": "place for a couch potato"
+    },
+    {
+        "word": "OHNO",
+        "clue": "\"yikes!\""
+    },
+    {
+        "word": "WOOF",
+        "clue": "dog's bark"
+    },
+    {
+        "word": "SAGA",
+        "clue": "long, drawn-out story"
+    },
+    {
+        "word": "EDEN",
+        "clue": "garden of ___"
+    },
+    {
+        "word": "SWAP",
+        "clue": "give and take?"
+    },
+    {
+        "word": "MINI",
+        "clue": "5x5 crossword, e.g."
+    },
+    {
+        "word": "POKE",
+        "clue": "jab with a finger"
+    },
+    {
+        "word": "VISA",
+        "clue": "mastercard competitor"
+    },
+    {
+        "word": "STIR",
+        "clue": "begin to wake up"
+    },
+    {
+        "word": "GROW",
+        "clue": "get bigger"
+    },
+    {
+        "word": "THOR",
+        "clue": "superhero role for chris hemsworth"
+    },
+    {
+        "word": "RANG",
+        "clue": "pushed the doorbell"
+    },
+    {
+        "word": "DYED",
+        "clue": "like pink and purple hair"
+    },
+    {
+        "word": "WAYS",
+        "clue": "methods"
+    },
+    {
+        "word": "HENS",
+        "clue": "mothers to chicks"
+    },
+    {
+        "word": "SEAS",
+        "clue": "sail the seven ___"
+    },
+    {
+        "word": "MOTH",
+        "clue": "nocturnal insect"
+    },
+    {
+        "word": "KELP",
+        "clue": "plant in an underwater forest"
+    },
+    {
+        "word": "NICE",
+        "clue": "\"good going!\""
+    },
+    {
+        "word": "ROAD",
+        "clue": "chicken's crossing place, in a joke"
+    },
+    {
+        "word": "BASS",
+        "clue": "paul mccartney played it for the beatles"
+    },
+    {
+        "word": "UPTO",
+        "clue": "___ no good"
+    },
+    {
+        "word": "EMIT",
+        "clue": "give off"
+    },
+    {
+        "word": "SKEW",
+        "clue": "polling bias"
+    },
+    {
+        "word": "SPOT",
+        "clue": "fitting name for a dalmatian"
+    },
+    {
+        "word": "ICES",
+        "clue": "chills in a champagne bucket"
+    },
+    {
+        "word": "RIGS",
+        "clue": "oil-drilling structures"
+    },
+    {
+        "word": "KNIT",
+        "clue": "work with yarn"
+    },
+    {
+        "word": "BFFS",
+        "clue": "close pals, for short"
+    },
+    {
+        "word": "EURO",
+        "clue": "this currency: \u20ac"
+    },
+    {
+        "word": "SEEN",
+        "clue": "witnessed"
+    },
+    {
+        "word": "GDAY",
+        "clue": "sydney greeting"
+    },
+    {
+        "word": "LUCK",
+        "clue": "what four-leaf clovers bring"
+    },
+    {
+        "word": "INFO",
+        "clue": "helpful facts, for short"
+    },
+    {
+        "word": "BYTE",
+        "clue": "01011010 or 10101100"
+    },
+    {
+        "word": "CRED",
+        "clue": "street ___ (respect)"
+    },
+    {
+        "word": "BAND",
+        "clue": "coldplay or the red hot chili peppers"
+    },
+    {
+        "word": "UBER",
+        "clue": "app connecting riders with drivers"
+    },
+    {
+        "word": "SAVE",
+        "clue": "put in the bank"
+    },
+    {
+        "word": "ROAM",
+        "clue": "wander about"
+    },
+    {
+        "word": "YODA",
+        "clue": "a jedi master, he is"
+    },
+    {
+        "word": "PROD",
+        "clue": "poke"
+    },
+    {
+        "word": "HERO",
+        "clue": "villain's counterpart"
+    },
+    {
+        "word": "TEND",
+        "clue": "be in charge of, as a bar"
+    },
+    {
+        "word": "JOES",
+        "clue": "trader ___"
+    },
+    {
+        "word": "FIFA",
+        "clue": "popular soccer video game franchise"
+    },
+    {
+        "word": "FLEX",
+        "clue": "show off your muscles"
+    },
+    {
+        "word": "JUNE",
+        "clue": "month with the longest day of the year"
+    },
+    {
+        "word": "FAQS",
+        "clue": "common queries, for short"
+    },
+    {
+        "word": "FIVE",
+        "clue": "number of letters in a wordle guess"
+    },
+    {
+        "word": "MEOW",
+        "clue": "feline \"feed me\""
+    },
+    {
+        "word": "SASS",
+        "clue": "back talk"
+    },
+    {
+        "word": "STAR",
+        "clue": "our sun, for one"
+    },
+    {
+        "word": "LENS",
+        "clue": "part of a camera"
+    },
+    {
+        "word": "GALA",
+        "clue": "fancy party"
+    },
+    {
+        "word": "GOLF",
+        "clue": "game with chips and aces"
+    },
+    {
+        "word": "CRAB",
+        "clue": "spongebob's boss is one"
+    },
+    {
+        "word": "HERS",
+        "clue": "that lady's"
+    },
+    {
+        "word": "BEER",
+        "clue": "\"cold one\""
+    },
+    {
+        "word": "WASH",
+        "clue": "laundry load"
+    },
+    {
+        "word": "ABBR",
+        "clue": "e.g., e.g."
+    },
+    {
+        "word": "WINE",
+        "clue": "cabernet or merlot"
+    },
+    {
+        "word": "EYES",
+        "clue": "they're never open 24/7"
+    },
+    {
+        "word": "RAIN",
+        "clue": "drops from the sky"
+    },
+    {
+        "word": "SNIT",
+        "clue": "bad mood"
     }
 ]

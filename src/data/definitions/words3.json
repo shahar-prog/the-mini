@@ -1690,5 +1690,501 @@
     {
         "word": "SIN",
         "clue": "Wrongdoing, in religion"
+    },
+    {
+        "word": "IDO",
+        "clue": "words before \"you may kiss the bride\""
+    },
+    {
+        "word": "HIT",
+        "clue": "big success"
+    },
+    {
+        "word": "STY",
+        "clue": "pig's home"
+    },
+    {
+        "word": "ZOO",
+        "clue": "animal attraction"
+    },
+    {
+        "word": "GUM",
+        "clue": "gross thing to find stuck under a desk"
+    },
+    {
+        "word": "TAB",
+        "clue": "new ___ (browser button)"
+    },
+    {
+        "word": "END",
+        "clue": "conclude"
+    },
+    {
+        "word": "GOT",
+        "clue": "acquired"
+    },
+    {
+        "word": "PIE",
+        "clue": "circular kind of chart"
+    },
+    {
+        "word": "RAW",
+        "clue": "like steak tartare and sashimi"
+    },
+    {
+        "word": "GPS",
+        "clue": "car navigation aid, for short"
+    },
+    {
+        "word": "SUV",
+        "clue": "nissan rogue or ford escape"
+    },
+    {
+        "word": "REM",
+        "clue": "sleep phase, briefly"
+    },
+    {
+        "word": "LIL",
+        "clue": "rap's ___ wayne"
+    },
+    {
+        "word": "SAN",
+        "clue": "___ diego, ca"
+    },
+    {
+        "word": "PER",
+        "clue": "according to"
+    },
+    {
+        "word": "SPA",
+        "clue": "where you might be steaming happy, not steaming mad"
+    },
+    {
+        "word": "APP",
+        "clue": "smartphone download"
+    },
+    {
+        "word": "IFS",
+        "clue": "hypotheticals"
+    },
+    {
+        "word": "BOT",
+        "clue": "fake twitter follower"
+    },
+    {
+        "word": "ROE",
+        "clue": "fish eggs"
+    },
+    {
+        "word": "TIN",
+        "clue": "bronze = copper + ___"
+    },
+    {
+        "word": "EGG",
+        "clue": "\"which came first?\" item"
+    },
+    {
+        "word": "OAR",
+        "clue": "rowing stick"
+    },
+    {
+        "word": "SMH",
+        "clue": "\"you've got to be kidding me,\" in texts"
+    },
+    {
+        "word": "TOE",
+        "clue": "what you might use to test the temperature of a bath"
+    },
+    {
+        "word": "MOP",
+        "clue": "unruly head of hair"
+    },
+    {
+        "word": "OWL",
+        "clue": "creature capable of 270-degree head rotation"
+    },
+    {
+        "word": "ODD",
+        "clue": "like all prime numbers but one"
+    },
+    {
+        "word": "PIG",
+        "clue": "enemy animal in angry birds"
+    },
+    {
+        "word": "SHY",
+        "clue": "prone to blushing and mumbling"
+    },
+    {
+        "word": "ALL",
+        "clue": "100%"
+    },
+    {
+        "word": "AXE",
+        "clue": "deodorant brand"
+    },
+    {
+        "word": "FAN",
+        "clue": "ceiling spinner"
+    },
+    {
+        "word": "ZZZ",
+        "clue": "[snoring slightly]"
+    },
+    {
+        "word": "ABS",
+        "clue": "crunch muscles"
+    },
+    {
+        "word": "BID",
+        "clue": "auction action"
+    },
+    {
+        "word": "SAT",
+        "clue": "took a chair"
+    },
+    {
+        "word": "CUT",
+        "clue": "cause for a band-aid"
+    },
+    {
+        "word": "LES",
+        "clue": "\"___ mis\u00e9rables\""
+    },
+    {
+        "word": "BUM",
+        "clue": "make sad, with \"out\""
+    },
+    {
+        "word": "JAB",
+        "clue": "quick punch"
+    },
+    {
+        "word": "TEA",
+        "clue": "what the mad hatter serves at his party"
+    },
+    {
+        "word": "HUG",
+        "clue": "show of affection"
+    },
+    {
+        "word": "SAP",
+        "clue": "oozy tree output"
+    },
+    {
+        "word": "SPA",
+        "clue": "place that might offer mud baths"
+    },
+    {
+        "word": "NOS",
+        "clue": "what horizontal head shakes signify"
+    },
+    {
+        "word": "EYE",
+        "clue": "painful place for saltwater"
+    },
+    {
+        "word": "OHM",
+        "clue": "unit of electrical resistance"
+    },
+    {
+        "word": "ECO",
+        "clue": "environmental: prefix"
+    },
+    {
+        "word": "RUN",
+        "clue": "compete in a 5k or 10k"
+    },
+    {
+        "word": "LET",
+        "clue": "\"___ there be light\""
+    },
+    {
+        "word": "SAG",
+        "clue": "droop"
+    },
+    {
+        "word": "GEM",
+        "clue": "precious stone"
+    },
+    {
+        "word": "WIG",
+        "clue": "drag queen's wear"
+    },
+    {
+        "word": "SKY",
+        "clue": "place for a plane"
+    },
+    {
+        "word": "SET",
+        "clue": "unit for a comedian or weightlifter"
+    },
+    {
+        "word": "CHI",
+        "clue": "tai ___"
+    },
+    {
+        "word": "GPS",
+        "clue": "device that might say \"in 1,000 feet ...\""
+    },
+    {
+        "word": "INK",
+        "clue": "squid squirt"
+    },
+    {
+        "word": "SKY",
+        "clue": "shade of blue"
+    },
+    {
+        "word": "PAN",
+        "clue": "omelet cooker"
+    },
+    {
+        "word": "TRY",
+        "clue": "\"___ not to laugh ...\""
+    },
+    {
+        "word": "CAP",
+        "clue": "top part of an ocean swell"
+    },
+    {
+        "word": "ONS",
+        "clue": "opposite of offs"
+    },
+    {
+        "word": "WWW",
+        "clue": "part of a u.r.l."
+    },
+    {
+        "word": "SSE",
+        "clue": "opposite of nnw"
+    },
+    {
+        "word": "EYE",
+        "clue": "what a flash camera might turn red"
+    },
+    {
+        "word": "SHH",
+        "clue": "\"will you be quiet!\""
+    },
+    {
+        "word": "PRY",
+        "clue": "use a crowbar"
+    },
+    {
+        "word": "DNA",
+        "clue": "molecule studied by rosalind franklin"
+    },
+    {
+        "word": "LET",
+        "clue": "\"___ there be light\""
+    },
+    {
+        "word": "TBD",
+        "clue": "not yet established: abbr."
+    },
+    {
+        "word": "HER",
+        "clue": "that woman"
+    },
+    {
+        "word": "SEA",
+        "clue": "mermaid's home"
+    },
+    {
+        "word": "SAX",
+        "clue": "jazz instrument, for short"
+    },
+    {
+        "word": "BZZ",
+        "clue": "sound from a bee"
+    },
+    {
+        "word": "GOO",
+        "clue": "sticky stuff"
+    },
+    {
+        "word": "ADS",
+        "clue": "things often skipped while listening to podcasts"
+    },
+    {
+        "word": "KIN",
+        "clue": "family members, collectively"
+    },
+    {
+        "word": "OWS",
+        "clue": "exclamations of pain"
+    },
+    {
+        "word": "CAN",
+        "clue": "recyclable item"
+    },
+    {
+        "word": "USE",
+        "clue": "fair ___ (copyright issue)"
+    },
+    {
+        "word": "PIE",
+        "clue": "pizzeria order"
+    },
+    {
+        "word": "AYE",
+        "clue": "sailor's agreement"
+    },
+    {
+        "word": "PAL",
+        "clue": "buddy"
+    },
+    {
+        "word": "DUD",
+        "clue": "disappointing firework"
+    },
+    {
+        "word": "GOD",
+        "clue": "deity"
+    },
+    {
+        "word": "LED",
+        "clue": "took charge of"
+    },
+    {
+        "word": "CDS",
+        "clue": "section of a music store, maybe"
+    },
+    {
+        "word": "RAN",
+        "clue": "took charge of"
+    },
+    {
+        "word": "BTW",
+        "clue": "\"oh, i should mention ...\""
+    },
+    {
+        "word": "YOU",
+        "clue": "person solving this puzzle"
+    },
+    {
+        "word": "RAT",
+        "clue": "snitch"
+    },
+    {
+        "word": "WED",
+        "clue": "get married to"
+    },
+    {
+        "word": "SKI",
+        "clue": "bit of winter sports equipment"
+    },
+    {
+        "word": "SOY",
+        "clue": "what tofu is made of"
+    },
+    {
+        "word": "GYM",
+        "clue": "business that sees an uptick after new year's"
+    },
+    {
+        "word": "POD",
+        "clue": "it has its peas in a queue"
+    },
+    {
+        "word": "BUT",
+        "clue": "word before an excuse"
+    },
+    {
+        "word": "SEW",
+        "clue": "use a needle and thread"
+    },
+    {
+        "word": "TAN",
+        "clue": "light brown"
+    },
+    {
+        "word": "GEM",
+        "clue": "rock on a ring"
+    },
+    {
+        "word": "SKY",
+        "clue": "where to aim a telescope"
+    },
+    {
+        "word": "YUM",
+        "clue": "\"dee-licious!\""
+    },
+    {
+        "word": "FLY",
+        "clue": "what a pants zipper closes"
+    },
+    {
+        "word": "RAN",
+        "clue": "sprinted"
+    },
+    {
+        "word": "RIG",
+        "clue": "manipulate, as an election"
+    },
+    {
+        "word": "ADD",
+        "clue": "throw in the mix"
+    },
+    {
+        "word": "CAP",
+        "clue": "lens cover"
+    },
+    {
+        "word": "MEH",
+        "clue": "\"it was so-so\""
+    },
+    {
+        "word": "MAY",
+        "clue": "could possibly"
+    },
+    {
+        "word": "RAT",
+        "clue": "animal that's a symbol for snitching"
+    },
+    {
+        "word": "ONE",
+        "clue": "65 \u2013 43 \u2013 21 = ?"
+    },
+    {
+        "word": "MOS",
+        "clue": "jan. and feb., e.g."
+    },
+    {
+        "word": "DIM",
+        "clue": "opposite of bright"
+    },
+    {
+        "word": "STY",
+        "clue": "pig's home"
+    },
+    {
+        "word": "ALE",
+        "clue": "type of beer"
+    },
+    {
+        "word": "HAS",
+        "clue": "owns"
+    },
+    {
+        "word": "ICE",
+        "clue": "surface for the sport of curling"
+    },
+    {
+        "word": "END",
+        "clue": "final stage"
+    },
+    {
+        "word": "ORE",
+        "clue": "mined metal"
+    },
+    {
+        "word": "BAG",
+        "clue": "something placed in an overhead compartment"
+    },
+    {
+        "word": "SAD",
+        "clue": "feeling blue"
     }
 ]
