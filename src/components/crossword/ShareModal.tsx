@@ -1,9 +1,11 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Link from 'next/link';
 import { CrosswordPuzzle } from '@/types/playminicrossword';
-import { Check, Copy, Share2, Sparkles, RotateCw, X } from 'lucide-react';
+import { Check, Copy, Image as ImageIcon, Sparkles, RotateCw, X } from 'lucide-react';
+import domtoimage from 'dom-to-image-more';
+import ShareImageCard from './ShareImageCard';
 
 interface ShareModalProps {
   isOpen: boolean;
@@ -23,6 +25,8 @@ export default function ShareModal({
   onNewRandomPuzzle,
 }: ShareModalProps) {
   const [copied, setCopied] = useState(false);
+  const [imageCopied, setImageCopied] = useState(false);
+  const imageRef = useRef<HTMLDivElement>(null);
 
   if (!isOpen) return null;
 
@@ -69,6 +73,46 @@ export default function ShareModal({
       setTimeout(() => setCopied(false), 2500);
     } catch (err) {
       console.error('Failed to copy share text', err);
+    }
+  };
+
+  const handleShareImage = async () => {
+    if (!imageRef.current) return;
+
+    try {
+      const dataUrl = await domtoimage.toPng(imageRef.current, {
+        backgroundColor: '#ffffff',
+        style: {
+          position: 'fixed',
+          left: '0',
+          top: '0',
+          visibility: 'visible',
+          opacity: '1',
+          zIndex: '-1000',
+        }
+      });
+
+      if (!dataUrl || dataUrl === 'data:image/png;base64,') {
+        throw new Error('Generated image is empty');
+      }
+
+      const response = await fetch(dataUrl);
+      const blob = await response.blob();
+
+      if (navigator.clipboard && window.ClipboardItem) {
+        await navigator.clipboard.write([
+          new ClipboardItem({ 'image/png': blob })
+        ]);
+        setImageCopied(true);
+        setTimeout(() => setImageCopied(false), 2500);
+      } else {
+        const link = document.createElement('a');
+        link.download = 'mini-crossword-result.png';
+        link.href = dataUrl;
+        link.click();
+      }
+    } catch (err) {
+      console.error('Failed to copy image', err);
     }
   };
 
@@ -152,18 +196,18 @@ export default function ShareModal({
         {/* Action Buttons */}
         <div className="flex flex-col gap-2.5">
           <button
-            onClick={handleNativeShare}
+            onClick={handleShareImage}
             className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#F17127] hover:bg-[#D95F1A] text-white font-medium shadow-sm transition-colors text-sm"
           >
-            {copied ? (
+            {imageCopied ? (
               <>
                 <Check className="w-4 h-4" />
-                Copied to Clipboard!
+                Image Copied!
               </>
             ) : (
               <>
-                <Share2 className="w-4 h-4" />
-                Share Result
+                <ImageIcon className="w-4 h-4" />
+                Copy Share Image
               </>
             )}
           </button>
@@ -203,6 +247,18 @@ export default function ShareModal({
             </button>
           </div>
         </div>
+      </div>
+      <div
+        className="absolute opacity-0 pointer-events-none"
+        aria-hidden="true"
+        ref={imageRef}
+      >
+        <ShareImageCard
+          puzzle={puzzle}
+          timeFormatted={timeFormatted}
+          revealsUsed={revealsUsed}
+          shareUrl={shareUrl}
+        />
       </div>
     </div>
   );
