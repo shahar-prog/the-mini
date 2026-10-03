@@ -1,418 +1,5402 @@
 [
-  { "word": "ABOVE", "clue": "Higher than, overhead" },
-  { "word": "ACORN", "clue": "Oak tree seed dropped in autumn" },
-  { "word": "ACTOR", "clue": "Stage or movie performer" },
-  { "word": "ADAPT", "clue": "Adjust to new circumstances" },
-  { "word": "ADMIT", "clue": "Confess to the truth" },
-  { "word": "ADOBE", "clue": "Sun-dried clay brick" },
-  { "word": "ADOPT", "clue": "Legally take in a child or pet" },
-  { "word": "AGILE", "clue": "Nimble and quick on one's feet" },
-  { "word": "ALBUM", "clue": "Collection of recorded songs or photos" },
-  { "word": "ALERT", "clue": "Watchful, vigilant, and awake" },
-  { "word": "ALIVE", "clue": "Living and breathing" },
-  { "word": "ALLOW", "clue": "Grant permission for" },
-  { "word": "ALONE", "clue": "Solo without company" },
-  { "word": "ALONG", "clue": "Side by side or together with" },
-  { "word": "AMBER", "clue": "Fossilized golden tree resin" },
-  { "word": "AMONG", "clue": "Surrounded by in a group" },
-  { "word": "ANGEL", "clue": "Halo-wearing heavenly figure" },
-  { "word": "ANGER", "clue": "Fierce emotion of displeasure" },
-  { "word": "APPLE", "clue": "Crisp red orchard fruit" },
-  { "word": "APRON", "clue": "Chef's front-covering garment" },
-  { "word": "ARENA", "clue": "Stadium for sports or concerts" },
-  { "word": "ARROW", "clue": "Pointed projectile shot from a bow" },
-  { "word": "ASSET", "clue": "Valuable possession or resource" },
-  { "word": "AUDIO", "clue": "Sound transmission or recording" },
-  { "word": "AVOID", "clue": "Steer clear of" },
-  { "word": "AWARD", "clue": "Trophy or prize bestowed for achievement" },
-  { "word": "AWARE", "clue": "Conscious and informed" },
-  { "word": "BADGE", "clue": "Emblem worn on an officer's uniform" },
-  { "word": "BAKER", "clue": "Artisan who crafts sourdough and pies" },
-  { "word": "BASIC", "clue": "Fundamental or elementary" },
-  { "word": "BASIN", "clue": "Open round bowl or river drainage" },
-  { "word": "BEACH", "clue": "Sandy ocean shoreline" },
-  { "word": "BEGIN", "clue": "Commence or initiate" },
-  { "word": "BIBLE", "clue": "Sacred scripture volume" },
-  { "word": "BIRCH", "clue": "White-barked forest tree" },
-  { "word": "BLACK", "clue": "Darkest chromatic shade" },
-  { "word": "BLADE", "clue": "Sharp cutting edge of a knife" },
-  { "word": "BLANK", "clue": "Empty without markings" },
-  { "word": "BLAST", "clue": "Sudden gust or dynamic explosion" },
-  { "word": "BLAZE", "clue": "Fierce blazing inferno" },
-  { "word": "BLEND", "clue": "Mix ingredients seamlessly" },
-  { "word": "BLESS", "clue": "Confer good fortune or grace" },
-  { "word": "BLIND", "clue": "Window shade or unable to see" },
-  { "word": "BLOCK", "clue": "Toy cube or city street segment" },
-  { "word": "BLOOM", "clue": "Open petals like a spring flower" },
-  { "word": "BLUSH", "clue": "Cheeks reddening from compliments" },
-  { "word": "BOARD", "clue": "Flat plank or game surface" },
-  { "word": "BOAST", "clue": "Brag about one's achievements" },
-  { "word": "BONUS", "clue": "Extra unexpected reward" },
-  { "word": "BOOST", "clue": "Provide an uplifting push" },
-  { "word": "BOUND", "clue": "Leap forward or tied together" },
-  { "word": "BRAIN", "clue": "Organ of cognition and memory" },
-  { "word": "BRAVE", "clue": "Courageous in the face of fear" },
-  { "word": "BREAD", "clue": "Baked loaf sliced for sandwiches" },
-  { "word": "BREAK", "clue": "Fracture or take a short recess" },
-  { "word": "BRICK", "clue": "Rectangular clay building block" },
-  { "word": "BRIDE", "clue": "Woman on her wedding day" },
-  { "word": "BRIEF", "clue": "Short and concise" },
-  { "word": "BRING", "clue": "Carry along to a destination" },
-  { "word": "BROAD", "clue": "Wide in physical span" },
-  { "word": "BROOK", "clue": "Gentle babbling stream" },
-  { "word": "BROWN", "clue": "Earth tone color" },
-  { "word": "BRUSH", "clue": "Tool for hair, painting, or teeth" },
-  { "word": "BUILD", "clue": "Construct a skyscraper" },
-  { "word": "BUNCH", "clue": "Cluster of bananas or grapes" },
-  { "word": "CABIN", "clue": "Rustic wooden shelter in the woods" },
-  { "word": "CABLE", "clue": "Heavy wire for electricity or towing" },
-  { "word": "CAMEL", "clue": "Humped desert traveler" },
-  { "word": "CANAL", "clue": "Artificial waterway for transport" },
-  { "word": "CANDY", "clue": "Confectionery sweet treat" },
-  { "word": "CARGO", "clue": "Freight carried by container ships" },
-  { "word": "CEDAR", "clue": "Fragrant evergreen timber" },
-  { "word": "CHAIN", "clue": "Connected metal rings" },
-  { "word": "CHAIR", "clue": "Furniture seat with back support" },
-  { "word": "CHALK", "clue": "Soft white limestone for writing on slates" },
-  { "word": "CHAMP", "clue": "Short for champion or victor" },
-  { "word": "CHARM", "clue": "Delightful magnetism or lucky amulet" },
-  { "word": "CHASE", "clue": "Pursue in rapid flight" },
-  { "word": "CHEAP", "clue": "Low in price" },
-  { "word": "CHECK", "clue": "Inspect or tick off a box" },
-  { "word": "CHEEK", "clue": "Side of the human face" },
-  { "word": "CHESS", "clue": "Classic board game of kings and queens" },
-  { "word": "CHIEF", "clue": "Leader of a tribe or department" },
-  { "word": "CHILD", "clue": "Young boy or girl" },
-  { "word": "CHILL", "clue": "Nippy cold feeling" },
-  { "word": "CHORD", "clue": "Harmonious blend of guitar notes" },
-  { "word": "CIVIL", "clue": "Courteous or related to citizens" },
-  { "word": "CLAIM", "clue": "Assert ownership or truth" },
-  { "word": "CLASH", "clue": "Loud collision or conflict" },
-  { "word": "CLASS", "clue": "School course or refined elegance" },
-  { "word": "CLEAN", "clue": "Spotless and sanitized" },
-  { "word": "CLEAR", "clue": "Transparent or easy to comprehend" },
-  { "word": "CLERK", "clue": "Desk worker or store associate" },
-  { "word": "CLICK", "clue": "Press a computer mouse button" },
-  { "word": "CLIFF", "clue": "Steep rock drop-off" },
-  { "word": "CLIMB", "clue": "Ascend a rocky peak or tree" },
-  { "word": "CLOAK", "clue": "Flowing mantle cape" },
-  { "word": "CLOCK", "clue": "Timekeeping device on a mantle" },
-  { "word": "CLOSE", "clue": "Shut tightly or nearby" },
-  { "word": "CLOTH", "clue": "Woven textile fabric" },
-  { "word": "CLOUD", "clue": "Fluffy white water vapor in the sky" },
-  { "word": "CLOWN", "clue": "Circus joker in makeup" },
-  { "word": "COACH", "clue": "Team athletic trainer or carriage" },
-  { "word": "COAST", "clue": "Where ocean meets the shore" },
-  { "word": "CORAL", "clue": "Marine invertebrate forming reefs" },
-  { "word": "COUNT", "clue": "Tally numbers or a European nobleman" },
-  { "word": "COURT", "clue": "Tennis arena or judicial hall" },
-  { "word": "COVER", "clue": "Blanket top or book front" },
-  { "word": "CRAFT", "clue": "Skilled handmade artistry" },
-  { "word": "CRANE", "clue": "Tall wading bird or heavy lifting machine" },
-  { "word": "CRASH", "clue": "Violent impact collision" },
-  { "word": "CREAM", "clue": "Rich dairy liquid atop milk" },
-  { "word": "CREEK", "clue": "Small natural water tributary" },
-  { "word": "CRISP", "clue": "Pleasantly fresh and crunchy" },
-  { "word": "CROWD", "clue": "Large throng of people" },
-  { "word": "CROWN", "clue": "Jeweled headwear of a monarch" },
-  { "word": "DAILY", "clue": "Occurring once every twenty-four hours" },
-  { "word": "DAIRY", "clue": "Food group including cheese and yogurt" },
-  { "word": "DAISY", "clue": "White-petaled wildflower with yellow center" },
-  { "word": "DANCE", "clue": "Rhythmic body movement to music" },
-  { "word": "DELTA", "clue": "River mouth silt deposit or Greek letter" },
-  { "word": "DENSE", "clue": "Thickly crowded with mass" },
-  { "word": "DEPTH", "clue": "Measurement from surface to floor" },
-  { "word": "DRAFT", "clue": "Preliminary sketch or cool breeze" },
-  { "word": "DREAM", "clue": "Visions during nighttime slumber" },
-  { "word": "DRESS", "clue": "One-piece garment or put on clothing" },
-  { "word": "DRIFT", "clue": "Float aimlessly upon waves" },
-  { "word": "DRINK", "clue": "Quench thirst with water" },
-  { "word": "DRIVE", "clue": "Operate a motor vehicle" },
-  { "word": "EAGER", "clue": "Enthusiastic and keen to begin" },
-  { "word": "EAGLE", "clue": "Majestic high-soaring raptor" },
-  { "word": "EARLY", "clue": "Before the expected hour" },
-  { "word": "EARTH", "clue": "Our blue planet or fertile soil" },
-  { "word": "ELDER", "clue": "Respected senior member of the village" },
-  { "word": "EMBER", "clue": "Glowing coal in dying hearth" },
-  { "word": "EMPTY", "clue": "Containing nothing within" },
-  { "word": "ENTER", "clue": "Walk through an open door" },
-  { "word": "EQUAL", "clue": "Identical in quantity or value" },
-  { "word": "ERROR", "clue": "Mistake or slip in code" },
-  { "word": "ESSAY", "clue": "Written composition with a thesis" },
-  { "word": "EVENT", "clue": "Scheduled gathering or occasion" },
-  { "word": "EXACT", "clue": "Precise down to the millimeter" },
-  { "word": "EXTRA", "clue": "Surplus or supplementary" },
-  { "word": "FABLE", "clue": "Moral animal story by Aesop" },
-  { "word": "FAITH", "clue": "Complete trust or spiritual belief" },
-  { "word": "FEAST", "clue": "Sumptuous banquet meal" },
-  { "word": "FIBER", "clue": "Dietary nutrient or textile strand" },
-  { "word": "FIELD", "clue": "Pasture meadow or athletic turf" },
-  { "word": "FINAL", "clue": "Ultimate concluding stage" },
-  { "word": "FIRST", "clue": "Coming before all others" },
-  { "word": "FLAME", "clue": "Glowing fire tongue" },
-  { "word": "FLARE", "clue": "Signal blaze in the night" },
-  { "word": "FLASH", "clue": "Instant camera burst of light" },
-  { "word": "FLEET", "clue": "Armada of naval vessels" },
-  { "word": "FLOAT", "clue": "Stay buoyant upon water" },
-  { "word": "FLOOR", "clue": "Ground surface of a room" },
-  { "word": "FLOUR", "clue": "Milled wheat grain for baking" },
-  { "word": "FLUTE", "clue": "Slender woodwind music pipe" },
-  { "word": "FOCUS", "clue": "Concentrate one's attention" },
-  { "word": "FORCE", "clue": "Physical push, pull, or strength" },
-  { "word": "FOREST", "clue": "Large expanse of wooded trees" },
-  { "word": "FORTH", "clue": "Forward into the world" },
-  { "word": "FRESH", "clue": "Newly harvested or crisp" },
-  { "word": "FRONT", "clue": "Foremost side" },
-  { "word": "FROST", "clue": "Delicate ice glaze on windows" },
-  { "word": "FRUIT", "clue": "Sweet ripened plant produce" },
-  { "word": "GIANT", "clue": "Colossal mythical titan" },
-  { "word": "GLASS", "clue": "Brittle transparent silica sheet" },
-  { "word": "GLIDE", "clue": "Coast effortlessly through air" },
-  { "word": "GLOBE", "clue": "Spherical model of planet Earth" },
-  { "word": "GLORY", "clue": "Magnificence and fame" },
-  { "word": "GRACE", "clue": "Elegance of posture and movement" },
-  { "word": "GRAIN", "clue": "Single wheat or rice particle" },
-  { "word": "GRAND", "clue": "Magnificent and stately" },
-  { "word": "GRAPE", "clue": "Vine fruit crushed for wine" },
-  { "word": "GRASS", "clue": "Green turf lawn" },
-  { "word": "GREAT", "clue": "Wonderful or vast" },
-  { "word": "GREEN", "clue": "Color of emeralds and spring leaves" },
-  { "word": "GREET", "clue": "Welcome someone with a smile" },
-  { "word": "GROVE", "clue": "Small picturesque cluster of trees" },
-  { "word": "GUARD", "clue": "Protect from harm" },
-  { "word": "GUESS", "clue": "Conjecture without certainty" },
-  { "word": "GUIDE", "clue": "Lead the way on an expedition" },
-  { "word": "HABIT", "clue": "Regularly practiced routine" },
-  { "word": "HAPPY", "clue": "Joyful and cheerful" },
-  { "word": "HARSH", "clue": "Severe or abrasive" },
-  { "word": "HAVEN", "clue": "Peaceful harbor or sanctuary" },
-  { "word": "HAZEL", "clue": "Golden brown eye or nut color" },
-  { "word": "HEART", "clue": "Pulse-beating muscular organ" },
-  { "word": "HEAVY", "clue": "Weighing substantial poundage" },
-  { "word": "HONEY", "clue": "Golden nectar distilled by bees" },
-  { "word": "HONOR", "clue": "Integrity, respect, and high esteem" },
-  { "word": "HORSE", "clue": "Equine steed with hooves" },
-  { "word": "HOTEL", "clue": "Traveler's accommodation lodge" },
-  { "word": "HOUSE", "clue": "Domestic residential dwelling" },
-  { "word": "HUMAN", "clue": "Homo sapiens person" },
-  { "word": "HUMOR", "clue": "Comedic wit and amusement" },
-  { "word": "IDEAL", "clue": "Flawless perfection model" },
-  { "word": "IMAGE", "clue": "Visual depiction or likeness" },
-  { "word": "INDEX", "clue": "Alphabetical reference catalog at back of book" },
-  { "word": "INNER", "clue": "Located deeper inside" },
-  { "word": "INPUT", "clue": "Data fed into a computer system" },
-  { "word": "IRONY", "clue": "Paradoxical twist of circumstances" },
-  { "word": "ISLAND", "clue": "Land tract surrounded by water" },
-  { "word": "JEWEL", "clue": "Cut diamond or emerald gem" },
-  { "word": "JUDGE", "clue": "Courtroom magistrate with a gavel" },
-  { "word": "JUICE", "clue": "Squeezed orange or apple liquid" },
-  { "word": "KNIFE", "clue": "Cutlery tool for carving steaks" },
-  { "word": "LARGE", "clue": "Substantial in scale" },
-  { "word": "LASER", "clue": "Concentrated monochromatic light beam" },
-  { "word": "LATER", "clue": "At an upcoming subsequent time" },
-  { "word": "LAUGH", "clue": "Chuckle heartily at comedy" },
-  { "word": "LEARN", "clue": "Acquire new knowledge and skills" },
-  { "word": "LEAST", "clue": "Smallest in magnitude" },
-  { "word": "LEMON", "clue": "Sour yellow citrus" },
-  { "word": "LEVEL", "clue": "Even horizon or game stage" },
-  { "word": "LIGHT", "clue": "Luminosity or feather-weight" },
-  { "word": "LIMIT", "clue": "Maximum allowable boundary" },
-  { "word": "LINEN", "clue": "Flaxen fabric for tablecloths and sheets" },
-  { "word": "LODGE", "clue": "Alpine ski cabin" },
-  { "word": "LOGIC", "clue": "Rigorous reasoned deductive thinking" },
-  { "word": "LOTUS", "clue": "Sacred water lily flower" },
-  { "word": "LUNCH", "clue": "Noontime midday meal" },
-  { "word": "MAGIC", "clue": "Mystical sleight of hand or spells" },
-  { "word": "MAJOR", "clue": "Significant in importance" },
-  { "word": "MAKER", "clue": "Craftsman or creator" },
-  { "word": "MANGO", "clue": "Tropical sweet stone fruit" },
-  { "word": "MANOR", "clue": "Stately aristocratic country estate" },
-  { "word": "MAPLE", "clue": "Tree yielding sweet breakfast syrup" },
-  { "word": "MARCH", "clue": "Third month or rhythmic parade walk" },
-  { "word": "MATCH", "clue": "Kindling fire stick or athletic duel" },
-  { "word": "MEDAL", "clue": "Olympic gold circular medallion" },
-  { "word": "MELON", "clue": "Watermelon or honeydew gourd" },
-  { "word": "MERCY", "clue": "Compassion shown to offenders" },
-  { "word": "MERIT", "clue": "Excellence deserving praise" },
-  { "word": "METAL", "clue": "Conductive element like steel or copper" },
-  { "word": "MODEL", "clue": "Miniature prototype or runway mannequin" },
-  { "word": "MONEY", "clue": "Currency used in commerce" },
-  { "word": "MONTH", "clue": "Four-week calendar block" },
-  { "word": "MORAL", "clue": "Ethical virtue or fable's lesson" },
-  { "word": "MOTOR", "clue": "Engine converting power into motion" },
-  { "word": "MOUNT", "clue": "Scale a hill or climb on a horse" },
-  { "word": "MOUSE", "clue": "Computer pointing device or tiny rodent" },
-  { "word": "MUSIC", "clue": "Art of melodic rhythms and tones" },
-  { "word": "NIGHT", "clue": "Hours under dark starry skies" },
-  { "word": "NOBLE", "clue": "Aristocratic or of elevated character" },
-  { "word": "NORTH", "clue": "Compass pointer towards the Arctic pole" },
-  { "word": "NOVEL", "clue": "Fictional book narrative" },
-  { "word": "NURSE", "clue": "Healthcare healer in a hospital ward" },
-  { "word": "OASIS", "clue": "Lush sanctuary amidst desert sands" },
-  { "word": "OCEAN", "clue": "Vast saltwater body spanning continents" },
-  { "word": "OLIVE", "clue": "Mediterranean salad fruit pressed for cooking oil" },
-  { "word": "OPERA", "clue": "Dramatic musical theater with tenors" },
-  { "word": "ORBIT", "clue": "Revolutionary loop around a planetary body" },
-  { "word": "ORGAN", "clue": "Cathedral keyboard pipe instrument or bodily heart" },
-  { "word": "PAINT", "clue": "Pigment applied with a fine brush" },
-  { "word": "PANEL", "clue": "Discussion board or solar power sheet" },
-  { "word": "PAPER", "clue": "Wood pulp sheets for writing" },
-  { "word": "PARTY", "clue": "Festive celebratory social gathering" },
-  { "word": "PASTA", "clue": "Spaghetti, penne, or fettuccine noodles" },
-  { "word": "PATCH", "clue": "Mended fabric scrap or pumpkin garden" },
-  { "word": "PAUSE", "clue": "Temporary halt in playback" },
-  { "word": "PEACE", "clue": "Harmony free from conflict" },
-  { "word": "PEACH", "clue": "Velvety fuzzy sweet orchard fruit" },
-  { "word": "PEARL", "clue": "Lustrous white sphere formed inside an oyster" },
-  { "word": "PEDAL", "clue": "Bicycle foot lever" },
-  { "word": "PENNY", "clue": "One-cent copper coin" },
-  { "word": "PHASE", "clue": "Stage in a developmental process" },
-  { "word": "PIANO", "clue": "Eighty-eight keys musical acoustic instrument" },
-  { "word": "PILOT", "clue": "Cockpit commander navigating an airplane" },
-  { "word": "PINCH", "clue": "Tiny pinch of culinary salt" },
-  { "word": "PIPER", "clue": "Bagpipes musician" },
-  { "word": "PITCH", "clue": "Baseball throw or musical frequency" },
-  { "word": "PIVOT", "clue": "Rotate around a fixed center point" },
-  { "word": "PIXEL", "clue": "Tiny digital color dot on a screen" },
-  { "word": "PIZZA", "clue": "Baked dough pie with melted cheese and sauce" },
-  { "word": "PLACE", "clue": "Location or spot" },
-  { "word": "PLAIN", "clue": "Unadorned or expansive prairie" },
-  { "word": "PLANE", "clue": "Winged airliner soaring through clouds" },
-  { "word": "PLANT", "clue": "Flora taking root in garden soil" },
-  { "word": "PLATE", "clue": "Ceramic dish for dinner" },
-  { "word": "PLAZA", "clue": "Open public town square" },
-  { "word": "POINT", "clue": "Sharp tip of a needle or pencil" },
-  { "word": "POLAR", "clue": "Pertaining to icy polar regions" },
-  { "word": "POWER", "clue": "Electrical energy or strength" },
-  { "word": "PRICE", "clue": "Retail cost on a merchandise tag" },
-  { "word": "PRIDE", "clue": "Healthy self-esteem or troop of lions" },
-  { "word": "PRIME", "clue": "Number with no divisors or finest quality" },
-  { "word": "PRIZE", "clue": "Winner's trophy or ribbon" },
-  { "word": "PROUD", "clue": "Pleased with an accomplished feat" },
-  { "word": "PULSE", "clue": "Rhythmic artery beat felt at wrist" },
-  { "word": "PUPIL", "clue": "Eye's aperture or eager student" },
-  { "word": "QUEEN", "clue": "Female crowned royal ruler" },
-  { "word": "QUEST", "clue": "Hero's journey to seek a prize" },
-  { "word": "QUICK", "clue": "Swift in tempo" },
-  { "word": "QUIET", "clue": "Serene silence without noise" },
-  { "word": "RADIO", "clue": "Wireless audio broadcast receiver" },
-  { "word": "RADAR", "clue": "Radio-wave detection system" },
-  { "word": "RANCH", "clue": "Cattle-raising homestead" },
-  { "word": "RANGE", "clue": "Mountain chain or cooking stove" },
-  { "word": "RAPID", "clue": "Fast-moving river current" },
-  { "word": "REACH", "clue": "Stretch hands outward" },
-  { "word": "READY", "clue": "Prepared for what comes next" },
-  { "word": "RELAX", "clue": "Unwind in leisure" },
-  { "word": "RIDER", "clue": "Equestrian or bicycle passenger" },
-  { "word": "RIDGE", "clue": "Crest of a mountain spine" },
-  { "word": "RIGHT", "clue": "Correct or opposite of left" },
-  { "word": "RIVER", "clue": "Flowing waterway coursing towards the sea" },
-  { "word": "ROBOT", "clue": "Mechanical automated automaton" },
-  { "word": "ROUND", "clue": "Circular geometric shape" },
-  { "word": "ROUTE", "clue": "Highway passage path" },
-  { "word": "ROYAL", "clue": "Fit for a king or monarch" },
-  { "word": "RULER", "clue": "Twelve-inch measuring stick or sovereign" },
-  { "word": "RURAL", "clue": "Countryside rather than urban" },
-  { "word": "SALAD", "clue": "Tossed bowl of crisp garden greens" },
-  { "word": "SAUCE", "clue": "Marinara or gravy condiment" },
-  { "word": "SCALE", "clue": "Weighing balance or fish dermal plate" },
-  { "word": "SCENE", "clue": "Segment of a film screenplay" },
-  { "word": "SCENT", "clue": "Pleasant fragrant aroma" },
-  { "word": "SCORE", "clue": "Points tally in a football match" },
-  { "word": "SCOUT", "clue": "Pioneer exploring advance territory" },
-  { "word": "SHADE", "clue": "Canopy shadow shielding sunlight" },
-  { "word": "SHAKE", "clue": "Vibrate gently or greeting hand movement" },
-  { "word": "SHARE", "clue": "Divide portions equally among friends" },
-  { "word": "SHARP", "clue": "Keen razor edge" },
-  { "word": "SHEEP", "clue": "Wool-bearing grazing animal" },
-  { "word": "SHELF", "clue": "Horizontal bookcase plank" },
-  { "word": "SHELL", "clue": "Hard protective clam casing" },
-  { "word": "SHINE", "clue": "Radiate bright illumination" },
-  { "word": "SHIRT", "clue": "Collared button-up top garment" },
-  { "word": "SHORE", "clue": "Coastline where waves crash" },
-  { "word": "SHORT", "clue": "Small in vertical stature" },
-  { "word": "SIGHT", "clue": "Visual perception power" },
-  { "word": "SILVER", "clue": "Precious metallic second-place medal" },
-  { "word": "SKATE", "clue": "Glide on ice blades or wheels" },
-  { "word": "SKILL", "clue": "Mastered proficiency and craftsmanship" },
-  { "word": "SLATE", "clue": "Grey fine-grained chalkboard rock" },
-  { "word": "SLEEP", "clue": "Restful nocturnal slumber" },
-  { "word": "SLICE", "clue": "Thin wedge of pie or bread" },
-  { "word": "SMART", "clue": "Intelligent and clever" },
-  { "word": "SMILE", "clue": "Upturned lips expressing joy" },
-  { "word": "SMOKE", "clue": "Plume rising from a cozy chimney" },
-  { "word": "SNAKE", "clue": "Legless slithering reptile" },
-  { "word": "SOLAR", "clue": "Relating to the power of the sun" },
-  { "word": "SOLID", "clue": "Firm, dense, and rigid matter" },
-  { "word": "SOUND", "clue": "Auditory tone or noise" },
-  { "word": "SOUTH", "clue": "Direction toward the Antarctic pole" },
-  { "word": "SPACE", "clue": "Cosmic realm of stars and galaxies" },
-  { "word": "SPARK", "clue": "Fiery ignition glow" },
-  { "word": "SPEED", "clue": "Velocity of rapid travel" },
-  { "word": "SPICE", "clue": "Cinnamon, nutmeg, or pepper" },
-  { "word": "SPOON", "clue": "Curved bowl utensil for broth" },
-  { "word": "SPORT", "clue": "Athletic physical competition" },
-  { "word": "STAGE", "clue": "Platform in a playhouse theater" },
-  { "word": "STAND", "clue": "Rise upright onto two feet" },
-  { "word": "STARL", "clue": "Star-like shine or pattern" },
-  { "word": "START", "clue": "Begin the race" },
-  { "word": "STEAM", "clue": "Vapor rising from boiling tea" },
-  { "word": "STEEL", "clue": "Strong alloy of iron and carbon" },
-  { "word": "STILL", "clue": "Stationary and calm" },
-  { "word": "STONE", "clue": "Pebble or mineral rock" },
-  { "word": "STORM", "clue": "Tempest of thunder and lightning" },
-  { "word": "STORY", "clue": "Fable or bedtime tale" },
-  { "word": "STRAW", "clue": "Dried grain stalks or sipping tube" },
-  { "word": "STUDY", "clue": "Examine books to master a topic" },
-  { "word": "SUGAR", "clue": "Sweet crystalline baking ingredient" },
-  { "word": "SUNNY", "clue": "Bathed in bright daylight" },
-  { "word": "SUPER", "clue": "Extraordinary or marvelous" },
-  { "word": "SWEET", "clue": "Sugary honey flavor" },
-  { "word": "SWIFT", "clue": "Moving with astonishing speed" },
-  { "word": "TABLE", "clue": "Dinner surface with four legs" },
-  { "word": "TASTE", "clue": "Palate sensation of flavors" },
-  { "word": "TEETH", "clue": "Pearly whites in a smile" },
-  { "word": "THEME", "clue": "Underlying motif or aesthetic style" },
-  { "word": "TIGER", "clue": "Striped feline predator of Asia" },
-  { "word": "TITLE", "clue": "Name heading a book or crown" },
-  { "word": "TOOTH", "clue": "Enamel grinder inside the mouth" },
-  { "word": "TORCH", "clue": "Flaming stick or portable flashlight" },
-  { "word": "TOTAL", "clue": "Sum tally of an addition" },
-  { "word": "TOWER", "clue": "Tall turret or spire structure" },
-  { "word": "TRACK", "clue": "Running course or train rails" },
-  { "word": "TRAIL", "clue": "Scenic mountain hiking path" },
-  { "word": "TRAIN", "clue": "Locomotive pulling passenger cars" },
-  { "word": "TREAT", "clue": "Special enjoyable snack" },
-  { "word": "TREND", "clue": "Popular prevailing direction or craze" },
-  { "word": "TULIP", "clue": "Cup-shaped Dutch spring blossom" },
-  { "word": "UNDER", "clue": "Below the surface" },
-  { "word": "UNITY", "clue": "Solidarity and oneness" },
-  { "word": "URBAN", "clue": "Relating to city life" },
-  { "word": "VALVE", "clue": "Mechanical regulator of fluid flow" },
-  { "word": "VALOR", "clue": "Heroic courage in battle" },
-  { "word": "VAULT", "clue": "Secure bank safe for gold bars" },
-  { "word": "VENUE", "clue": "Hall hosting a grand concert" },
-  { "word": "VIGOR", "clue": "Robust physical vitality" },
-  { "word": "VIRUS", "clue": "Microscopic infectious particle" },
-  { "word": "VISIT", "clue": "Drop by a friend's house" },
-  { "word": "VISTA", "clue": "Sweeping panoramic landscape view" },
-  { "word": "VITAL", "clue": "Essential to life" },
-  { "word": "VIVID", "clue": "Brightly colored and sharply detailed" },
-  { "word": "VOCAL", "clue": "Spoken with the human voice" },
-  { "word": "VOICE", "clue": "Sound produced when speaking or singing" },
-  { "word": "WAGON", "clue": "Four-wheeled wooden cart" },
-  { "word": "WATER", "clue": "Clear life-sustaining liquid" },
-  { "word": "WATCH", "clue": "Wrist timepiece" },
-  { "word": "WHEAT", "clue": "Golden cereal grain harvested for flour" },
-  { "word": "WHEEL", "clue": "Circular rotating tire invention" },
-  { "word": "WHITE", "clue": "Color of fresh fallen snow" },
-  { "word": "WHOLE", "clue": "Complete without missing pieces" },
-  { "word": "WINDY", "clue": "Gusting with breezy gusts" },
-  { "word": "WORLD", "clue": "Global planetary sphere" },
-  { "word": "WORRY", "clue": "Anxious fretful thoughts" },
-  { "word": "WORTH", "clue": "Calculated value or merit" },
-  { "word": "YACHT", "clue": "Luxury sailing recreational vessel" },
-  { "word": "YIELD", "clue": "Produce harvest crops or give right of way" },
-  { "word": "YOUTH", "clue": "Early springtime of life" },
-  { "word": "ZEBRA", "clue": "African savannah beast with black and white stripes" }
+    {
+        "word": "ABOVE",
+        "clue": "Higher than, overhead"
+    },
+    {
+        "word": "ACORN",
+        "clue": "Oak tree seed dropped in autumn"
+    },
+    {
+        "word": "ACTOR",
+        "clue": "Stage or movie performer"
+    },
+    {
+        "word": "ADAPT",
+        "clue": "Adjust to new circumstances"
+    },
+    {
+        "word": "ADMIT",
+        "clue": "Confess to the truth"
+    },
+    {
+        "word": "ADOBE",
+        "clue": "Sun-dried clay brick"
+    },
+    {
+        "word": "ADOPT",
+        "clue": "Legally take in a child or pet"
+    },
+    {
+        "word": "AGILE",
+        "clue": "Nimble and quick on one's feet"
+    },
+    {
+        "word": "ALBUM",
+        "clue": "Collection of recorded songs or photos"
+    },
+    {
+        "word": "ALERT",
+        "clue": "Watchful, vigilant, and awake"
+    },
+    {
+        "word": "ALIVE",
+        "clue": "Living and breathing"
+    },
+    {
+        "word": "ALLOW",
+        "clue": "Grant permission for"
+    },
+    {
+        "word": "ALONE",
+        "clue": "Solo without company"
+    },
+    {
+        "word": "ALONG",
+        "clue": "Side by side or together with"
+    },
+    {
+        "word": "AMBER",
+        "clue": "Fossilized golden tree resin"
+    },
+    {
+        "word": "AMONG",
+        "clue": "Surrounded by in a group"
+    },
+    {
+        "word": "ANGEL",
+        "clue": "Halo-wearing heavenly figure"
+    },
+    {
+        "word": "ANGER",
+        "clue": "Fierce emotion of displeasure"
+    },
+    {
+        "word": "APPLE",
+        "clue": "Crisp red orchard fruit"
+    },
+    {
+        "word": "APRON",
+        "clue": "Chef's front-covering garment"
+    },
+    {
+        "word": "ARENA",
+        "clue": "Stadium for sports or concerts"
+    },
+    {
+        "word": "ARROW",
+        "clue": "Pointed projectile shot from a bow"
+    },
+    {
+        "word": "ASSET",
+        "clue": "Valuable possession or resource"
+    },
+    {
+        "word": "AUDIO",
+        "clue": "Sound transmission or recording"
+    },
+    {
+        "word": "AVOID",
+        "clue": "Steer clear of"
+    },
+    {
+        "word": "AWARD",
+        "clue": "Trophy or prize bestowed for achievement"
+    },
+    {
+        "word": "AWARE",
+        "clue": "Conscious and informed"
+    },
+    {
+        "word": "BADGE",
+        "clue": "Emblem worn on an officer's uniform"
+    },
+    {
+        "word": "BAKER",
+        "clue": "Artisan who crafts sourdough and pies"
+    },
+    {
+        "word": "BASIC",
+        "clue": "Fundamental or elementary"
+    },
+    {
+        "word": "BASIN",
+        "clue": "Open round bowl or river drainage"
+    },
+    {
+        "word": "BEACH",
+        "clue": "Sandy ocean shoreline"
+    },
+    {
+        "word": "BEGIN",
+        "clue": "Commence or initiate"
+    },
+    {
+        "word": "BIBLE",
+        "clue": "Sacred scripture volume"
+    },
+    {
+        "word": "BIRCH",
+        "clue": "White-barked forest tree"
+    },
+    {
+        "word": "BLACK",
+        "clue": "Darkest chromatic shade"
+    },
+    {
+        "word": "BLADE",
+        "clue": "Sharp cutting edge of a knife"
+    },
+    {
+        "word": "BLANK",
+        "clue": "Empty without markings"
+    },
+    {
+        "word": "BLAST",
+        "clue": "Sudden gust or dynamic explosion"
+    },
+    {
+        "word": "BLAZE",
+        "clue": "Fierce blazing inferno"
+    },
+    {
+        "word": "BLEND",
+        "clue": "Mix ingredients seamlessly"
+    },
+    {
+        "word": "BLESS",
+        "clue": "Confer good fortune or grace"
+    },
+    {
+        "word": "BLIND",
+        "clue": "Window shade or unable to see"
+    },
+    {
+        "word": "BLOCK",
+        "clue": "Toy cube or city street segment"
+    },
+    {
+        "word": "BLOOM",
+        "clue": "Open petals like a spring flower"
+    },
+    {
+        "word": "BLUSH",
+        "clue": "Cheeks reddening from compliments"
+    },
+    {
+        "word": "BOARD",
+        "clue": "Flat plank or game surface"
+    },
+    {
+        "word": "BOAST",
+        "clue": "Brag about one's achievements"
+    },
+    {
+        "word": "BONUS",
+        "clue": "Extra unexpected reward"
+    },
+    {
+        "word": "BOOST",
+        "clue": "Provide an uplifting push"
+    },
+    {
+        "word": "BOUND",
+        "clue": "Leap forward or tied together"
+    },
+    {
+        "word": "BRAIN",
+        "clue": "Organ of cognition and memory"
+    },
+    {
+        "word": "BRAVE",
+        "clue": "Courageous in the face of fear"
+    },
+    {
+        "word": "BREAD",
+        "clue": "Baked loaf sliced for sandwiches"
+    },
+    {
+        "word": "BREAK",
+        "clue": "Fracture or take a short recess"
+    },
+    {
+        "word": "BRICK",
+        "clue": "Rectangular clay building block"
+    },
+    {
+        "word": "BRIDE",
+        "clue": "Woman on her wedding day"
+    },
+    {
+        "word": "BRIEF",
+        "clue": "Short and concise"
+    },
+    {
+        "word": "BRING",
+        "clue": "Carry along to a destination"
+    },
+    {
+        "word": "BROAD",
+        "clue": "Wide in physical span"
+    },
+    {
+        "word": "BROOK",
+        "clue": "Gentle babbling stream"
+    },
+    {
+        "word": "BROWN",
+        "clue": "Earth tone color"
+    },
+    {
+        "word": "BRUSH",
+        "clue": "Tool for hair, painting, or teeth"
+    },
+    {
+        "word": "BUILD",
+        "clue": "Construct a skyscraper"
+    },
+    {
+        "word": "BUNCH",
+        "clue": "Cluster of bananas or grapes"
+    },
+    {
+        "word": "CABIN",
+        "clue": "Rustic wooden shelter in the woods"
+    },
+    {
+        "word": "CABLE",
+        "clue": "Heavy wire for electricity or towing"
+    },
+    {
+        "word": "CAMEL",
+        "clue": "Humped desert traveler"
+    },
+    {
+        "word": "CANAL",
+        "clue": "Artificial waterway for transport"
+    },
+    {
+        "word": "CANDY",
+        "clue": "Confectionery sweet treat"
+    },
+    {
+        "word": "CARGO",
+        "clue": "Freight carried by container ships"
+    },
+    {
+        "word": "CEDAR",
+        "clue": "Fragrant evergreen timber"
+    },
+    {
+        "word": "CHAIN",
+        "clue": "Connected metal rings"
+    },
+    {
+        "word": "CHAIR",
+        "clue": "Furniture seat with back support"
+    },
+    {
+        "word": "CHALK",
+        "clue": "Soft white limestone for writing on slates"
+    },
+    {
+        "word": "CHAMP",
+        "clue": "Short for champion or victor"
+    },
+    {
+        "word": "CHARM",
+        "clue": "Delightful magnetism or lucky amulet"
+    },
+    {
+        "word": "CHASE",
+        "clue": "Pursue in rapid flight"
+    },
+    {
+        "word": "CHEAP",
+        "clue": "Low in price"
+    },
+    {
+        "word": "CHECK",
+        "clue": "Inspect or tick off a box"
+    },
+    {
+        "word": "CHEEK",
+        "clue": "Side of the human face"
+    },
+    {
+        "word": "CHESS",
+        "clue": "Classic board game of kings and queens"
+    },
+    {
+        "word": "CHIEF",
+        "clue": "Leader of a tribe or department"
+    },
+    {
+        "word": "CHILD",
+        "clue": "Young boy or girl"
+    },
+    {
+        "word": "CHILL",
+        "clue": "Nippy cold feeling"
+    },
+    {
+        "word": "CHORD",
+        "clue": "Harmonious blend of guitar notes"
+    },
+    {
+        "word": "CIVIL",
+        "clue": "Courteous or related to citizens"
+    },
+    {
+        "word": "CLAIM",
+        "clue": "Assert ownership or truth"
+    },
+    {
+        "word": "CLASH",
+        "clue": "Loud collision or conflict"
+    },
+    {
+        "word": "CLASS",
+        "clue": "School course or refined elegance"
+    },
+    {
+        "word": "CLEAN",
+        "clue": "Spotless and sanitized"
+    },
+    {
+        "word": "CLEAR",
+        "clue": "Transparent or easy to comprehend"
+    },
+    {
+        "word": "CLERK",
+        "clue": "Desk worker or store associate"
+    },
+    {
+        "word": "CLICK",
+        "clue": "Press a computer mouse button"
+    },
+    {
+        "word": "CLIFF",
+        "clue": "Steep rock drop-off"
+    },
+    {
+        "word": "CLIMB",
+        "clue": "Ascend a rocky peak or tree"
+    },
+    {
+        "word": "CLOAK",
+        "clue": "Flowing mantle cape"
+    },
+    {
+        "word": "CLOCK",
+        "clue": "Timekeeping device on a mantle"
+    },
+    {
+        "word": "CLOSE",
+        "clue": "Shut tightly or nearby"
+    },
+    {
+        "word": "CLOTH",
+        "clue": "Woven textile fabric"
+    },
+    {
+        "word": "CLOUD",
+        "clue": "Fluffy white water vapor in the sky"
+    },
+    {
+        "word": "CLOWN",
+        "clue": "Circus joker in makeup"
+    },
+    {
+        "word": "COACH",
+        "clue": "Team athletic trainer or carriage"
+    },
+    {
+        "word": "COAST",
+        "clue": "Where ocean meets the shore"
+    },
+    {
+        "word": "BELLS",
+        "clue": "___ and whistles"
+    },
+    {
+        "word": "NORMS",
+        "clue": "Usual practices"
+    },
+    {
+        "word": "CODED",
+        "clue": "Worked in python or java, say"
+    },
+    {
+        "word": "SHADE",
+        "clue": "Criticism, slangily"
+    },
+    {
+        "word": "BALDS",
+        "clue": "Loses one's hair (Like Adar Glaizer"
+    },
+    {
+        "word": "TOKYO",
+        "clue": "2020 olympics host"
+    },
+    {
+        "word": "EIGHT",
+        "clue": "The first number alphabetically"
+    },
+    {
+        "word": "REMIX",
+        "clue": "New version of a song"
+    },
+    {
+        "word": "STAFF",
+        "clue": "Something held by moses or gandalf"
+    },
+    {
+        "word": "ABODE",
+        "clue": "Home"
+    },
+    {
+        "word": "ALLIN",
+        "clue": "100% committed"
+    },
+    {
+        "word": "TRULY",
+        "clue": "Yours ___"
+    },
+    {
+        "word": "LIKES",
+        "clue": "Reactions to an Instagram post"
+    },
+    {
+        "word": "SOLAR",
+        "clue": "Green energy from the sun"
+    },
+    {
+        "word": "PARIS",
+        "clue": "Home to the Louvre museum"
+    },
+    {
+        "word": "SMILE",
+        "clue": "Visually show happiness"
+    },
+    {
+        "word": "CORAL",
+        "clue": "Marine invertebrate forming reefs"
+    },
+    {
+        "word": "COUNT",
+        "clue": "Tally numbers or a European nobleman"
+    },
+    {
+        "word": "COURT",
+        "clue": "Tennis arena or judicial hall"
+    },
+    {
+        "word": "COVER",
+        "clue": "Blanket top or book front"
+    },
+    {
+        "word": "CRAFT",
+        "clue": "Skilled handmade artistry"
+    },
+    {
+        "word": "CRANE",
+        "clue": "Tall wading bird or heavy lifting machine"
+    },
+    {
+        "word": "CRASH",
+        "clue": "Violent impact collision"
+    },
+    {
+        "word": "CREAM",
+        "clue": "Rich dairy liquid atop milk"
+    },
+    {
+        "word": "CREEK",
+        "clue": "Small natural water tributary"
+    },
+    {
+        "word": "CRISP",
+        "clue": "Pleasantly fresh and crunchy"
+    },
+    {
+        "word": "CROWD",
+        "clue": "Large throng of people"
+    },
+    {
+        "word": "CROWN",
+        "clue": "Jeweled headwear of a monarch"
+    },
+    {
+        "word": "DAILY",
+        "clue": "Occurring once every twenty-four hours"
+    },
+    {
+        "word": "DAIRY",
+        "clue": "Food group including cheese and yogurt"
+    },
+    {
+        "word": "DAISY",
+        "clue": "White-petaled wildflower with yellow center"
+    },
+    {
+        "word": "DANCE",
+        "clue": "Rhythmic body movement to music"
+    },
+    {
+        "word": "DELTA",
+        "clue": "River mouth silt deposit or Greek letter"
+    },
+    {
+        "word": "DENSE",
+        "clue": "Thickly crowded with mass"
+    },
+    {
+        "word": "DEPTH",
+        "clue": "Measurement from surface to floor"
+    },
+    {
+        "word": "DRAFT",
+        "clue": "Preliminary sketch or cool breeze"
+    },
+    {
+        "word": "DREAM",
+        "clue": "Visions during nighttime slumber"
+    },
+    {
+        "word": "DRESS",
+        "clue": "One-piece garment or put on clothing"
+    },
+    {
+        "word": "DRIFT",
+        "clue": "Float aimlessly upon waves"
+    },
+    {
+        "word": "DRINK",
+        "clue": "Quench thirst with water"
+    },
+    {
+        "word": "DRIVE",
+        "clue": "Operate a motor vehicle"
+    },
+    {
+        "word": "EAGER",
+        "clue": "Enthusiastic and keen to begin"
+    },
+    {
+        "word": "EAGLE",
+        "clue": "Majestic high-soaring raptor"
+    },
+    {
+        "word": "EARLY",
+        "clue": "Before the expected hour"
+    },
+    {
+        "word": "EARTH",
+        "clue": "Our blue planet or fertile soil"
+    },
+    {
+        "word": "ELDER",
+        "clue": "Respected senior member of the village"
+    },
+    {
+        "word": "EMBER",
+        "clue": "Glowing coal in dying hearth"
+    },
+    {
+        "word": "EMPTY",
+        "clue": "Containing nothing within"
+    },
+    {
+        "word": "ENTER",
+        "clue": "Walk through an open door"
+    },
+    {
+        "word": "EQUAL",
+        "clue": "Identical in quantity or value"
+    },
+    {
+        "word": "ERROR",
+        "clue": "Mistake or slip in code"
+    },
+    {
+        "word": "ESSAY",
+        "clue": "Written composition with a thesis"
+    },
+    {
+        "word": "EVENT",
+        "clue": "Scheduled gathering or occasion"
+    },
+    {
+        "word": "EXACT",
+        "clue": "Precise down to the millimeter"
+    },
+    {
+        "word": "EXTRA",
+        "clue": "Surplus or supplementary"
+    },
+    {
+        "word": "FABLE",
+        "clue": "Moral animal story by Aesop"
+    },
+    {
+        "word": "FAITH",
+        "clue": "Complete trust or spiritual belief"
+    },
+    {
+        "word": "FEAST",
+        "clue": "Sumptuous banquet meal"
+    },
+    {
+        "word": "FIBER",
+        "clue": "Dietary nutrient or textile strand"
+    },
+    {
+        "word": "FIELD",
+        "clue": "Pasture meadow or athletic turf"
+    },
+    {
+        "word": "FINAL",
+        "clue": "Ultimate concluding stage"
+    },
+    {
+        "word": "FIRST",
+        "clue": "Coming before all others"
+    },
+    {
+        "word": "FLAME",
+        "clue": "Glowing fire tongue"
+    },
+    {
+        "word": "FLARE",
+        "clue": "Signal blaze in the night"
+    },
+    {
+        "word": "FLASH",
+        "clue": "Instant camera burst of light"
+    },
+    {
+        "word": "FLEET",
+        "clue": "Armada of naval vessels"
+    },
+    {
+        "word": "FLOAT",
+        "clue": "Stay buoyant upon water"
+    },
+    {
+        "word": "FLOOR",
+        "clue": "Ground surface of a room"
+    },
+    {
+        "word": "FLOUR",
+        "clue": "Milled wheat grain for baking"
+    },
+    {
+        "word": "FLUTE",
+        "clue": "Slender woodwind music pipe"
+    },
+    {
+        "word": "FOCUS",
+        "clue": "Concentrate one's attention"
+    },
+    {
+        "word": "FORCE",
+        "clue": "Physical push, pull, or strength"
+    },
+    {
+        "word": "FOREST",
+        "clue": "Large expanse of wooded trees"
+    },
+    {
+        "word": "FORTH",
+        "clue": "Forward into the world"
+    },
+    {
+        "word": "FRESH",
+        "clue": "Newly harvested or crisp"
+    },
+    {
+        "word": "FRONT",
+        "clue": "Foremost side"
+    },
+    {
+        "word": "FROST",
+        "clue": "Delicate ice glaze on windows"
+    },
+    {
+        "word": "FRUIT",
+        "clue": "Sweet ripened plant produce"
+    },
+    {
+        "word": "GIANT",
+        "clue": "Colossal mythical titan"
+    },
+    {
+        "word": "GLASS",
+        "clue": "Brittle transparent silica sheet"
+    },
+    {
+        "word": "GLIDE",
+        "clue": "Coast effortlessly through air"
+    },
+    {
+        "word": "GLOBE",
+        "clue": "Spherical model of planet Earth"
+    },
+    {
+        "word": "GLORY",
+        "clue": "Magnificence and fame"
+    },
+    {
+        "word": "GRACE",
+        "clue": "Elegance of posture and movement"
+    },
+    {
+        "word": "GRAIN",
+        "clue": "Single wheat or rice particle"
+    },
+    {
+        "word": "GRAND",
+        "clue": "Magnificent and stately"
+    },
+    {
+        "word": "GRAPE",
+        "clue": "Vine fruit crushed for wine"
+    },
+    {
+        "word": "GRASS",
+        "clue": "Green turf lawn"
+    },
+    {
+        "word": "GREAT",
+        "clue": "Wonderful or vast"
+    },
+    {
+        "word": "GREEN",
+        "clue": "Color of emeralds and spring leaves"
+    },
+    {
+        "word": "GREET",
+        "clue": "Welcome someone with a smile"
+    },
+    {
+        "word": "GROVE",
+        "clue": "Small picturesque cluster of trees"
+    },
+    {
+        "word": "GUARD",
+        "clue": "Protect from harm"
+    },
+    {
+        "word": "GUESS",
+        "clue": "Conjecture without certainty"
+    },
+    {
+        "word": "GUIDE",
+        "clue": "Lead the way on an expedition"
+    },
+    {
+        "word": "HABIT",
+        "clue": "Regularly practiced routine"
+    },
+    {
+        "word": "HAPPY",
+        "clue": "Joyful and cheerful"
+    },
+    {
+        "word": "HARSH",
+        "clue": "Severe or abrasive"
+    },
+    {
+        "word": "HAVEN",
+        "clue": "Peaceful harbor or sanctuary"
+    },
+    {
+        "word": "HAZEL",
+        "clue": "Golden brown eye or nut color"
+    },
+    {
+        "word": "HEART",
+        "clue": "Pulse-beating muscular organ"
+    },
+    {
+        "word": "HEAVY",
+        "clue": "Weighing substantial poundage"
+    },
+    {
+        "word": "HONEY",
+        "clue": "Golden nectar distilled by bees"
+    },
+    {
+        "word": "HONOR",
+        "clue": "Integrity, respect, and high esteem"
+    },
+    {
+        "word": "HORSE",
+        "clue": "Equine steed with hooves"
+    },
+    {
+        "word": "HOTEL",
+        "clue": "Traveler's accommodation lodge"
+    },
+    {
+        "word": "HOUSE",
+        "clue": "Domestic residential dwelling"
+    },
+    {
+        "word": "HUMAN",
+        "clue": "Homo sapiens person"
+    },
+    {
+        "word": "HUMOR",
+        "clue": "Comedic wit and amusement"
+    },
+    {
+        "word": "IDEAL",
+        "clue": "Flawless perfection model"
+    },
+    {
+        "word": "IMAGE",
+        "clue": "Visual depiction or likeness"
+    },
+    {
+        "word": "INDEX",
+        "clue": "Alphabetical reference catalog at back of book"
+    },
+    {
+        "word": "INNER",
+        "clue": "Located deeper inside"
+    },
+    {
+        "word": "INPUT",
+        "clue": "Data fed into a computer system"
+    },
+    {
+        "word": "IRONY",
+        "clue": "Paradoxical twist of circumstances"
+    },
+    {
+        "word": "ISLAND",
+        "clue": "Land tract surrounded by water"
+    },
+    {
+        "word": "JEWEL",
+        "clue": "Cut diamond or emerald gem"
+    },
+    {
+        "word": "JUDGE",
+        "clue": "Courtroom magistrate with a gavel"
+    },
+    {
+        "word": "JUICE",
+        "clue": "Squeezed orange or apple liquid"
+    },
+    {
+        "word": "KNIFE",
+        "clue": "Cutlery tool for carving steaks"
+    },
+    {
+        "word": "LARGE",
+        "clue": "Substantial in scale"
+    },
+    {
+        "word": "LASER",
+        "clue": "Concentrated monochromatic light beam"
+    },
+    {
+        "word": "LATER",
+        "clue": "At an upcoming subsequent time"
+    },
+    {
+        "word": "LAUGH",
+        "clue": "Chuckle heartily at comedy"
+    },
+    {
+        "word": "LEARN",
+        "clue": "Acquire new knowledge and skills"
+    },
+    {
+        "word": "LEAST",
+        "clue": "Smallest in magnitude"
+    },
+    {
+        "word": "LEMON",
+        "clue": "Sour yellow citrus"
+    },
+    {
+        "word": "LEVEL",
+        "clue": "Even horizon or game stage"
+    },
+    {
+        "word": "LIGHT",
+        "clue": "Luminosity or feather-weight"
+    },
+    {
+        "word": "LIMIT",
+        "clue": "Maximum allowable boundary"
+    },
+    {
+        "word": "LINEN",
+        "clue": "Flaxen fabric for tablecloths and sheets"
+    },
+    {
+        "word": "LODGE",
+        "clue": "Alpine ski cabin"
+    },
+    {
+        "word": "LOGIC",
+        "clue": "Rigorous reasoned deductive thinking"
+    },
+    {
+        "word": "LOTUS",
+        "clue": "Sacred water lily flower"
+    },
+    {
+        "word": "LUNCH",
+        "clue": "Noontime midday meal"
+    },
+    {
+        "word": "MAGIC",
+        "clue": "Mystical sleight of hand or spells"
+    },
+    {
+        "word": "MAJOR",
+        "clue": "Significant in importance"
+    },
+    {
+        "word": "MAKER",
+        "clue": "Craftsman or creator"
+    },
+    {
+        "word": "MANGO",
+        "clue": "Tropical sweet stone fruit"
+    },
+    {
+        "word": "MANOR",
+        "clue": "Stately aristocratic country estate"
+    },
+    {
+        "word": "MAPLE",
+        "clue": "Tree yielding sweet breakfast syrup"
+    },
+    {
+        "word": "MARCH",
+        "clue": "Third month or rhythmic parade walk"
+    },
+    {
+        "word": "MATCH",
+        "clue": "Kindling fire stick or athletic duel"
+    },
+    {
+        "word": "MEDAL",
+        "clue": "Olympic gold circular medallion"
+    },
+    {
+        "word": "MELON",
+        "clue": "Watermelon or honeydew gourd"
+    },
+    {
+        "word": "MERCY",
+        "clue": "Compassion shown to offenders"
+    },
+    {
+        "word": "MERIT",
+        "clue": "Excellence deserving praise"
+    },
+    {
+        "word": "METAL",
+        "clue": "Conductive element like steel or copper"
+    },
+    {
+        "word": "MODEL",
+        "clue": "Miniature prototype or runway mannequin"
+    },
+    {
+        "word": "MONEY",
+        "clue": "Currency used in commerce"
+    },
+    {
+        "word": "MONTH",
+        "clue": "Four-week calendar block"
+    },
+    {
+        "word": "MORAL",
+        "clue": "Ethical virtue or fable's lesson"
+    },
+    {
+        "word": "MOTOR",
+        "clue": "Engine converting power into motion"
+    },
+    {
+        "word": "MOUNT",
+        "clue": "Scale a hill or climb on a horse"
+    },
+    {
+        "word": "MOUSE",
+        "clue": "Computer pointing device or tiny rodent"
+    },
+    {
+        "word": "MUSIC",
+        "clue": "Art of melodic rhythms and tones"
+    },
+    {
+        "word": "NIGHT",
+        "clue": "Hours under dark starry skies"
+    },
+    {
+        "word": "NOBLE",
+        "clue": "Aristocratic or of elevated character"
+    },
+    {
+        "word": "NORTH",
+        "clue": "Compass pointer towards the Arctic pole"
+    },
+    {
+        "word": "NOVEL",
+        "clue": "Fictional book narrative"
+    },
+    {
+        "word": "NURSE",
+        "clue": "Healthcare healer in a hospital ward"
+    },
+    {
+        "word": "OASIS",
+        "clue": "Lush sanctuary amidst desert sands"
+    },
+    {
+        "word": "OCEAN",
+        "clue": "Vast saltwater body spanning continents"
+    },
+    {
+        "word": "OLIVE",
+        "clue": "Mediterranean salad fruit pressed for cooking oil"
+    },
+    {
+        "word": "OPERA",
+        "clue": "Dramatic musical theater with tenors"
+    },
+    {
+        "word": "ORBIT",
+        "clue": "Revolutionary loop around a planetary body"
+    },
+    {
+        "word": "ORGAN",
+        "clue": "Cathedral keyboard pipe instrument or bodily heart"
+    },
+    {
+        "word": "PAINT",
+        "clue": "Pigment applied with a fine brush"
+    },
+    {
+        "word": "PANEL",
+        "clue": "Discussion board or solar power sheet"
+    },
+    {
+        "word": "PAPER",
+        "clue": "Wood pulp sheets for writing"
+    },
+    {
+        "word": "PARTY",
+        "clue": "Festive celebratory social gathering"
+    },
+    {
+        "word": "PASTA",
+        "clue": "Spaghetti, penne, or fettuccine noodles"
+    },
+    {
+        "word": "PATCH",
+        "clue": "Mended fabric scrap or pumpkin garden"
+    },
+    {
+        "word": "PAUSE",
+        "clue": "Temporary halt in playback"
+    },
+    {
+        "word": "PEACE",
+        "clue": "Harmony free from conflict"
+    },
+    {
+        "word": "PEACH",
+        "clue": "Velvety fuzzy sweet orchard fruit"
+    },
+    {
+        "word": "PEARL",
+        "clue": "Lustrous white sphere formed inside an oyster"
+    },
+    {
+        "word": "PEDAL",
+        "clue": "Bicycle foot lever"
+    },
+    {
+        "word": "PENNY",
+        "clue": "One-cent copper coin"
+    },
+    {
+        "word": "PHASE",
+        "clue": "Stage in a developmental process"
+    },
+    {
+        "word": "PIANO",
+        "clue": "Eighty-eight keys musical acoustic instrument"
+    },
+    {
+        "word": "PILOT",
+        "clue": "Cockpit commander navigating an airplane"
+    },
+    {
+        "word": "PINCH",
+        "clue": "Tiny pinch of culinary salt"
+    },
+    {
+        "word": "PIPER",
+        "clue": "Bagpipes musician"
+    },
+    {
+        "word": "PITCH",
+        "clue": "Baseball throw or musical frequency"
+    },
+    {
+        "word": "PIVOT",
+        "clue": "Rotate around a fixed center point"
+    },
+    {
+        "word": "PIXEL",
+        "clue": "Tiny digital color dot on a screen"
+    },
+    {
+        "word": "PIZZA",
+        "clue": "Baked dough pie with melted cheese and sauce"
+    },
+    {
+        "word": "PLACE",
+        "clue": "Location or spot"
+    },
+    {
+        "word": "PLAIN",
+        "clue": "Unadorned or expansive prairie"
+    },
+    {
+        "word": "PLANE",
+        "clue": "Winged airliner soaring through clouds"
+    },
+    {
+        "word": "PLANT",
+        "clue": "Flora taking root in garden soil"
+    },
+    {
+        "word": "PLATE",
+        "clue": "Ceramic dish for dinner"
+    },
+    {
+        "word": "PLAZA",
+        "clue": "Open public town square"
+    },
+    {
+        "word": "POINT",
+        "clue": "Sharp tip of a needle or pencil"
+    },
+    {
+        "word": "POLAR",
+        "clue": "Pertaining to icy polar regions"
+    },
+    {
+        "word": "POWER",
+        "clue": "Electrical energy or strength"
+    },
+    {
+        "word": "PRICE",
+        "clue": "Retail cost on a merchandise tag"
+    },
+    {
+        "word": "PRIDE",
+        "clue": "Healthy self-esteem or troop of lions"
+    },
+    {
+        "word": "PRIME",
+        "clue": "Number with no divisors or finest quality"
+    },
+    {
+        "word": "PRIZE",
+        "clue": "Winner's trophy or ribbon"
+    },
+    {
+        "word": "PROUD",
+        "clue": "Pleased with an accomplished feat"
+    },
+    {
+        "word": "PULSE",
+        "clue": "Rhythmic artery beat felt at wrist"
+    },
+    {
+        "word": "PUPIL",
+        "clue": "Eye's aperture or eager student"
+    },
+    {
+        "word": "QUEEN",
+        "clue": "Female crowned royal ruler"
+    },
+    {
+        "word": "QUEST",
+        "clue": "Hero's journey to seek a prize"
+    },
+    {
+        "word": "QUICK",
+        "clue": "Swift in tempo"
+    },
+    {
+        "word": "QUIET",
+        "clue": "Serene silence without noise"
+    },
+    {
+        "word": "RADIO",
+        "clue": "Wireless audio broadcast receiver"
+    },
+    {
+        "word": "RADAR",
+        "clue": "Radio-wave detection system"
+    },
+    {
+        "word": "RANCH",
+        "clue": "Cattle-raising homestead"
+    },
+    {
+        "word": "RANGE",
+        "clue": "Mountain chain or cooking stove"
+    },
+    {
+        "word": "RAPID",
+        "clue": "Fast-moving river current"
+    },
+    {
+        "word": "REACH",
+        "clue": "Stretch hands outward"
+    },
+    {
+        "word": "READY",
+        "clue": "Prepared for what comes next"
+    },
+    {
+        "word": "RELAX",
+        "clue": "Unwind in leisure"
+    },
+    {
+        "word": "RIDER",
+        "clue": "Equestrian or bicycle passenger"
+    },
+    {
+        "word": "RIDGE",
+        "clue": "Crest of a mountain spine"
+    },
+    {
+        "word": "RIGHT",
+        "clue": "Correct or opposite of left"
+    },
+    {
+        "word": "RIVER",
+        "clue": "Flowing waterway coursing towards the sea"
+    },
+    {
+        "word": "ROBOT",
+        "clue": "Mechanical automated automaton"
+    },
+    {
+        "word": "ROUND",
+        "clue": "Circular geometric shape"
+    },
+    {
+        "word": "ROUTE",
+        "clue": "Highway passage path"
+    },
+    {
+        "word": "ROYAL",
+        "clue": "Fit for a king or monarch"
+    },
+    {
+        "word": "RULER",
+        "clue": "Twelve-inch measuring stick or sovereign"
+    },
+    {
+        "word": "RURAL",
+        "clue": "Countryside rather than urban"
+    },
+    {
+        "word": "SALAD",
+        "clue": "Tossed bowl of crisp garden greens"
+    },
+    {
+        "word": "SAUCE",
+        "clue": "Marinara or gravy condiment"
+    },
+    {
+        "word": "SCALE",
+        "clue": "Weighing balance or fish dermal plate"
+    },
+    {
+        "word": "SCENE",
+        "clue": "Segment of a film screenplay"
+    },
+    {
+        "word": "SCENT",
+        "clue": "Pleasant fragrant aroma"
+    },
+    {
+        "word": "SCORE",
+        "clue": "Points tally in a football match"
+    },
+    {
+        "word": "SCOUT",
+        "clue": "Pioneer exploring advance territory"
+    },
+    {
+        "word": "SHADE",
+        "clue": "Canopy shadow shielding sunlight"
+    },
+    {
+        "word": "SHAKE",
+        "clue": "Vibrate gently or greeting hand movement"
+    },
+    {
+        "word": "SHARE",
+        "clue": "Divide portions equally among friends"
+    },
+    {
+        "word": "SHARP",
+        "clue": "Keen razor edge"
+    },
+    {
+        "word": "SHEEP",
+        "clue": "Wool-bearing grazing animal"
+    },
+    {
+        "word": "SHELF",
+        "clue": "Horizontal bookcase plank"
+    },
+    {
+        "word": "SHELL",
+        "clue": "Hard protective clam casing"
+    },
+    {
+        "word": "SHINE",
+        "clue": "Radiate bright illumination"
+    },
+    {
+        "word": "SHIRT",
+        "clue": "Collared button-up top garment"
+    },
+    {
+        "word": "SHORE",
+        "clue": "Coastline where waves crash"
+    },
+    {
+        "word": "SHORT",
+        "clue": "Small in vertical stature"
+    },
+    {
+        "word": "SIGHT",
+        "clue": "Visual perception power"
+    },
+    {
+        "word": "SILVER",
+        "clue": "Precious metallic second-place medal"
+    },
+    {
+        "word": "SKATE",
+        "clue": "Glide on ice blades or wheels"
+    },
+    {
+        "word": "SKILL",
+        "clue": "Mastered proficiency and craftsmanship"
+    },
+    {
+        "word": "SLATE",
+        "clue": "Grey fine-grained chalkboard rock"
+    },
+    {
+        "word": "SLEEP",
+        "clue": "Restful nocturnal slumber"
+    },
+    {
+        "word": "SLICE",
+        "clue": "Thin wedge of pie or bread"
+    },
+    {
+        "word": "SMART",
+        "clue": "Intelligent and clever"
+    },
+    {
+        "word": "SMILE",
+        "clue": "Upturned lips expressing joy"
+    },
+    {
+        "word": "SMOKE",
+        "clue": "Plume rising from a cozy chimney"
+    },
+    {
+        "word": "SNAKE",
+        "clue": "Legless slithering reptile"
+    },
+    {
+        "word": "SOLAR",
+        "clue": "Relating to the power of the sun"
+    },
+    {
+        "word": "SOLID",
+        "clue": "Firm, dense, and rigid matter"
+    },
+    {
+        "word": "SOUND",
+        "clue": "Auditory tone or noise"
+    },
+    {
+        "word": "SOUTH",
+        "clue": "Direction toward the Antarctic pole"
+    },
+    {
+        "word": "SPACE",
+        "clue": "Cosmic realm of stars and galaxies"
+    },
+    {
+        "word": "SPARK",
+        "clue": "Fiery ignition glow"
+    },
+    {
+        "word": "SPEED",
+        "clue": "Velocity of rapid travel"
+    },
+    {
+        "word": "SPICE",
+        "clue": "Cinnamon, nutmeg, or pepper"
+    },
+    {
+        "word": "SPOON",
+        "clue": "Curved bowl utensil for broth"
+    },
+    {
+        "word": "SPORT",
+        "clue": "Athletic physical competition"
+    },
+    {
+        "word": "STAGE",
+        "clue": "Platform in a playhouse theater"
+    },
+    {
+        "word": "STAND",
+        "clue": "Rise upright onto two feet"
+    },
+    {
+        "word": "STARL",
+        "clue": "Star-like shine or pattern"
+    },
+    {
+        "word": "START",
+        "clue": "Begin the race"
+    },
+    {
+        "word": "STEAM",
+        "clue": "Vapor rising from boiling tea"
+    },
+    {
+        "word": "STEEL",
+        "clue": "Strong alloy of iron and carbon"
+    },
+    {
+        "word": "STILL",
+        "clue": "Stationary and calm"
+    },
+    {
+        "word": "STONE",
+        "clue": "Pebble or mineral rock"
+    },
+    {
+        "word": "STORM",
+        "clue": "Tempest of thunder and lightning"
+    },
+    {
+        "word": "STORY",
+        "clue": "Fable or bedtime tale"
+    },
+    {
+        "word": "STRAW",
+        "clue": "Dried grain stalks or sipping tube"
+    },
+    {
+        "word": "STUDY",
+        "clue": "Examine books to master a topic"
+    },
+    {
+        "word": "SUGAR",
+        "clue": "Sweet crystalline baking ingredient"
+    },
+    {
+        "word": "SUNNY",
+        "clue": "Bathed in bright daylight"
+    },
+    {
+        "word": "SUPER",
+        "clue": "Extraordinary or marvelous"
+    },
+    {
+        "word": "SWEET",
+        "clue": "Sugary honey flavor"
+    },
+    {
+        "word": "SWIFT",
+        "clue": "Moving with astonishing speed"
+    },
+    {
+        "word": "TABLE",
+        "clue": "Dinner surface with four legs"
+    },
+    {
+        "word": "TASTE",
+        "clue": "Palate sensation of flavors"
+    },
+    {
+        "word": "TEETH",
+        "clue": "Pearly whites in a smile"
+    },
+    {
+        "word": "THEME",
+        "clue": "Underlying motif or aesthetic style"
+    },
+    {
+        "word": "TIGER",
+        "clue": "Striped feline predator of Asia"
+    },
+    {
+        "word": "TITLE",
+        "clue": "Name heading a book or crown"
+    },
+    {
+        "word": "TOOTH",
+        "clue": "Enamel grinder inside the mouth"
+    },
+    {
+        "word": "TORCH",
+        "clue": "Flaming stick or portable flashlight"
+    },
+    {
+        "word": "TOTAL",
+        "clue": "Sum tally of an addition"
+    },
+    {
+        "word": "TOWER",
+        "clue": "Tall turret or spire structure"
+    },
+    {
+        "word": "TRACK",
+        "clue": "Running course or train rails"
+    },
+    {
+        "word": "TRAIL",
+        "clue": "Scenic mountain hiking path"
+    },
+    {
+        "word": "TRAIN",
+        "clue": "Locomotive pulling passenger cars"
+    },
+    {
+        "word": "TREAT",
+        "clue": "Special enjoyable snack"
+    },
+    {
+        "word": "TREND",
+        "clue": "Popular prevailing direction or craze"
+    },
+    {
+        "word": "TULIP",
+        "clue": "Cup-shaped Dutch spring blossom"
+    },
+    {
+        "word": "UNDER",
+        "clue": "Below the surface"
+    },
+    {
+        "word": "UNITY",
+        "clue": "Solidarity and oneness"
+    },
+    {
+        "word": "URBAN",
+        "clue": "Relating to city life"
+    },
+    {
+        "word": "VALVE",
+        "clue": "Mechanical regulator of fluid flow"
+    },
+    {
+        "word": "VALOR",
+        "clue": "Heroic courage in battle"
+    },
+    {
+        "word": "VAULT",
+        "clue": "Secure bank safe for gold bars"
+    },
+    {
+        "word": "VENUE",
+        "clue": "Hall hosting a grand concert"
+    },
+    {
+        "word": "VIGOR",
+        "clue": "Robust physical vitality"
+    },
+    {
+        "word": "VIRUS",
+        "clue": "Microscopic infectious particle"
+    },
+    {
+        "word": "VISIT",
+        "clue": "Drop by a friend's house"
+    },
+    {
+        "word": "VISTA",
+        "clue": "Sweeping panoramic landscape view"
+    },
+    {
+        "word": "VITAL",
+        "clue": "Essential to life"
+    },
+    {
+        "word": "VIVID",
+        "clue": "Brightly colored and sharply detailed"
+    },
+    {
+        "word": "VOCAL",
+        "clue": "Spoken with the human voice"
+    },
+    {
+        "word": "VOICE",
+        "clue": "Sound produced when speaking or singing"
+    },
+    {
+        "word": "WAGON",
+        "clue": "Four-wheeled wooden cart"
+    },
+    {
+        "word": "WATER",
+        "clue": "Clear life-sustaining liquid"
+    },
+    {
+        "word": "WATCH",
+        "clue": "Wrist timepiece"
+    },
+    {
+        "word": "WHEAT",
+        "clue": "Golden cereal grain harvested for flour"
+    },
+    {
+        "word": "WHEEL",
+        "clue": "Circular rotating tire invention"
+    },
+    {
+        "word": "WHITE",
+        "clue": "Color of fresh fallen snow"
+    },
+    {
+        "word": "WHOLE",
+        "clue": "Complete without missing pieces"
+    },
+    {
+        "word": "WINDY",
+        "clue": "Gusting with breezy gusts"
+    },
+    {
+        "word": "WORLD",
+        "clue": "Global planetary sphere"
+    },
+    {
+        "word": "WORRY",
+        "clue": "Anxious fretful thoughts"
+    },
+    {
+        "word": "WORTH",
+        "clue": "Calculated value or merit"
+    },
+    {
+        "word": "YACHT",
+        "clue": "Luxury sailing recreational vessel"
+    },
+    {
+        "word": "YIELD",
+        "clue": "Produce harvest crops or give right of way"
+    },
+    {
+        "word": "YOUTH",
+        "clue": "Early springtime of life"
+    },
+    {
+        "word": "ZEBRA",
+        "clue": "African savannah beast with black and white stripes"
+    },
+    {
+        "word": "BAAED",
+        "clue": "Made like a sheep"
+    },
+    {
+        "word": "ICIER",
+        "clue": "More frosty"
+    },
+    {
+        "word": "STROP",
+        "clue": "Leather strip for sharpening a razor"
+    },
+    {
+        "word": "BIRTH",
+        "clue": "Day you celebrate every year"
+    },
+    {
+        "word": "LEELA",
+        "clue": "One-eyed captain on 'Futurama'"
+    },
+    {
+        "word": "LATIN",
+        "clue": "Language of ancient Rome"
+    },
+    {
+        "word": "DOLCE",
+        "clue": "Gabbana's fashion partner"
+    },
+    {
+        "word": "SCOUT",
+        "clue": "Member of a troop with badges"
+    },
+    {
+        "word": "MILKY",
+        "clue": "Like the Way galaxy?"
+    },
+    {
+        "word": "RECON",
+        "clue": "Military mission, for short"
+    },
+    {
+        "word": "DYLAN",
+        "clue": "Bob who sang 'Blowin' in the Wind'"
+    },
+    {
+        "word": "DREAM",
+        "clue": "What you might do during a boring class"
+    },
+    {
+        "word": "ALLEY",
+        "clue": "Bowling lane"
+    },
+    {
+        "word": "DATED",
+        "clue": "Went out with, or out of style"
+    },
+    {
+        "word": "HAITI",
+        "clue": "Caribbean country sharing an island with the Dominican Republic"
+    },
+    {
+        "word": "DELVE",
+        "clue": "Dig deep (into)"
+    },
+    {
+        "word": "SIEVE",
+        "clue": "Kitchen strainer"
+    },
+    {
+        "word": "BROIL",
+        "clue": "Cook like a steak under high heat"
+    },
+    {
+        "word": "ARDOR",
+        "clue": "Burning passion"
+    },
+    {
+        "word": "RODEO",
+        "clue": "Event with bucking broncos"
+    },
+    {
+        "word": "BREAD",
+        "clue": "Loaf of the bakery"
+    },
+    {
+        "word": "AREAS",
+        "clue": "Regions or zones"
+    },
+    {
+        "word": "RARER",
+        "clue": "More uncommon"
+    },
+    {
+        "word": "CHIVE",
+        "clue": "Herb related to the onion"
+    },
+    {
+        "word": "EYING",
+        "clue": "Giving the side-eye?"
+    },
+    {
+        "word": "NEGEV",
+        "clue": "Israeli desert"
+    },
+    {
+        "word": "POTTY",
+        "clue": "Toilet, informally"
+    },
+    {
+        "word": "TRIBE",
+        "clue": "Group with a chief"
+    },
+    {
+        "word": "COALS",
+        "clue": "Stocking stuffers for the naughty"
+    },
+    {
+        "word": "ANKLE",
+        "clue": "Joint above the foot"
+    },
+    {
+        "word": "FLAKY",
+        "clue": "Unreliable, like bad pastry?"
+    },
+    {
+        "word": "FELLA",
+        "clue": "\"Hey, ___!\" (casual greeting)"
+    },
+    {
+        "word": "ABORT",
+        "clue": "Cancel mid-mission"
+    },
+    {
+        "word": "PUMAS",
+        "clue": "Big cats also called cougars"
+    },
+    {
+        "word": "LOOMS",
+        "clue": "Threatens ominously, as a deadline"
+    },
+    {
+        "word": "STRAP",
+        "clue": "Watchband or sandal piece"
+    },
+    {
+        "word": "FLORA",
+        "clue": "Plant life of a region"
+    },
+    {
+        "word": "OPTED",
+        "clue": "Made a choice"
+    },
+    {
+        "word": "SLAPS",
+        "clue": "High-fives, perhaps"
+    },
+    {
+        "word": "AORTA",
+        "clue": "Body's largest artery"
+    },
+    {
+        "word": "PRIES",
+        "clue": "Snoops (into)"
+    },
+    {
+        "word": "SPAIN",
+        "clue": "Country whose capital is Madrid"
+    },
+    {
+        "word": "BINDI",
+        "clue": "Forehead dot in Hindu tradition"
+    },
+    {
+        "word": "ANGEL",
+        "clue": "Heavenly being"
+    },
+    {
+        "word": "APING",
+        "clue": "Mimicking, monkey-style?"
+    },
+    {
+        "word": "TANGO",
+        "clue": "Ballroom dance for two"
+    },
+    {
+        "word": "VIDEO",
+        "clue": "YouTube upload"
+    },
+    {
+        "word": "BICEP",
+        "clue": "Muscle flexed in a selfie"
+    },
+    {
+        "word": "EXCEL",
+        "clue": "Do really well"
+    },
+    {
+        "word": "NEEDS",
+        "clue": "Requires"
+    },
+    {
+        "word": "GRETA",
+        "clue": "Climate activist Thunberg"
+    },
+    {
+        "word": "BEAST",
+        "clue": "Belle's furry love interest"
+    },
+    {
+        "word": "YIELD",
+        "clue": "Stop sign's triangular cousin"
+    },
+    {
+        "word": "BOING",
+        "clue": "Sound of a spring bouncing?"
+    },
+    {
+        "word": "CLEAR",
+        "clue": "Crystal ___ (transparent)"
+    },
+    {
+        "word": "SALSA",
+        "clue": "Chip's dance partner?"
+    },
+    {
+        "word": "CHESS",
+        "clue": "Game with a king and queen?"
+    },
+    {
+        "word": "MIDAS",
+        "clue": "King with a golden touch"
+    },
+    {
+        "word": "ALERT",
+        "clue": "On guard"
+    },
+    {
+        "word": "ALINE",
+        "clue": "Skirt style with a flared shape"
+    },
+    {
+        "word": "SIGNS",
+        "clue": "Storefront displays"
+    },
+    {
+        "word": "UNRIG",
+        "clue": "Undo, as a sailboat's setup"
+    },
+    {
+        "word": "RINGS",
+        "clue": "Wedding band purchases"
+    },
+    {
+        "word": "INANE",
+        "clue": "Utterly silly"
+    },
+    {
+        "word": "ECOLI",
+        "clue": "Bacteria sometimes behind food recalls"
+    },
+    {
+        "word": "ACTOR",
+        "clue": "One who plays a part"
+    },
+    {
+        "word": "LIBRA",
+        "clue": "Sign of the scales"
+    },
+    {
+        "word": "LABEL",
+        "clue": "Sticker on a wine bottle"
+    },
+    {
+        "word": "ARENA",
+        "clue": "Concert venue"
+    },
+    {
+        "word": "ABBEY",
+        "clue": "Where monks live"
+    },
+    {
+        "word": "BLOOD",
+        "clue": "What a vampire craves"
+    },
+    {
+        "word": "PINED",
+        "clue": "Longed (for)"
+    },
+    {
+        "word": "TOOLS",
+        "clue": "Hammers and saws"
+    },
+    {
+        "word": "BORAX",
+        "clue": "Cleaning powder brand"
+    },
+    {
+        "word": "EMOJI",
+        "clue": "\ud83d\ude01\u201a or \ud83e\udd76, e.g."
+    },
+    {
+        "word": "ECARD",
+        "clue": "Digital birthday greeting"
+    },
+    {
+        "word": "BLOOD",
+        "clue": "Donor's donation"
+    },
+    {
+        "word": "BATON",
+        "clue": "Conductor's stick"
+    },
+    {
+        "word": "THINK",
+        "clue": "Use your noggin"
+    },
+    {
+        "word": "ALOHA",
+        "clue": "Hawaiian greeting"
+    },
+    {
+        "word": "LASIK",
+        "clue": "Eye surgery for the nearsighted"
+    },
+    {
+        "word": "PROOF",
+        "clue": "Evidence in court"
+    },
+    {
+        "word": "EDENS",
+        "clue": "Paradises"
+    },
+    {
+        "word": "YOINK",
+        "clue": "Cartoonish word said while swiping something?"
+    },
+    {
+        "word": "ATTIC",
+        "clue": "Dusty space under the roof"
+    },
+    {
+        "word": "NITRO",
+        "clue": "Dynamite ingredient, for short"
+    },
+    {
+        "word": "NASAL",
+        "clue": "Like a stuffy-nose voice"
+    },
+    {
+        "word": "ABATE",
+        "clue": "Lessen, as a storm"
+    },
+    {
+        "word": "MEANS",
+        "clue": "Methods"
+    },
+    {
+        "word": "REPAY",
+        "clue": "Pay back"
+    },
+    {
+        "word": "ANNIE",
+        "clue": "Little Orphan ___"
+    },
+    {
+        "word": "EIEIO",
+        "clue": "Old MacDonald's refrain"
+    },
+    {
+        "word": "TRULY",
+        "clue": "Sincerely, in a letter sign-off"
+    },
+    {
+        "word": "TESLA",
+        "clue": "Electric car brand named after an inventor"
+    },
+    {
+        "word": "AIRES",
+        "clue": "Buenos ___, Argentina"
+    },
+    {
+        "word": "REUSE",
+        "clue": "Recycle, in a way"
+    },
+    {
+        "word": "GILLS",
+        "clue": "Fish breathing organs"
+    },
+    {
+        "word": "KOALA",
+        "clue": "Eucalyptus-eating marsupial"
+    },
+    {
+        "word": "AIOLI",
+        "clue": "Garlicky mayo"
+    },
+    {
+        "word": "REAMS",
+        "clue": "Lots and lots"
+    },
+    {
+        "word": "TILER",
+        "clue": "One who lays the groundwork in a bathroom?"
+    },
+    {
+        "word": "ALLEN",
+        "clue": "Woody of film"
+    },
+    {
+        "word": "ALLOY",
+        "clue": "Brass or bronze, e.g."
+    },
+    {
+        "word": "SOLAR",
+        "clue": "Like energy from the sun"
+    },
+    {
+        "word": "ALEXA",
+        "clue": "Amazon's voice assistant"
+    },
+    {
+        "word": "STREW",
+        "clue": "Scatter, as flower petals"
+    },
+    {
+        "word": "GLEAM",
+        "clue": "Soft glow"
+    },
+    {
+        "word": "SNAPS",
+        "clue": "Crackling sounds from a fire"
+    },
+    {
+        "word": "MEDAL",
+        "clue": "Olympic prize"
+    },
+    {
+        "word": "BOLTS",
+        "clue": "Hardware store fasteners"
+    },
+    {
+        "word": "CIAOS",
+        "clue": "Italian farewells"
+    },
+    {
+        "word": "ENTER",
+        "clue": "Press to submit"
+    },
+    {
+        "word": "LIONS",
+        "clue": "Pride members"
+    },
+    {
+        "word": "HAILS",
+        "clue": "Greets warmly"
+    },
+    {
+        "word": "ENDOW",
+        "clue": "Provide with funds"
+    },
+    {
+        "word": "PANIC",
+        "clue": "Sudden overwhelming fear"
+    },
+    {
+        "word": "PIDAY",
+        "clue": "March 14, for math fans?"
+    },
+    {
+        "word": "SLOTS",
+        "clue": "Casino machine openings"
+    },
+    {
+        "word": "LILAC",
+        "clue": "Light purple flower"
+    },
+    {
+        "word": "VALVE",
+        "clue": "Faucet part that controls flow"
+    },
+    {
+        "word": "ARIEL",
+        "clue": "Disney's Little Mermaid"
+    },
+    {
+        "word": "LIARS",
+        "clue": "Folks who can't be trusted"
+    },
+    {
+        "word": "NAVEL",
+        "clue": "Belly button"
+    },
+    {
+        "word": "KOREA",
+        "clue": "Country split at the 38th parallel"
+    },
+    {
+        "word": "IRISH",
+        "clue": "Like a Dublin accent"
+    },
+    {
+        "word": "AORTA",
+        "clue": "Largest artery in the body"
+    },
+    {
+        "word": "BESTS",
+        "clue": "Beats in competition"
+    },
+    {
+        "word": "FLOES",
+        "clue": "Drifting chunks of sea ice"
+    },
+    {
+        "word": "TALES",
+        "clue": "Bedtime stories"
+    },
+    {
+        "word": "WHEEL",
+        "clue": "Ferris ___"
+    },
+    {
+        "word": "TYPEA",
+        "clue": "High-strung personality"
+    },
+    {
+        "word": "RELAY",
+        "clue": "Track race with a baton"
+    },
+    {
+        "word": "ELUDE",
+        "clue": "Avoid, as capture"
+    },
+    {
+        "word": "RENEW",
+        "clue": "Extend, as a magazine subscription"
+    },
+    {
+        "word": "BONED",
+        "clue": "Removed the fishy bits?"
+    },
+    {
+        "word": "KIOSK",
+        "clue": "Small newsstand"
+    },
+    {
+        "word": "SPOOL",
+        "clue": "Thread holder"
+    },
+    {
+        "word": "BOOST",
+        "clue": "Give a lift to?"
+    },
+    {
+        "word": "HANKS",
+        "clue": "Tom of \"Forrest Gump\""
+    },
+    {
+        "word": "SLEET",
+        "clue": "Wintry mix of rain and ice"
+    },
+    {
+        "word": "HIKES",
+        "clue": "Raises prices, or goes on long walks?"
+    },
+    {
+        "word": "LITER",
+        "clue": "Metric unit roughly equal to a quart"
+    },
+    {
+        "word": "ARISE",
+        "clue": "Get up"
+    },
+    {
+        "word": "SKIES",
+        "clue": "Where eagles soar"
+    },
+    {
+        "word": "JERKS",
+        "clue": "Sudden quick movements"
+    },
+    {
+        "word": "AWAIT",
+        "clue": "Hang tight"
+    },
+    {
+        "word": "LOCKS",
+        "clue": "Hair tresses, or things a locksmith picks?"
+    },
+    {
+        "word": "REDID",
+        "clue": "Renovated, as a kitchen"
+    },
+    {
+        "word": "EDICT",
+        "clue": "Official decree"
+    },
+    {
+        "word": "DISCO",
+        "clue": "'70s genre with a ball?"
+    },
+    {
+        "word": "LANDS",
+        "clue": "Touches down, as a plane"
+    },
+    {
+        "word": "SHEIK",
+        "clue": "Arabian chief"
+    },
+    {
+        "word": "WINED",
+        "clue": "Plied with merlot, say"
+    },
+    {
+        "word": "OMEGA",
+        "clue": "Last Greek letter"
+    },
+    {
+        "word": "BREED",
+        "clue": "Labrador or poodle, e.g."
+    },
+    {
+        "word": "AREPA",
+        "clue": "Stuffed Venezuelan corn cake"
+    },
+    {
+        "word": "ISLES",
+        "clue": "Archipelago components"
+    },
+    {
+        "word": "AROSE",
+        "clue": "Got out of bed"
+    },
+    {
+        "word": "UPSET",
+        "clue": "Stomach trouble, or a stunning loss"
+    },
+    {
+        "word": "AAHED",
+        "clue": "Reacted to fireworks"
+    },
+    {
+        "word": "BLECH",
+        "clue": "\"Yuck!\""
+    },
+    {
+        "word": "ENTER",
+        "clue": "Key to the right of the apostrophe key"
+    },
+    {
+        "word": "OCHER",
+        "clue": "Earthy yellow-brown pigment"
+    },
+    {
+        "word": "SNARE",
+        "clue": "Drum or trap"
+    },
+    {
+        "word": "ANODE",
+        "clue": "Positive electrode"
+    },
+    {
+        "word": "BADGE",
+        "clue": "Sheriff's star"
+    },
+    {
+        "word": "RAMON",
+        "clue": "Spanish form of Raymond"
+    },
+    {
+        "word": "CRAVE",
+        "clue": "Strongly desire"
+    },
+    {
+        "word": "STRAT",
+        "clue": "Fender guitar, for short"
+    },
+    {
+        "word": "EARTH",
+        "clue": "Our planet"
+    },
+    {
+        "word": "NOVAS",
+        "clue": "Exploding stars"
+    },
+    {
+        "word": "SWAMP",
+        "clue": "Marshy wetland"
+    },
+    {
+        "word": "ELVES",
+        "clue": "Santa's little helpers"
+    },
+    {
+        "word": "BLINI",
+        "clue": "Russian pancakes often topped with caviar"
+    },
+    {
+        "word": "OVERS",
+        "clue": "Cricket bowling units"
+    },
+    {
+        "word": "MOLAR",
+        "clue": "Tooth in the back"
+    },
+    {
+        "word": "AILED",
+        "clue": "Was under the weather"
+    },
+    {
+        "word": "ALTER",
+        "clue": "Modify, as a hemline"
+    },
+    {
+        "word": "BELIE",
+        "clue": "Contradict, as appearances"
+    },
+    {
+        "word": "BOTOX",
+        "clue": "Wrinkle-smoothing injection"
+    },
+    {
+        "word": "ANGST",
+        "clue": "Feeling of dread or anxiety"
+    },
+    {
+        "word": "TONIC",
+        "clue": "Water with quinine, or a cure-all"
+    },
+    {
+        "word": "ANGLE",
+        "clue": "45 degrees, for one"
+    },
+    {
+        "word": "CYSTS",
+        "clue": "Fluid-filled lumps a doctor might find"
+    },
+    {
+        "word": "ERECT",
+        "clue": "Standing straight up"
+    },
+    {
+        "word": "WISED",
+        "clue": "___ up (got smart, informally)"
+    },
+    {
+        "word": "ESSES",
+        "clue": "S-shaped curves"
+    },
+    {
+        "word": "ARISE",
+        "clue": "Get up out of bed"
+    },
+    {
+        "word": "ICEES",
+        "clue": "Frozen slushy drinks"
+    },
+    {
+        "word": "ABATE",
+        "clue": "Lessen or die down, as a storm"
+    },
+    {
+        "word": "TETRA",
+        "clue": "Small colorful aquarium fish"
+    },
+    {
+        "word": "CINCO",
+        "clue": "___ de Mayo (Mexican holiday)"
+    },
+    {
+        "word": "BASTE",
+        "clue": "Brush a turkey with juices while roasting"
+    },
+    {
+        "word": "UTERO",
+        "clue": "In ___ (before birth)"
+    },
+    {
+        "word": "ARIEL",
+        "clue": "\"The Little Mermaid\" heroine"
+    },
+    {
+        "word": "HENNA",
+        "clue": "Reddish dye for the hair"
+    },
+    {
+        "word": "ENACT",
+        "clue": "Put into law"
+    },
+    {
+        "word": "ARENA",
+        "clue": "Stadium where games are played"
+    },
+    {
+        "word": "CATAN",
+        "clue": "\"Settlers of ___,\" popular board game"
+    },
+    {
+        "word": "THICK",
+        "clue": "Not thin"
+    },
+    {
+        "word": "RATIO",
+        "clue": "Comparison of two numbers, like 2:1"
+    },
+    {
+        "word": "GRACE",
+        "clue": "Prayer said before a meal"
+    },
+    {
+        "word": "THIRD",
+        "clue": "Like a bronze medalist"
+    },
+    {
+        "word": "IDEAL",
+        "clue": "Just perfect"
+    },
+    {
+        "word": "DAMNS",
+        "clue": "Condemns, or utters a mild curse"
+    },
+    {
+        "word": "AMPED",
+        "clue": "Full of energy, informally"
+    },
+    {
+        "word": "PANED",
+        "clue": "Having glass sections, as a window?"
+    },
+    {
+        "word": "SNARF",
+        "clue": "Gobble down greedily"
+    },
+    {
+        "word": "SPINE",
+        "clue": "The backbone"
+    },
+    {
+        "word": "TUNIS",
+        "clue": "Capital of Tunisia"
+    },
+    {
+        "word": "INPUT",
+        "clue": "Data fed into a computer"
+    },
+    {
+        "word": "ERNIE",
+        "clue": "Bert's \"Sesame Street\" pal"
+    },
+    {
+        "word": "RODEO",
+        "clue": "Event with bull riding and roping"
+    },
+    {
+        "word": "CREAM",
+        "clue": "Whitish part of milk, or a color"
+    },
+    {
+        "word": "AMORE",
+        "clue": "Italian word for love"
+    },
+    {
+        "word": "TREAD",
+        "clue": "The part of a tire that grips the road"
+    },
+    {
+        "word": "ROUTE",
+        "clue": "Path from here to there"
+    },
+    {
+        "word": "OCTET",
+        "clue": "Group of eight musicians"
+    },
+    {
+        "word": "EASED",
+        "clue": "Loosened, as tension"
+    },
+    {
+        "word": "WHALE",
+        "clue": "Largest animal in the ocean"
+    },
+    {
+        "word": "EASEL",
+        "clue": "Painter's stand"
+    },
+    {
+        "word": "SUGAR",
+        "clue": "Sweetener for coffee"
+    },
+    {
+        "word": "BEGAN",
+        "clue": "Got started"
+    },
+    {
+        "word": "CIRCA",
+        "clue": "Roughly, in dates (abbr.)"
+    },
+    {
+        "word": "ONION",
+        "clue": "Layered vegetable that can bring tears to your eyes"
+    },
+    {
+        "word": "SCONE",
+        "clue": "Biscuit-like treat served with tea"
+    },
+    {
+        "word": "CINCO",
+        "clue": "___ de Mayo (May holiday)"
+    },
+    {
+        "word": "ORION",
+        "clue": "Constellation named for a hunter"
+    },
+    {
+        "word": "ICONS",
+        "clue": "Beloved symbols or celebrities"
+    },
+    {
+        "word": "PIECE",
+        "clue": "Slice of pie or cake"
+    },
+    {
+        "word": "STARE",
+        "clue": "Long, fixed gaze"
+    },
+    {
+        "word": "WAITS",
+        "clue": "Bides one's time"
+    },
+    {
+        "word": "OCEAN",
+        "clue": "Vast body of saltwater"
+    },
+    {
+        "word": "LYCRA",
+        "clue": "Stretchy fabric in leggings"
+    },
+    {
+        "word": "FRODO",
+        "clue": "Hobbit who carried the One Ring to Mount Doom"
+    },
+    {
+        "word": "RIDGE",
+        "clue": "Long, narrow top of a mountain"
+    },
+    {
+        "word": "EDGES",
+        "clue": "Sharp borders of a blade"
+    },
+    {
+        "word": "BRIDE",
+        "clue": "Woman on her wedding day"
+    },
+    {
+        "word": "LODGE",
+        "clue": "Rustic cabin in the woods"
+    },
+    {
+        "word": "EDGED",
+        "clue": "Moved slowly and carefully, bit by bit"
+    },
+    {
+        "word": "HARAM",
+        "clue": "Forbidden under Islamic law"
+    },
+    {
+        "word": "BASER",
+        "clue": "More lowly or vile"
+    },
+    {
+        "word": "BRAVO",
+        "clue": "Cheer for a great performance"
+    },
+    {
+        "word": "SADAT",
+        "clue": "Egyptian president Anwar who won the Nobel Peace Prize"
+    },
+    {
+        "word": "LASSO",
+        "clue": "Cowboy's rope"
+    },
+    {
+        "word": "POSER",
+        "clue": "One striking a fake pose?"
+    },
+    {
+        "word": "BLIPS",
+        "clue": "Small radar dots"
+    },
+    {
+        "word": "PALEO",
+        "clue": "Diet emphasizing meat and veggies, informally"
+    },
+    {
+        "word": "RIPEN",
+        "clue": "Get ready to pick, as fruit"
+    },
+    {
+        "word": "PRANK",
+        "clue": "Harmless practical joke"
+    },
+    {
+        "word": "EBIKE",
+        "clue": "Eco-friendly ride with pedal assist"
+    },
+    {
+        "word": "ABLER",
+        "clue": "More skilled"
+    },
+    {
+        "word": "ANGLO",
+        "clue": "Prefix meaning \"English\""
+    },
+    {
+        "word": "XWING",
+        "clue": "Star Wars fighter craft flown by Luke Skywalker"
+    },
+    {
+        "word": "SENOR",
+        "clue": "Spanish title for a gentleman"
+    },
+    {
+        "word": "SLEEP",
+        "clue": "What you do for about eight hours a night"
+    },
+    {
+        "word": "PIANO",
+        "clue": "Keyboard instrument with 88 keys"
+    },
+    {
+        "word": "GLEAN",
+        "clue": "Gather bit by bit, as facts"
+    },
+    {
+        "word": "RESIN",
+        "clue": "Sticky substance from pine trees"
+    },
+    {
+        "word": "SNEER",
+        "clue": "Contemptuous facial expression"
+    },
+    {
+        "word": "MEANT",
+        "clue": "Intended"
+    },
+    {
+        "word": "RICER",
+        "clue": "Kitchen gadget for mashing potatoes"
+    },
+    {
+        "word": "ANCHO",
+        "clue": "___ chili pepper (dried poblano)"
+    },
+    {
+        "word": "LUCAS",
+        "clue": "\"Star Wars\" creator George"
+    },
+    {
+        "word": "DROOP",
+        "clue": "Wilt or sag, as flowers"
+    },
+    {
+        "word": "AMIGA",
+        "clue": "Female friend, in Spanish"
+    },
+    {
+        "word": "DORMS",
+        "clue": "College residence halls"
+    },
+    {
+        "word": "ARMOR",
+        "clue": "Suit of protective metal plates"
+    },
+    {
+        "word": "LOIRE",
+        "clue": "Longest river in France"
+    },
+    {
+        "word": "DOGMA",
+        "clue": "Firmly held belief or principle"
+    },
+    {
+        "word": "MAYBE",
+        "clue": "\"Possibly, possibly not\""
+    },
+    {
+        "word": "ASWAN",
+        "clue": "Famous dam on the Nile"
+    },
+    {
+        "word": "LHASA",
+        "clue": "Capital of Tibet"
+    },
+    {
+        "word": "BYWAY",
+        "clue": "Side road or scenic route"
+    },
+    {
+        "word": "METAL",
+        "clue": "Iron or copper, e.g."
+    },
+    {
+        "word": "CATAN",
+        "clue": "Popular board game 'Settlers of ___'"
+    },
+    {
+        "word": "ATOMS",
+        "clue": "Tiny bits of matter"
+    },
+    {
+        "word": "TATAR",
+        "clue": "Beef ___ (raw meat dish)"
+    },
+    {
+        "word": "ECOLI",
+        "clue": "Bacteria linked to food poisoning"
+    },
+    {
+        "word": "SAMOA",
+        "clue": "Pacific island nation near Fiji"
+    },
+    {
+        "word": "ITALY",
+        "clue": "European country shaped like a boot"
+    },
+    {
+        "word": "NONNA",
+        "clue": "Italian grandma"
+    },
+    {
+        "word": "TREAD",
+        "clue": "Part of a tire that grips the road"
+    },
+    {
+        "word": "BANES",
+        "clue": "Sources of ruin"
+    },
+    {
+        "word": "GAINS",
+        "clue": "Increases in size or amount"
+    },
+    {
+        "word": "SCAMS",
+        "clue": "Con artists' schemes"
+    },
+    {
+        "word": "SCRUM",
+        "clue": "Rugby pileup for the ball"
+    },
+    {
+        "word": "EMITS",
+        "clue": "Gives off, as light or heat"
+    },
+    {
+        "word": "SLURP",
+        "clue": "Drink noisily"
+    },
+    {
+        "word": "AMENS",
+        "clue": "Words ending prayers"
+    },
+    {
+        "word": "LUBED",
+        "clue": "Greased up, as a machine"
+    },
+    {
+        "word": "IRONY",
+        "clue": "'How ___!' (life's cruel twist)"
+    },
+    {
+        "word": "INLAW",
+        "clue": "Mother-, father-, or sister-___"
+    },
+    {
+        "word": "POLIO",
+        "clue": "Disease prevented by a Salk vaccine"
+    },
+    {
+        "word": "FLOOR",
+        "clue": "Level of a building"
+    },
+    {
+        "word": "NOOBS",
+        "clue": "Newbies, in gamer slang"
+    },
+    {
+        "word": "LADLE",
+        "clue": "Spoon for serving soup"
+    },
+    {
+        "word": "INDIE",
+        "clue": "Not with a major record label"
+    },
+    {
+        "word": "EJECT",
+        "clue": "Push the button to leave a bad seat, say"
+    },
+    {
+        "word": "BANJO",
+        "clue": "Bluegrass string instrument"
+    },
+    {
+        "word": "UDDER",
+        "clue": "Cow's milk-producing part"
+    },
+    {
+        "word": "FLICK",
+        "clue": "Movie, informally"
+    },
+    {
+        "word": "GENIE",
+        "clue": "Magical being who grants three wishes"
+    },
+    {
+        "word": "AIMED",
+        "clue": "Pointed a gun (at)"
+    },
+    {
+        "word": "BLINI",
+        "clue": "Small Russian pancake"
+    },
+    {
+        "word": "PESTO",
+        "clue": "Green sauce for pasta made with basil"
+    },
+    {
+        "word": "NOSIR",
+        "clue": "Firm refusal: \"___!\""
+    },
+    {
+        "word": "LUIGI",
+        "clue": "Mario's brother in green"
+    },
+    {
+        "word": "ALONE",
+        "clue": "By oneself"
+    },
+    {
+        "word": "FLUKE",
+        "clue": "Stroke of luck"
+    },
+    {
+        "word": "ROSES",
+        "clue": "Valentine's Day flowers"
+    },
+    {
+        "word": "ALLOW",
+        "clue": "Permit"
+    },
+    {
+        "word": "MOUSE",
+        "clue": "Computer clicker"
+    },
+    {
+        "word": "INKED",
+        "clue": "Signed a contract, informally"
+    },
+    {
+        "word": "AEIOU",
+        "clue": "The five vowels, in order"
+    },
+    {
+        "word": "GOING",
+        "clue": "Departing, as a flight"
+    },
+    {
+        "word": "AROMA",
+        "clue": "Pleasant smell"
+    },
+    {
+        "word": "LEONE",
+        "clue": "Sierra ___, West African country"
+    },
+    {
+        "word": "CAIRO",
+        "clue": "Capital of Egypt"
+    },
+    {
+        "word": "ROOST",
+        "clue": "Where chickens sleep"
+    },
+    {
+        "word": "BALOO",
+        "clue": "Bear who mentors Mowgli in 'The Jungle Book'"
+    },
+    {
+        "word": "RIGOR",
+        "clue": "Strictness or harshness, as of the law"
+    },
+    {
+        "word": "ARISE",
+        "clue": "Get up from bed"
+    },
+    {
+        "word": "JUICY",
+        "clue": "Full of flavor, as a ripe orange"
+    },
+    {
+        "word": "LUMEN",
+        "clue": "SI unit of luminous flux"
+    },
+    {
+        "word": "TIANA",
+        "clue": "Disney princess in 'The Princess and the Frog'"
+    },
+    {
+        "word": "ISLET",
+        "clue": "Tiny island"
+    },
+    {
+        "word": "SPICY",
+        "clue": "Like hot peppers or zesty salsa"
+    },
+    {
+        "word": "LATHE",
+        "clue": "Woodworking tool that spins a piece as it's shaped"
+    },
+    {
+        "word": "BEHAR",
+        "clue": "Joy of 'The View'"
+    },
+    {
+        "word": "TATUM",
+        "clue": "Channing of 'Magic Mike'"
+    },
+    {
+        "word": "CEDAR",
+        "clue": "Fragrant closet wood"
+    },
+    {
+        "word": "THETA",
+        "clue": "Eighth Greek letter"
+    },
+    {
+        "word": "BOSCH",
+        "clue": "Vacuum cleaner brand"
+    },
+    {
+        "word": "NICER",
+        "clue": "More pleasant"
+    },
+    {
+        "word": "OMENS",
+        "clue": "Signs of things to come"
+    },
+    {
+        "word": "AROMA",
+        "clue": "Pleasant smell from the kitchen"
+    },
+    {
+        "word": "OVENS",
+        "clue": "Places to bake bread"
+    },
+    {
+        "word": "LITHE",
+        "clue": "Graceful and supple, as a dancer"
+    },
+    {
+        "word": "EATEN",
+        "clue": "Consumed a meal"
+    },
+    {
+        "word": "BONES",
+        "clue": "The body's skeleton parts"
+    },
+    {
+        "word": "ASIDE",
+        "clue": "Whispered remark to the audience"
+    },
+    {
+        "word": "TINTS",
+        "clue": "Shades of color"
+    },
+    {
+        "word": "AESOP",
+        "clue": "Ancient Greek teller of fables"
+    },
+    {
+        "word": "RHINE",
+        "clue": "Major river of Germany"
+    },
+    {
+        "word": "FEDEX",
+        "clue": "Big overnight shipping company"
+    },
+    {
+        "word": "ROADS",
+        "clue": "Highways and byways"
+    },
+    {
+        "word": "CUTIE",
+        "clue": "Adorable one, informally"
+    },
+    {
+        "word": "SLICE",
+        "clue": "Piece of pizza"
+    },
+    {
+        "word": "COULD",
+        "clue": "\"I ___ use a break\""
+    },
+    {
+        "word": "RATIO",
+        "clue": "3-to-1, for example"
+    },
+    {
+        "word": "EDICT",
+        "clue": "Official order from a ruler"
+    },
+    {
+        "word": "COACH",
+        "clue": "Sports team's trainer"
+    },
+    {
+        "word": "AGREE",
+        "clue": "Say yes together; be of one mind"
+    },
+    {
+        "word": "RUNNY",
+        "clue": "Like a nose with a cold"
+    },
+    {
+        "word": "BOGUS",
+        "clue": "Fake or counterfeit"
+    },
+    {
+        "word": "EARNS",
+        "clue": "Brings home, as a paycheck"
+    },
+    {
+        "word": "SCENT",
+        "clue": "A dog's keen sense"
+    },
+    {
+        "word": "LIBEL",
+        "clue": "False written statement that damages a reputation"
+    },
+    {
+        "word": "SALON",
+        "clue": "Place for a haircut"
+    },
+    {
+        "word": "LILAC",
+        "clue": "Fragrant spring-blooming shrub with purple flowers"
+    },
+    {
+        "word": "EBOLA",
+        "clue": "Serious viral disease"
+    },
+    {
+        "word": "XENON",
+        "clue": "Noble gas used in some car headlights"
+    },
+    {
+        "word": "FOAMY",
+        "clue": "Full of bubbles, like a latte's top"
+    },
+    {
+        "word": "URBAN",
+        "clue": "City-related"
+    },
+    {
+        "word": "STOIC",
+        "clue": "Showing no emotion"
+    },
+    {
+        "word": "BARON",
+        "clue": "Nobleman above a viscount"
+    },
+    {
+        "word": "AORTA",
+        "clue": "Main artery from the heart"
+    },
+    {
+        "word": "LABOR",
+        "clue": "Hard work"
+    },
+    {
+        "word": "EMAIL",
+        "clue": "Message sent with a click of 'send'"
+    },
+    {
+        "word": "CARED",
+        "clue": "Felt concern"
+    },
+    {
+        "word": "BRAVO",
+        "clue": "\"Well done!\" cheer"
+    },
+    {
+        "word": "RARER",
+        "clue": "Harder to find"
+    },
+    {
+        "word": "OVERT",
+        "clue": "Out in the open, not hidden"
+    },
+    {
+        "word": "HEAVY",
+        "clue": "Not lightweight"
+    },
+    {
+        "word": "ACRES",
+        "clue": "Farm land measures"
+    },
+    {
+        "word": "THERE",
+        "clue": "In that place"
+    },
+    {
+        "word": "DARES",
+        "clue": "Challenges to do something risky"
+    },
+    {
+        "word": "SODAS",
+        "clue": "Fizzy drinks like Sprite and 7 Up"
+    },
+    {
+        "word": "GLARE",
+        "clue": "Harsh, blinding light"
+    },
+    {
+        "word": "COLAS",
+        "clue": "Fizzy dark drinks like Coke and Pepsi"
+    },
+    {
+        "word": "ALARM",
+        "clue": "Clock's wake-up sound"
+    },
+    {
+        "word": "VALUE",
+        "clue": "Worth, or a good deal"
+    },
+    {
+        "word": "INANE",
+        "clue": "Silly and pointless"
+    },
+    {
+        "word": "STREP",
+        "clue": "Sore-throat infection, for short"
+    },
+    {
+        "word": "HAIKU",
+        "clue": "Three-line Japanese poem"
+    },
+    {
+        "word": "UNDER",
+        "clue": "Below"
+    },
+    {
+        "word": "STEAK",
+        "clue": "Grilled beef cut"
+    },
+    {
+        "word": "AIDED",
+        "clue": "Helped"
+    },
+    {
+        "word": "ELVIS",
+        "clue": "\"The King\" of rock and roll, Presley"
+    },
+    {
+        "word": "FALLS",
+        "clue": "Niagara ___, natural wonder"
+    },
+    {
+        "word": "RIVAL",
+        "clue": "Competitor or foe"
+    },
+    {
+        "word": "OLIVE",
+        "clue": "Green fruit in a martini"
+    },
+    {
+        "word": "FRANK",
+        "clue": "Honest and direct"
+    },
+    {
+        "word": "APART",
+        "clue": "Separated by a distance"
+    },
+    {
+        "word": "CLEAN",
+        "clue": "Free of dirt"
+    },
+    {
+        "word": "OPTIC",
+        "clue": "___ nerve (carrier of sight signals)"
+    },
+    {
+        "word": "PHASE",
+        "clue": "Stage or step in a process"
+    },
+    {
+        "word": "ALPHA",
+        "clue": "First letter of the Greek alphabet"
+    },
+    {
+        "word": "FETAL",
+        "clue": "Relating to an unborn baby"
+    },
+    {
+        "word": "RAISE",
+        "clue": "Ask for more pay"
+    },
+    {
+        "word": "AXLES",
+        "clue": "Rods that wheels turn on"
+    },
+    {
+        "word": "TITLE",
+        "clue": "Book's name on its cover"
+    },
+    {
+        "word": "SLATE",
+        "clue": "Schedule of candidates, or a gray rock"
+    },
+    {
+        "word": "EXILE",
+        "clue": "Forced to live away from home"
+    },
+    {
+        "word": "ALTAR",
+        "clue": "Place for a wedding vow"
+    },
+    {
+        "word": "DELTA",
+        "clue": "River mouth deposit, shaped like a Greek letter"
+    },
+    {
+        "word": "SAMOA",
+        "clue": "Pacific island nation with Apia as its capital"
+    },
+    {
+        "word": "ERECT",
+        "clue": "Standing upright"
+    },
+    {
+        "word": "MONKS",
+        "clue": "Robed men in a monastery"
+    },
+    {
+        "word": "AARON",
+        "clue": "Moses's brother in the Bible"
+    },
+    {
+        "word": "AMEND",
+        "clue": "Make changes to, as a law"
+    },
+    {
+        "word": "ROCKY",
+        "clue": "Boxing film series starring Sylvester Stallone"
+    },
+    {
+        "word": "FORTE",
+        "clue": "One's strong suit"
+    },
+    {
+        "word": "ALOUD",
+        "clue": "Read ___ (not silently)"
+    },
+    {
+        "word": "NORSE",
+        "clue": "Language of the Vikings"
+    },
+    {
+        "word": "SATAN",
+        "clue": "The Devil"
+    },
+    {
+        "word": "SIZED",
+        "clue": "Measured, as clothing"
+    },
+    {
+        "word": "XENON",
+        "clue": "Gas used in bright lights and signs"
+    },
+    {
+        "word": "AIRED",
+        "clue": "Broadcast on TV"
+    },
+    {
+        "word": "OZONE",
+        "clue": "Protective layer high in the atmosphere"
+    },
+    {
+        "word": "LEMON",
+        "clue": "Sour yellow fruit"
+    },
+    {
+        "word": "ALIKE",
+        "clue": "Similar; the same"
+    },
+    {
+        "word": "MELON",
+        "clue": "Watermelon or cantaloupe"
+    },
+    {
+        "word": "ASKEW",
+        "clue": "Tilted, crooked, off-kilter"
+    },
+    {
+        "word": "DALAI",
+        "clue": "___ Lama, Tibetan spiritual leader"
+    },
+    {
+        "word": "SEUSS",
+        "clue": "Dr. ___, author of \"The Cat in the Hat\""
+    },
+    {
+        "word": "ALBUM",
+        "clue": "Collection of songs on a record"
+    },
+    {
+        "word": "YOYOS",
+        "clue": "Toys that go up and down on a string"
+    },
+    {
+        "word": "ATOMS",
+        "clue": "Building blocks of molecules"
+    },
+    {
+        "word": "ROYAL",
+        "clue": "Like a king or queen"
+    },
+    {
+        "word": "SMOKE",
+        "clue": "What comes from a fire"
+    },
+    {
+        "word": "TAROT",
+        "clue": "Deck of cards used for fortune-telling"
+    },
+    {
+        "word": "CLARA",
+        "clue": "Nutcracker girl who dreams of a prince"
+    },
+    {
+        "word": "RUSES",
+        "clue": "Sneaky tricks or schemes"
+    },
+    {
+        "word": "AESOP",
+        "clue": "Ancient Greek fabulist known for talking-animal tales"
+    },
+    {
+        "word": "BLUER",
+        "clue": "More like a clear sky"
+    },
+    {
+        "word": "LASSO",
+        "clue": "Cowboy's rope for catching cattle"
+    },
+    {
+        "word": "OREOS",
+        "clue": "Sandwich cookies with a twistable middle"
+    },
+    {
+        "word": "RELIC",
+        "clue": "Object from the past, like an old artifact"
+    },
+    {
+        "word": "ASIDE",
+        "clue": "Remark meant just for the audience"
+    },
+    {
+        "word": "SEVEN",
+        "clue": "Number after six"
+    },
+    {
+        "word": "RESET",
+        "clue": "Hit the button to start over"
+    },
+    {
+        "word": "WIDEN",
+        "clue": "Make broader"
+    },
+    {
+        "word": "SLEET",
+        "clue": "Icy winter precipitation"
+    },
+    {
+        "word": "LINES",
+        "clue": "Waits in a queue at, or actor's words to memorize"
+    },
+    {
+        "word": "IVORY",
+        "clue": "Piano-key material, or a shade of white"
+    },
+    {
+        "word": "ALIVE",
+        "clue": "Not dead"
+    },
+    {
+        "word": "XENON",
+        "clue": "Noble gas used in bright lamps"
+    },
+    {
+        "word": "LEERY",
+        "clue": "Wary or suspicious"
+    },
+    {
+        "word": "DREAM",
+        "clue": "Vision during sleep"
+    },
+    {
+        "word": "DELVE",
+        "clue": "Dig deep for information"
+    },
+    {
+        "word": "SALES",
+        "clue": "Discounts at a store"
+    },
+    {
+        "word": "CREAM",
+        "clue": "It's whipped for dessert toppings"
+    },
+    {
+        "word": "HELLO",
+        "clue": "Friendly greeting"
+    },
+    {
+        "word": "EAVES",
+        "clue": "Roof edges that overhang the walls"
+    },
+    {
+        "word": "FUTON",
+        "clue": "Sofa that folds out into a bed"
+    },
+    {
+        "word": "ELUDE",
+        "clue": "Slip away from, as a pursuer"
+    },
+    {
+        "word": "AGREE",
+        "clue": "Say yes; be of the same mind"
+    },
+    {
+        "word": "BULGE",
+        "clue": "Swelling or outward bump"
+    },
+    {
+        "word": "UTURN",
+        "clue": "180-degree driving maneuver"
+    },
+    {
+        "word": "CODES",
+        "clue": "Secret writing systems"
+    },
+    {
+        "word": "ELITE",
+        "clue": "The best of the best"
+    },
+    {
+        "word": "INLET",
+        "clue": "Small coastal bay"
+    },
+    {
+        "word": "RAILS",
+        "clue": "What a train runs on"
+    },
+    {
+        "word": "APTLY",
+        "clue": "In a fitting manner"
+    },
+    {
+        "word": "TORSO",
+        "clue": "The trunk of the body"
+    },
+    {
+        "word": "AMISH",
+        "clue": "Group known for horse-drawn buggies and plain clothing"
+    },
+    {
+        "word": "PIERS",
+        "clue": "Structures where boats dock"
+    },
+    {
+        "word": "DRIED",
+        "clue": "Like raisins or prunes"
+    },
+    {
+        "word": "GROIN",
+        "clue": "Area strained by a pulled muscle in athletes"
+    },
+    {
+        "word": "THORN",
+        "clue": "Prickle on a rose stem"
+    },
+    {
+        "word": "ASIAN",
+        "clue": "From the world's largest continent"
+    },
+    {
+        "word": "HUMAN",
+        "clue": "___ being (person)"
+    },
+    {
+        "word": "ARMED",
+        "clue": "Carrying weapons"
+    },
+    {
+        "word": "SPLAT",
+        "clue": "Sound of something hitting the floor wetly"
+    },
+    {
+        "word": "OPERA",
+        "clue": "Musical drama with singing"
+    },
+    {
+        "word": "CLEAR",
+        "clue": "Free of clouds"
+    },
+    {
+        "word": "APPLE",
+        "clue": "Fruit that keeps the doctor away"
+    },
+    {
+        "word": "SLEEP",
+        "clue": "What you do at night in bed"
+    },
+    {
+        "word": "KARAT",
+        "clue": "Unit of gold purity"
+    },
+    {
+        "word": "LITER",
+        "clue": "Metric unit of volume, about a quart"
+    },
+    {
+        "word": "FLAIR",
+        "clue": "Stylish flourish"
+    },
+    {
+        "word": "FLUTE",
+        "clue": "Woodwind instrument played sideways"
+    },
+    {
+        "word": "SORES",
+        "clue": "Painful open wounds"
+    },
+    {
+        "word": "MEDIA",
+        "clue": "TV, radio, and newspapers collectively"
+    },
+    {
+        "word": "OVENS",
+        "clue": "Kitchen appliances for baking"
+    },
+    {
+        "word": "LEASH",
+        "clue": "Dog walker's tether"
+    },
+    {
+        "word": "BEVEL",
+        "clue": "Slanted edge on a mirror or lens"
+    },
+    {
+        "word": "IDEAS",
+        "clue": "Bright thoughts"
+    },
+    {
+        "word": "RINSE",
+        "clue": "Wash out with water"
+    },
+    {
+        "word": "URBAN",
+        "clue": "Relating to city life"
+    },
+    {
+        "word": "GROVE",
+        "clue": "Small cluster of trees"
+    },
+    {
+        "word": "SOLES",
+        "clue": "Bottoms of shoes"
+    },
+    {
+        "word": "ERROR",
+        "clue": "Typo or mistake"
+    },
+    {
+        "word": "EBOLA",
+        "clue": "Deadly virus in the news"
+    },
+    {
+        "word": "RAVEN",
+        "clue": "Black bird in a Poe poem"
+    },
+    {
+        "word": "NAVAL",
+        "clue": "Relating to a country's fleet of warships"
+    },
+    {
+        "word": "ARENA",
+        "clue": "Sports stadium"
+    },
+    {
+        "word": "DORKY",
+        "clue": "Geeky, informally"
+    },
+    {
+        "word": "BARON",
+        "clue": "Nobleman ranking below a viscount"
+    },
+    {
+        "word": "PINES",
+        "clue": "Evergreen trees, or longs for"
+    },
+    {
+        "word": "GENRE",
+        "clue": "Category of art or music"
+    },
+    {
+        "word": "FIELD",
+        "clue": "Grassy area where soccer is played"
+    },
+    {
+        "word": "INNER",
+        "clue": "Not the outer, but the ___"
+    },
+    {
+        "word": "NERVY",
+        "clue": "Bold and brash"
+    },
+    {
+        "word": "LATEX",
+        "clue": "Material used in stretchy gloves"
+    },
+    {
+        "word": "PIANO",
+        "clue": "Instrument with 88 keys"
+    },
+    {
+        "word": "FATAL",
+        "clue": "Deadly, as an error"
+    },
+    {
+        "word": "CORNY",
+        "clue": "Full of cheesy jokes, like this clue?"
+    },
+    {
+        "word": "SPOOF",
+        "clue": "Comic parody"
+    },
+    {
+        "word": "AUNTS",
+        "clue": "Your parents' sisters"
+    },
+    {
+        "word": "DALAI",
+        "clue": "___ Lama (Tibetan spiritual leader)"
+    },
+    {
+        "word": "ATOLL",
+        "clue": "Ring-shaped coral island"
+    },
+    {
+        "word": "NOBEL",
+        "clue": "___ Prize awarded for peace or literature"
+    },
+    {
+        "word": "BLOBS",
+        "clue": "Shapeless masses"
+    },
+    {
+        "word": "IDEAS",
+        "clue": "Bright thoughts or plans"
+    },
+    {
+        "word": "HIDES",
+        "clue": "Conceals from view"
+    },
+    {
+        "word": "IDEAL",
+        "clue": "Absolutely perfect"
+    },
+    {
+        "word": "CEASE",
+        "clue": "Come to a stop"
+    },
+    {
+        "word": "RIDER",
+        "clue": "One on horseback"
+    },
+    {
+        "word": "AIDES",
+        "clue": "Presidential helpers"
+    },
+    {
+        "word": "PINUP",
+        "clue": "Poster of a movie star, say"
+    },
+    {
+        "word": "ADELE",
+        "clue": "Singer with the hit \"Hello\""
+    },
+    {
+        "word": "TEPID",
+        "clue": "Lukewarm, like bathwater gone cool"
+    },
+    {
+        "word": "BIDET",
+        "clue": "Bathroom fixture for washing"
+    },
+    {
+        "word": "INEPT",
+        "clue": "Clumsy or unskilled"
+    },
+    {
+        "word": "TULIP",
+        "clue": "Spring flower grown from a bulb"
+    },
+    {
+        "word": "RERAN",
+        "clue": "Showed the episode again"
+    },
+    {
+        "word": "AMIGO",
+        "clue": "Pal, in Spanish"
+    },
+    {
+        "word": "NUKED",
+        "clue": "Heated in the microwave"
+    },
+    {
+        "word": "LEMUR",
+        "clue": "Long-tailed primate of Madagascar"
+    },
+    {
+        "word": "WAGER",
+        "clue": "Bet placed on a game"
+    },
+    {
+        "word": "SANTA",
+        "clue": "Jolly figure in a red suit"
+    },
+    {
+        "word": "ARGON",
+        "clue": "Colorless gas used in light bulbs"
+    },
+    {
+        "word": "REELS",
+        "clue": "Staggers, as from dizziness"
+    },
+    {
+        "word": "CARES",
+        "clue": "Looks after, with 'for'"
+    },
+    {
+        "word": "ANGEL",
+        "clue": "Winged heavenly being"
+    },
+    {
+        "word": "STOLE",
+        "clue": "Swiped, or a fur wrap?"
+    },
+    {
+        "word": "PRONE",
+        "clue": "Lying face-down"
+    },
+    {
+        "word": "PAGAN",
+        "clue": "Non-religious, in old speak"
+    },
+    {
+        "word": "SQUID",
+        "clue": "Ten-armed sea creature"
+    },
+    {
+        "word": "IRAQI",
+        "clue": "Person from Baghdad"
+    },
+    {
+        "word": "MOGUL",
+        "clue": "Powerful business tycoon, or a ski bump"
+    },
+    {
+        "word": "SNAIL",
+        "clue": "Slow-moving garden creature with a shell"
+    },
+    {
+        "word": "FLARE",
+        "clue": "Signal from a distressed sailor"
+    },
+    {
+        "word": "ADEPT",
+        "clue": "Highly skilled"
+    },
+    {
+        "word": "BLADE",
+        "clue": "Sharp part of a knife"
+    },
+    {
+        "word": "DRIPS",
+        "clue": "Falls in droplets"
+    },
+    {
+        "word": "DITCH",
+        "clue": "Abandon, as a plan"
+    },
+    {
+        "word": "SHINE",
+        "clue": "Polish until it gleams"
+    },
+    {
+        "word": "OUTTA",
+        "clue": "\"Get ___ here!\" (\"No way!\")"
+    },
+    {
+        "word": "DECOR",
+        "clue": "Room's furnishings and style"
+    },
+    {
+        "word": "ASHES",
+        "clue": "What's left after a fire"
+    },
+    {
+        "word": "CARAT",
+        "clue": "Unit of weight for gemstones"
+    },
+    {
+        "word": "TRIMS",
+        "clue": "Cuts a little off the top"
+    },
+    {
+        "word": "RATED",
+        "clue": "Given a movie classification like PG or R"
+    },
+    {
+        "word": "PORCH",
+        "clue": "Covered area outside a front door"
+    },
+    {
+        "word": "IDOLS",
+        "clue": "Objects of worship, or pop stars to fans"
+    },
+    {
+        "word": "SERUM",
+        "clue": "Blood fluid, or an anti-venom shot"
+    },
+    {
+        "word": "CACAO",
+        "clue": "Bean that chocolate is made from"
+    },
+    {
+        "word": "GLITZ",
+        "clue": "Showy sparkle and glamour"
+    },
+    {
+        "word": "FLIRT",
+        "clue": "Bat one's eyelashes at, say"
+    },
+    {
+        "word": "SCALE",
+        "clue": "Fish's covering, or a bathroom weight-measurer"
+    },
+    {
+        "word": "HUMID",
+        "clue": "Muggy and damp, like summer air"
+    },
+    {
+        "word": "AREAS",
+        "clue": "Regions or zones on a map"
+    },
+    {
+        "word": "ACURA",
+        "clue": "Japanese luxury car brand"
+    },
+    {
+        "word": "JAMES",
+        "clue": "King ___ Bible"
+    },
+    {
+        "word": "ALIAS",
+        "clue": "False name a spy might use"
+    },
+    {
+        "word": "UNLIT",
+        "clue": "Not yet lighted, as a candle"
+    },
+    {
+        "word": "STONE",
+        "clue": "Material for a castle wall"
+    },
+    {
+        "word": "HIRES",
+        "clue": "Brings on for a job"
+    },
+    {
+        "word": "UNTIL",
+        "clue": "Up to the time that"
+    },
+    {
+        "word": "FLORA",
+        "clue": "Plants of a region"
+    },
+    {
+        "word": "FINES",
+        "clue": "Penalties for overdue library books"
+    },
+    {
+        "word": "BRUSH",
+        "clue": "Painter's tool"
+    },
+    {
+        "word": "LADLE",
+        "clue": "Big spoon for soup"
+    },
+    {
+        "word": "EVIAN",
+        "clue": "Bottled water brand"
+    },
+    {
+        "word": "AUDIO",
+        "clue": "Sound portion of a movie"
+    },
+    {
+        "word": "ISLAM",
+        "clue": "Major world religion"
+    },
+    {
+        "word": "ALOOF",
+        "clue": "Distant and reserved"
+    },
+    {
+        "word": "GLOVE",
+        "clue": "Baseball fielder's hand covering"
+    },
+    {
+        "word": "EASED",
+        "clue": "Lessened, as pain"
+    },
+    {
+        "word": "ALLAH",
+        "clue": "God, in Islam"
+    },
+    {
+        "word": "LOOSE",
+        "clue": "Not tight"
+    },
+    {
+        "word": "LOVER",
+        "clue": "Romantic partner"
+    },
+    {
+        "word": "CLING",
+        "clue": "Hold on tightly"
+    },
+    {
+        "word": "OUNCE",
+        "clue": "One-sixteenth of a pound"
+    },
+    {
+        "word": "VEGAS",
+        "clue": "Las ___, Nevada gambling city"
+    },
+    {
+        "word": "CLUED",
+        "clue": "Given a hint, as a crossword solver"
+    },
+    {
+        "word": "HINGE",
+        "clue": "It lets a door swing"
+    },
+    {
+        "word": "INCAN",
+        "clue": "Of the ancient Peruvian empire"
+    },
+    {
+        "word": "PEERS",
+        "clue": "Looks intently (at)"
+    },
+    {
+        "word": "METOO",
+        "clue": "Social movement against harassment, with a hashtag"
+    },
+    {
+        "word": "SPANS",
+        "clue": "Bridges cover these gaps"
+    },
+    {
+        "word": "BEEPS",
+        "clue": "Sounds a car horn makes"
+    },
+    {
+        "word": "METAL",
+        "clue": "Gold, silver, or copper, e.g."
+    },
+    {
+        "word": "IRONY",
+        "clue": "\"How fitting\" twist, like a fire station burning down?"
+    },
+    {
+        "word": "SCRAP",
+        "clue": "Tiny bit, as of paper"
+    },
+    {
+        "word": "ALIBI",
+        "clue": "Suspect's \"I was somewhere else\" excuse"
+    },
+    {
+        "word": "GUEST",
+        "clue": "Party attendee"
+    },
+    {
+        "word": "DRIES",
+        "clue": "Removes moisture from"
+    },
+    {
+        "word": "CAGED",
+        "clue": "Locked in a pen, as a zoo animal"
+    },
+    {
+        "word": "WAGON",
+        "clue": "Covered ___ (pioneer's vehicle)"
+    },
+    {
+        "word": "SCENE",
+        "clue": "Part of a play, or a place a crime happens"
+    },
+    {
+        "word": "PANDA",
+        "clue": "Black-and-white bear that loves bamboo"
+    },
+    {
+        "word": "HONOR",
+        "clue": "Award for distinguished service"
+    },
+    {
+        "word": "TRIBE",
+        "clue": "Group of related families or clans"
+    },
+    {
+        "word": "RUMOR",
+        "clue": "Piece of unverified gossip"
+    },
+    {
+        "word": "ADORE",
+        "clue": "Love deeply"
+    },
+    {
+        "word": "CRUDE",
+        "clue": "Unrefined, as oil"
+    },
+    {
+        "word": "LIMOS",
+        "clue": "Long luxury cars?"
+    },
+    {
+        "word": "ABORT",
+        "clue": "Call off, as a mission"
+    },
+    {
+        "word": "ADIOS",
+        "clue": "\"Goodbye\" in Spanish"
+    },
+    {
+        "word": "DOJOS",
+        "clue": "Martial arts training halls"
+    },
+    {
+        "word": "IDIOM",
+        "clue": "Expression like \"break a leg\""
+    },
+    {
+        "word": "NINJA",
+        "clue": "Stealthy Japanese warrior"
+    },
+    {
+        "word": "DODOS",
+        "clue": "Extinct flightless birds"
+    },
+    {
+        "word": "ARGUE",
+        "clue": "Have a heated disagreement"
+    },
+    {
+        "word": "MILAN",
+        "clue": "Italian fashion capital"
+    },
+    {
+        "word": "BRAIN",
+        "clue": "Organ inside the skull"
+    },
+    {
+        "word": "AGILE",
+        "clue": "Nimble and quick on one's feet"
+    },
+    {
+        "word": "TUNAS",
+        "clue": "Fish in a can of salad"
+    },
+    {
+        "word": "TAPED",
+        "clue": "Recorded on a cassette"
+    },
+    {
+        "word": "VIRGO",
+        "clue": "Zodiac sign for late-August birthdays"
+    },
+    {
+        "word": "STOIC",
+        "clue": "Calm and unemotional"
+    },
+    {
+        "word": "APRON",
+        "clue": "Chef's tie-on cover"
+    },
+    {
+        "word": "BEGIN",
+        "clue": "Start, as a journey"
+    },
+    {
+        "word": "SALSA",
+        "clue": "Spicy dip for tortilla chips"
+    },
+    {
+        "word": "ODDLY",
+        "clue": "In a strange way"
+    },
+    {
+        "word": "FLIES",
+        "clue": "Buzzing insects near a picnic"
+    },
+    {
+        "word": "BADLY",
+        "clue": "Poorly, or not well done"
+    },
+    {
+        "word": "OLDIE",
+        "clue": "A classic song from way back"
+    },
+    {
+        "word": "ISLES",
+        "clue": "Small islands"
+    },
+    {
+        "word": "SPAIN",
+        "clue": "European country with Madrid as its capital"
+    },
+    {
+        "word": "TREAT",
+        "clue": "Halloween handout"
+    },
+    {
+        "word": "APART",
+        "clue": "Separated, as two friends who drifted ___"
+    },
+    {
+        "word": "LABEL",
+        "clue": "Sticker on a bottle or jar"
+    },
+    {
+        "word": "LILAC",
+        "clue": "Purple flowering shrub"
+    },
+    {
+        "word": "BAKER",
+        "clue": "One who makes bread for a living"
+    },
+    {
+        "word": "NIKES",
+        "clue": "Popular athletic shoe brand with a swoosh"
+    },
+    {
+        "word": "CREME",
+        "clue": "Rich dessert topping, or shade of white"
+    },
+    {
+        "word": "LIBEL",
+        "clue": "Written false statement that damages a reputation"
+    },
+    {
+        "word": "EDITS",
+        "clue": "Trims down a manuscript"
+    },
+    {
+        "word": "LIBRA",
+        "clue": "Zodiac sign with the scales"
+    },
+    {
+        "word": "STEEL",
+        "clue": "Metal used to make bridges"
+    },
+    {
+        "word": "MOANA",
+        "clue": "Disney princess of a Polynesian island"
+    },
+    {
+        "word": "EPICS",
+        "clue": "Grand, sweeping films"
+    },
+    {
+        "word": "STREP",
+        "clue": "Kind of throat infection"
+    },
+    {
+        "word": "HAIRS",
+        "clue": "What a barber trims?"
+    },
+    {
+        "word": "DREAD",
+        "clue": "Great fear"
+    },
+    {
+        "word": "OPRAH",
+        "clue": "Talk-show legend Winfrey"
+    },
+    {
+        "word": "EIEIO",
+        "clue": "Refrain in 'Old MacDonald'"
+    },
+    {
+        "word": "SCARS",
+        "clue": "Marks left by old wounds"
+    },
+    {
+        "word": "FILET",
+        "clue": "Tender cut of steak, ___ mignon"
+    },
+    {
+        "word": "CELLS",
+        "clue": "Prison rooms, or the tiny units of the body"
+    },
+    {
+        "word": "TRUCE",
+        "clue": "Agreement to stop fighting"
+    },
+    {
+        "word": "GATED",
+        "clue": "Like a community with a security entrance"
+    },
+    {
+        "word": "IKEAS",
+        "clue": "Swedish furniture stores, informally"
+    },
+    {
+        "word": "BRAKE",
+        "clue": "Pedal you press to stop a car"
+    },
+    {
+        "word": "OUTER",
+        "clue": "Toward the edge, not the center"
+    },
+    {
+        "word": "CREPT",
+        "clue": "Moved stealthily, like a cat burglar"
+    },
+    {
+        "word": "TORAH",
+        "clue": "Sacred Jewish scroll"
+    },
+    {
+        "word": "SPICE",
+        "clue": "Cinnamon or nutmeg"
+    },
+    {
+        "word": "PROPS",
+        "clue": "Movie set items like fake swords"
+    },
+    {
+        "word": "EERIE",
+        "clue": "Spooky, like an old haunted house"
+    },
+    {
+        "word": "SPACE",
+        "clue": "The final frontier, to Star Trek fans"
+    },
+    {
+        "word": "GRIME",
+        "clue": "Dirt and soot on a surface"
+    },
+    {
+        "word": "LINEN",
+        "clue": "Fabric for fine tablecloths and sheets"
+    },
+    {
+        "word": "AMEND",
+        "clue": "Make small changes to, as a document"
+    },
+    {
+        "word": "CRIME",
+        "clue": "Robbery or theft, for example"
+    },
+    {
+        "word": "LINES",
+        "clue": "Waits in ___ (queues up)"
+    },
+    {
+        "word": "ISAAC",
+        "clue": "Biblical son of Abraham"
+    },
+    {
+        "word": "LINGO",
+        "clue": "Specialized jargon or slang"
+    },
+    {
+        "word": "LAGER",
+        "clue": "Light beer style"
+    },
+    {
+        "word": "ASIAN",
+        "clue": "From the largest continent"
+    },
+    {
+        "word": "RANGE",
+        "clue": "Stove burner setting, or a mountain chain"
+    },
+    {
+        "word": "EAGER",
+        "clue": "Keen and enthusiastic"
+    },
+    {
+        "word": "ELITE",
+        "clue": "The upper crust; society's best"
+    },
+    {
+        "word": "LACED",
+        "clue": "Tied up, as sneakers"
+    },
+    {
+        "word": "COLAS",
+        "clue": "Fizzy soft drinks"
+    },
+    {
+        "word": "OTTER",
+        "clue": "River animal that floats on its back"
+    },
+    {
+        "word": "MASON",
+        "clue": "Jar brand for canning, or a bricklayer"
+    },
+    {
+        "word": "AMUSE",
+        "clue": "Entertain and delight"
+    },
+    {
+        "word": "TEASE",
+        "clue": "Playfully mock"
+    },
+    {
+        "word": "CAMEO",
+        "clue": "Brief movie role for a big star"
+    },
+    {
+        "word": "USUAL",
+        "clue": "\"As ___\" (like always)"
+    },
+    {
+        "word": "POSSE",
+        "clue": "Group that chases the bad guys in a Western"
+    },
+    {
+        "word": "OPERA",
+        "clue": "Show with arias, like 'Carmen'"
+    },
+    {
+        "word": "SLAIN",
+        "clue": "Killed, in an old ballad"
+    },
+    {
+        "word": "HARDY",
+        "clue": "Tough and durable"
+    },
+    {
+        "word": "BEARD",
+        "clue": "Facial hair on a chin"
+    },
+    {
+        "word": "ERASE",
+        "clue": "Rub out with a pencil's other end"
+    },
+    {
+        "word": "CARVE",
+        "clue": "Shape a turkey into slices"
+    },
+    {
+        "word": "EMAIL",
+        "clue": "Message sent through your inbox"
+    },
+    {
+        "word": "DOSES",
+        "clue": "Amounts of medicine to take"
+    },
+    {
+        "word": "TRAIL",
+        "clue": "Path through the woods"
+    },
+    {
+        "word": "HINDI",
+        "clue": "Main language of northern India"
+    },
+    {
+        "word": "EDGED",
+        "clue": "Bordered, as a lawn"
+    },
+    {
+        "word": "MANGA",
+        "clue": "Japanese comic book style"
+    },
+    {
+        "word": "WIDER",
+        "clue": "More broad"
+    },
+    {
+        "word": "OTHER",
+        "clue": "The remaining one"
+    },
+    {
+        "word": "PLANE",
+        "clue": "Jet that flies through the sky"
+    },
+    {
+        "word": "EARNS",
+        "clue": "Makes money at a job"
+    },
+    {
+        "word": "ATLAS",
+        "clue": "Book of maps"
+    },
+    {
+        "word": "SHARE",
+        "clue": "Portion, or to divide fairly"
+    },
+    {
+        "word": "HENNA",
+        "clue": "Reddish dye for temporary tattoos"
+    },
+    {
+        "word": "MACHO",
+        "clue": "Very manly, as an attitude"
+    },
+    {
+        "word": "ACHES",
+        "clue": "Feels sore, as muscles after a workout"
+    },
+    {
+        "word": "ROOST",
+        "clue": "Where chickens sleep at night"
+    },
+    {
+        "word": "BACON",
+        "clue": "Breakfast strips from a pig"
+    },
+    {
+        "word": "ACHOO",
+        "clue": "Sound made by a sneeze"
+    },
+    {
+        "word": "CHEST",
+        "clue": "Trunk in the body, or a treasure box"
+    },
+    {
+        "word": "STYLE",
+        "clue": "Sense of fashion"
+    },
+    {
+        "word": "TILES",
+        "clue": "Squares on a bathroom floor"
+    },
+    {
+        "word": "ATTIC",
+        "clue": "Storage space just under the roof"
+    },
+    {
+        "word": "SHYLY",
+        "clue": "In a bashful manner"
+    },
+    {
+        "word": "SALES",
+        "clue": "Retail transactions, or big store events"
+    },
+    {
+        "word": "CHANT",
+        "clue": "Repeated phrase at a protest"
+    },
+    {
+        "word": "OASIS",
+        "clue": "Green spot in the desert"
+    },
+    {
+        "word": "MISTY",
+        "clue": "Hazy, like a foggy morning"
+    },
+    {
+        "word": "CHAIR",
+        "clue": "Seat with a back and four legs"
+    },
+    {
+        "word": "LASSO",
+        "clue": "Cowboy's roping rope"
+    },
+    {
+        "word": "UNITS",
+        "clue": "Basic building blocks of measurement"
+    },
+    {
+        "word": "POPES",
+        "clue": "Leaders of the Catholic Church"
+    },
+    {
+        "word": "GOPRO",
+        "clue": "Popular action camera brand for adventurers"
+    },
+    {
+        "word": "FOOLS",
+        "clue": "April 1st targets"
+    },
+    {
+        "word": "HABIT",
+        "clue": "A routine you do without thinking"
+    },
+    {
+        "word": "TIARA",
+        "clue": "Sparkly crown worn by a princess"
+    },
+    {
+        "word": "URBAN",
+        "clue": "Relating to the city, not the country"
+    },
+    {
+        "word": "BOING",
+        "clue": "Cartoon sound of a bouncing spring"
+    },
+    {
+        "word": "HOURS",
+        "clue": "There are 24 in a day"
+    },
+    {
+        "word": "KNOWS",
+        "clue": "Is aware of"
+    },
+    {
+        "word": "INUIT",
+        "clue": "Native people of the Arctic"
+    },
+    {
+        "word": "NERDY",
+        "clue": "Like a bookish, tech-loving type"
+    },
+    {
+        "word": "WHOOP",
+        "clue": "Excited shout of joy"
+    },
+    {
+        "word": "BOOKS",
+        "clue": "Library's stock"
+    },
+    {
+        "word": "RIGOR",
+        "clue": "Strictness or severity"
+    },
+    {
+        "word": "AMIGO",
+        "clue": "Friend, in Spanish"
+    },
+    {
+        "word": "VENUS",
+        "clue": "Second planet from the sun"
+    },
+    {
+        "word": "AIMED",
+        "clue": "Pointed a weapon at"
+    },
+    {
+        "word": "AGING",
+        "clue": "Getting older"
+    },
+    {
+        "word": "ROGUE",
+        "clue": "A mischievous scoundrel"
+    },
+    {
+        "word": "OBAMA",
+        "clue": "44th U.S. president"
+    },
+    {
+        "word": "ROMAN",
+        "clue": "Like ancient Rome, or a numeral like IV"
+    },
+    {
+        "word": "ELECT",
+        "clue": "Choose by voting"
+    },
+    {
+        "word": "EBOLA",
+        "clue": "Deadly virus with an outbreak in West Africa"
+    },
+    {
+        "word": "GAMES",
+        "clue": "The Olympics, for short"
+    },
+    {
+        "word": "SMACK",
+        "clue": "Loud kiss, or a sharp slap"
+    },
+    {
+        "word": "CLONE",
+        "clue": "Exact genetic copy"
+    },
+    {
+        "word": "HELEN",
+        "clue": "Troy's famous beauty of Greek myth"
+    },
+    {
+        "word": "EXERT",
+        "clue": "Put forth, as effort"
+    },
+    {
+        "word": "MOLES",
+        "clue": "Small burrowing animals, or skin spots"
+    },
+    {
+        "word": "INERT",
+        "clue": "Not moving; sluggish"
+    },
+    {
+        "word": "HUMAN",
+        "clue": "Member of our species"
+    },
+    {
+        "word": "ENEMY",
+        "clue": "Foe"
+    },
+    {
+        "word": "WAGES",
+        "clue": "Employee's earnings"
+    },
+    {
+        "word": "LUNAR",
+        "clue": "Relating to the moon"
+    },
+    {
+        "word": "OMEGA",
+        "clue": "Last letter of the Greek alphabet"
+    },
+    {
+        "word": "GAMER",
+        "clue": "One playing on a console?"
+    },
+    {
+        "word": "STEER",
+        "clue": "Guide a car's direction"
+    },
+    {
+        "word": "BRUTE",
+        "clue": "Cruel, brutish person"
+    },
+    {
+        "word": "EATER",
+        "clue": "One who consumes food"
+    },
+    {
+        "word": "ACTED",
+        "clue": "Performed on stage"
+    },
+    {
+        "word": "NINTH",
+        "clue": "Beethoven's Symphony No. 9, e.g."
+    },
+    {
+        "word": "IGLOO",
+        "clue": "Dome-shaped snow house"
+    },
+    {
+        "word": "THERE",
+        "clue": "\"Been ___, done that\""
+    },
+    {
+        "word": "HIGHS",
+        "clue": "Emotional peaks"
+    },
+    {
+        "word": "INLET",
+        "clue": "Small arm of the sea"
+    },
+    {
+        "word": "STORY",
+        "clue": "Tale told at bedtime"
+    },
+    {
+        "word": "INDEX",
+        "clue": "Guide at the back of a book"
+    },
+    {
+        "word": "LINER",
+        "clue": "Cruise ship"
+    },
+    {
+        "word": "INDIA",
+        "clue": "Country with the Taj Mahal"
+    },
+    {
+        "word": "SCENT",
+        "clue": "Smell, as of perfume"
+    },
+    {
+        "word": "HERBS",
+        "clue": "Basil, thyme and oregano"
+    },
+    {
+        "word": "DROOP",
+        "clue": "Sag or wilt"
+    },
+    {
+        "word": "MINES",
+        "clue": "Sources of coal or gold"
+    },
+    {
+        "word": "IRONS",
+        "clue": "Presses wrinkles out of clothes"
+    },
+    {
+        "word": "HASTE",
+        "clue": "\"Make ___\" (hurry up!)"
+    },
+    {
+        "word": "DUSTY",
+        "clue": "Covered in dirt"
+    },
+    {
+        "word": "ALPHA",
+        "clue": "The dominant one in the pack"
+    },
+    {
+        "word": "CARES",
+        "clue": "Looks after, or feels concern"
+    },
+    {
+        "word": "BLAME",
+        "clue": "Point the finger at"
+    },
+    {
+        "word": "APRIL",
+        "clue": "Month with showers, they say"
+    },
+    {
+        "word": "SHELL",
+        "clue": "What you crack to reach a nut"
+    },
+    {
+        "word": "NOVAS",
+        "clue": "Chevrolet models... or bright exploding stars"
+    },
+    {
+        "word": "ATOMS",
+        "clue": "Tiny building blocks of matter"
+    },
+    {
+        "word": "GHANA",
+        "clue": "West African country with capital Accra"
+    },
+    {
+        "word": "ALGAE",
+        "clue": "Green stuff on a pond's surface"
+    },
+    {
+        "word": "MIAMI",
+        "clue": "Florida city with South Beach"
+    },
+    {
+        "word": "UNLIT",
+        "clue": "Not yet lit, as a candle"
+    },
+    {
+        "word": "SCOTS",
+        "clue": "Highlanders of Scotland"
+    },
+    {
+        "word": "CINCO",
+        "clue": "Spanish for \"five\""
+    },
+    {
+        "word": "HALOS",
+        "clue": "Angel's headgear"
+    },
+    {
+        "word": "OMITS",
+        "clue": "Leaves out"
+    },
+    {
+        "word": "ONTOP",
+        "clue": "In the lead, as in a race"
+    },
+    {
+        "word": "STOLE",
+        "clue": "Warm shawl worn over the shoulders"
+    },
+    {
+        "word": "SIREN",
+        "clue": "Loud emergency alarm on an ambulance"
+    },
+    {
+        "word": "STORE",
+        "clue": "Shop where you buy things"
+    },
+    {
+        "word": "HOLES",
+        "clue": "Openings in a slice of Swiss cheese"
+    },
+    {
+        "word": "MELEE",
+        "clue": "Chaotic free-for-all"
+    },
+    {
+        "word": "EVICT",
+        "clue": "Kick out of an apartment"
+    },
+    {
+        "word": "GECKO",
+        "clue": "Small lizard famous in insurance ads"
+    },
+    {
+        "word": "BEVEL",
+        "clue": "Angled edge on a mirror or piece of glass"
+    },
+    {
+        "word": "ALICE",
+        "clue": "Girl who fell down the rabbit hole in Wonderland"
+    },
+    {
+        "word": "NECKS",
+        "clue": "Parts of the body that ties are worn around"
+    },
+    {
+        "word": "ALOOF",
+        "clue": "Distant and unfriendly"
+    },
+    {
+        "word": "GLOVE",
+        "clue": "Baseball catcher's mitt, e.g."
+    },
+    {
+        "word": "EASED",
+        "clue": "Made less painful"
+    },
+    {
+        "word": "MOVER",
+        "clue": "Company that helps you relocate"
+    },
+    {
+        "word": "RAISE",
+        "clue": "Lift up"
+    },
+    {
+        "word": "ASKED",
+        "clue": "Posed a question"
+    },
+    {
+        "word": "TIERS",
+        "clue": "Layers of a wedding cake"
+    },
+    {
+        "word": "BASIN",
+        "clue": "Bathroom sink"
+    },
+    {
+        "word": "LIKED",
+        "clue": "Enjoyed, as a book"
+    },
+    {
+        "word": "USERS",
+        "clue": "People on a website"
+    },
+    {
+        "word": "MENUS",
+        "clue": "Diner handouts listing dishes"
+    },
+    {
+        "word": "SPILT",
+        "clue": "Like milk you're told not to cry over"
+    },
+    {
+        "word": "NOMAD",
+        "clue": "Wandering desert dweller"
+    },
+    {
+        "word": "DEPOT",
+        "clue": "Train station"
+    },
+    {
+        "word": "ANIME",
+        "clue": "Japanese animation style"
+    },
+    {
+        "word": "FAKED",
+        "clue": "Pretended, as an injury"
+    },
+    {
+        "word": "DRAMA",
+        "clue": "A soap opera has plenty of it"
+    },
+    {
+        "word": "RAKES",
+        "clue": "Garden tools for leaves"
+    },
+    {
+        "word": "AGENT",
+        "clue": "Secret spy"
+    },
+    {
+        "word": "YIELD",
+        "clue": "What a driver does at a merge sign"
+    },
+    {
+        "word": "OUIJA",
+        "clue": "Board said to contact spirits"
+    },
+    {
+        "word": "OREOS",
+        "clue": "Cookies twisted apart and dunked"
+    },
+    {
+        "word": "BLURB",
+        "clue": "Short promotional description on a book jacket"
+    },
+    {
+        "word": "GAUZE",
+        "clue": "Thin fabric used to dress a wound"
+    },
+    {
+        "word": "FAUNA",
+        "clue": "Animals of a region"
+    },
+    {
+        "word": "ARTSY",
+        "clue": "Very into painting and crafts, informally"
+    },
+    {
+        "word": "NODES",
+        "clue": "Points where lines connect"
+    },
+    {
+        "word": "BARON",
+        "clue": "Nobleman ranking below a count"
+    },
+    {
+        "word": "OUTDO",
+        "clue": "Beat in a contest"
+    },
+    {
+        "word": "ONSET",
+        "clue": "The beginning of something"
+    },
+    {
+        "word": "LONER",
+        "clue": "Person who prefers to be alone"
+    },
+    {
+        "word": "SINCE",
+        "clue": "From a past point until now"
+    },
+    {
+        "word": "ONION",
+        "clue": "Layered vegetable that can make you cry"
+    },
+    {
+        "word": "JOINS",
+        "clue": "Connects together"
+    },
+    {
+        "word": "ANNIE",
+        "clue": "Little orphan of Broadway"
+    },
+    {
+        "word": "RECON",
+        "clue": "Military scouting mission, informally"
+    },
+    {
+        "word": "CANOE",
+        "clue": "Paddle-powered boat"
+    },
+    {
+        "word": "ALTAR",
+        "clue": "Spot where a couple says 'I do'"
+    },
+    {
+        "word": "SMIRK",
+        "clue": "Smug little smile"
+    },
+    {
+        "word": "BALMY",
+        "clue": "Pleasantly warm, as weather"
+    },
+    {
+        "word": "UNTIE",
+        "clue": "Undo, as shoelaces"
+    },
+    {
+        "word": "ROARS",
+        "clue": "Lion's mighty sounds"
+    },
+    {
+        "word": "EUROS",
+        "clue": "Money used in France and Germany"
+    },
+    {
+        "word": "SANTA",
+        "clue": "Jolly gift-giver in red"
+    },
+    {
+        "word": "RURAL",
+        "clue": "Like the countryside"
+    },
+    {
+        "word": "GOATS",
+        "clue": "Farm animals that butt heads?"
+    },
+    {
+        "word": "LOSER",
+        "clue": "One who doesn't win"
+    },
+    {
+        "word": "ANTSY",
+        "clue": "Restless and fidgety"
+    },
+    {
+        "word": "BUSTS",
+        "clue": "Police raids, or sculptures of heads and shoulders"
+    },
+    {
+        "word": "CREST",
+        "clue": "Top of a wave or hill"
+    },
+    {
+        "word": "MONEY",
+        "clue": "Cash, casually"
+    },
+    {
+        "word": "SWIPE",
+        "clue": "Motion to unlock a credit card"
+    },
+    {
+        "word": "GLOAT",
+        "clue": "Brag about a victory"
+    },
+    {
+        "word": "BOWLS",
+        "clue": "Deep dishes for cereal or soup"
+    },
+    {
+        "word": "UNION",
+        "clue": "Workers' organization"
+    },
+    {
+        "word": "NEPAL",
+        "clue": "Country home to Mount Everest"
+    },
+    {
+        "word": "HAZEL",
+        "clue": "Light brown eye color, or a common nut"
+    },
+    {
+        "word": "RAZOR",
+        "clue": "Blade for a close shave"
+    },
+    {
+        "word": "SHAPE",
+        "clue": "Form or figure"
+    },
+    {
+        "word": "KORAN",
+        "clue": "Islam's holy book, alternate spelling"
+    },
+    {
+        "word": "IPODS",
+        "clue": "Old Apple music players"
+    },
+    {
+        "word": "MEDAL",
+        "clue": "Olympic award for first, second, or third place"
+    },
+    {
+        "word": "AIDED",
+        "clue": "Helped out"
+    },
+    {
+        "word": "CELLO",
+        "clue": "Large stringed instrument played sitting down"
+    },
+    {
+        "word": "AGREE",
+        "clue": "Say yes; go along with"
+    },
+    {
+        "word": "BEIGE",
+        "clue": "Light brown color"
+    },
+    {
+        "word": "ULTRA",
+        "clue": "Prefix meaning 'extremely'"
+    },
+    {
+        "word": "SLEEK",
+        "clue": "Smooth and glossy"
+    },
+    {
+        "word": "SIDED",
+        "clue": "Took a position in an argument"
+    },
+    {
+        "word": "PLAIN",
+        "clue": "Simple and unadorned"
+    },
+    {
+        "word": "VILLA",
+        "clue": "Fancy country house"
+    },
+    {
+        "word": "DEVIL",
+        "clue": "Angel's opposite"
+    },
+    {
+        "word": "USING",
+        "clue": "Making use of"
+    },
+    {
+        "word": "ROOTS",
+        "clue": "What a plant grows underground"
+    },
+    {
+        "word": "BISON",
+        "clue": "Large shaggy plains animal"
+    },
+    {
+        "word": "AEIOU",
+        "clue": "The vowels, in order"
+    },
+    {
+        "word": "AWAKE",
+        "clue": "Not asleep"
+    },
+    {
+        "word": "NASAL",
+        "clue": "Spoken through the nose, like some voices"
+    },
+    {
+        "word": "DITTO",
+        "clue": "\"Same here\""
+    },
+    {
+        "word": "AWAIT",
+        "clue": "Wait for"
+    },
+    {
+        "word": "TASTE",
+        "clue": "Sense you use to enjoy food"
+    },
+    {
+        "word": "SKATE",
+        "clue": "Glide across ice on blades"
+    },
+    {
+        "word": "RATED",
+        "clue": "Given a movie rating, as a film"
+    },
+    {
+        "word": "BRAVE",
+        "clue": "Full of courage"
+    },
+    {
+        "word": "EATEN",
+        "clue": "Consumed, as a meal"
+    },
+    {
+        "word": "EVENT",
+        "clue": "A concert or a party, say"
+    },
+    {
+        "word": "LATTE",
+        "clue": "Espresso drink with steamed milk"
+    },
+    {
+        "word": "TRAIT",
+        "clue": "Distinguishing characteristic"
+    },
+    {
+        "word": "HEART",
+        "clue": "Organ that pumps blood"
+    },
+    {
+        "word": "METAL",
+        "clue": "Iron or gold, for example"
+    },
+    {
+        "word": "OPTIC",
+        "clue": "Relating to the eye"
+    },
+    {
+        "word": "CLOCK",
+        "clue": "Wall timepiece"
+    },
+    {
+        "word": "POLIO",
+        "clue": "Disease prevented by a famous vaccine"
+    },
+    {
+        "word": "IRONY",
+        "clue": "Rain on your wedding day, some say"
+    },
+    {
+        "word": "LACKS",
+        "clue": "Doesn't have"
+    },
+    {
+        "word": "NAVAL",
+        "clue": "Relating to the navy"
+    },
+    {
+        "word": "TRICK",
+        "clue": "Halloween's \"___ or treat\""
+    },
+    {
+        "word": "PAPAS",
+        "clue": "Fathers, informally"
+    },
+    {
+        "word": "ERASE",
+        "clue": "Remove with a rubber tip"
+    },
+    {
+        "word": "TAPES",
+        "clue": "Records on cassettes"
+    },
+    {
+        "word": "RIGHT",
+        "clue": "Correct"
+    },
+    {
+        "word": "LIGHT",
+        "clue": "Not heavy"
+    },
+    {
+        "word": "ACHES",
+        "clue": "Dull, throbbing pains"
+    },
+    {
+        "word": "DUBAI",
+        "clue": "City with the Burj Khalifa"
+    },
+    {
+        "word": "ABORT",
+        "clue": "Call off a mission"
+    },
+    {
+        "word": "TIDES",
+        "clue": "Ocean's rising and falling waters"
+    },
+    {
+        "word": "CUBIC",
+        "clue": "Like a die's shape"
+    },
+    {
+        "word": "ABODE",
+        "clue": "Home, sweet home"
+    },
+    {
+        "word": "BARED",
+        "clue": "Uncovered, as one's soul"
+    },
+    {
+        "word": "OLIVE",
+        "clue": "Green fruit on a pizza or in a martini"
+    },
+    {
+        "word": "PANEL",
+        "clue": "Jury group, or a flat section of a door"
+    },
+    {
+        "word": "RHINO",
+        "clue": "Large horned African animal"
+    }
 ]

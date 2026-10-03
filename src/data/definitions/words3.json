@@ -1,162 +1,1694 @@
 [
-  { "word": "ACE", "clue": "High card or tennis point winner" },
-  { "word": "ACT", "clue": "Perform on stage" },
-  { "word": "AGE", "clue": "Grow older, like fine wine" },
-  { "word": "AID", "clue": "Help or assist" },
-  { "word": "AIM", "clue": "Point at a target" },
-  { "word": "AIR", "clue": "What we breathe" },
-  { "word": "ALL", "clue": "Everything without exception" },
-  { "word": "ANT", "clue": "Picnic-crashing insect" },
-  { "word": "APE", "clue": "Chimpanzee or gorilla" },
-  { "word": "ARC", "clue": "Curved trajectory" },
-  { "word": "ARM", "clue": "Limb with an elbow" },
-  { "word": "ART", "clue": "Creative gallery display" },
-  { "word": "ASH", "clue": "Residue after a campfire" },
-  { "word": "AWE", "clue": "Feeling of wonder" },
-  { "word": "AXE", "clue": "Lumberjack's tool" },
-  { "word": "BAD", "clue": "Opposite of good" },
-  { "word": "BAG", "clue": "Sack for groceries" },
-  { "word": "BAN", "clue": "Official prohibition" },
-  { "word": "BAR", "clue": "Pub counter or chocolate block" },
-  { "word": "BAT", "clue": "Cave flyer or baseball hitter" },
-  { "word": "BED", "clue": "Place for sleep" },
-  { "word": "BEE", "clue": "Honey producer" },
-  { "word": "BET", "clue": "Wager on a game" },
-  { "word": "BIN", "clue": "Storage container" },
-  { "word": "BOW", "clue": "Archery weapon or knot" },
-  { "word": "BOX", "clue": "Cardboard package" },
-  { "word": "BOY", "clue": "Young lad" },
-  { "word": "BUS", "clue": "Public transit vehicle" },
-  { "word": "CAB", "clue": "Taxi ride" },
-  { "word": "CAP", "clue": "Baseball hat" },
-  { "word": "CAR", "clue": "Automobile" },
-  { "word": "CAT", "clue": "Feline pet" },
-  { "word": "COW", "clue": "Barnyard milk producer" },
-  { "word": "CUP", "clue": "Mug for tea" },
-  { "word": "DAY", "clue": "24 hours" },
-  { "word": "DEN", "clue": "Bear's lair or cozy home room" },
-  { "word": "DEW", "clue": "Morning grass moisture" },
-  { "word": "DIM", "clue": "Not brightly lit" },
-  { "word": "DOG", "clue": "Man's best friend" },
-  { "word": "DOT", "clue": "Small spot or period" },
-  { "word": "DRY", "clue": "Lacking moisture" },
-  { "word": "EAR", "clue": "Hearing organ" },
-  { "word": "EGG", "clue": "Breakfast food with a yolk" },
-  { "word": "ELM", "clue": "Deciduous shade tree" },
-  { "word": "END", "clue": "Finish or conclusion" },
-  { "word": "ERA", "clue": "Historic epoch" },
-  { "word": "EYE", "clue": "Sight organ" },
-  { "word": "FAN", "clue": "Devoted supporter or cooling blade" },
-  { "word": "FAR", "clue": "Distant away" },
-  { "word": "FAT", "clue": "Butter or lard, culinarily" },
-  { "word": "FIT", "clue": "Healthy and in shape" },
-  { "word": "FLY", "clue": "Soar through the skies" },
-  { "word": "FOG", "clue": "Low-lying misty cloud" },
-  { "word": "FOX", "clue": "Clever reddish creature" },
-  { "word": "FUN", "clue": "Enjoyment or amusement" },
-  { "word": "FUR", "clue": "Animal's warm coat" },
-  { "word": "GAP", "clue": "Opening or space in between" },
-  { "word": "GAS", "clue": "Fuel for cars" },
-  { "word": "GEM", "clue": "Precious jewel" },
-  { "word": "GET", "clue": "Obtain or acquire" },
-  { "word": "GLO", "clue": "Shine softly (var.)" },
-  { "word": "HAT", "clue": "Head covering" },
-  { "word": "HAY", "clue": "Dried grass for horses" },
-  { "word": "HEN", "clue": "Egg-laying farm bird" },
-  { "word": "HIP", "clue": "Pelvis joint or trendy" },
-  { "word": "HIT", "clue": "Strike a baseball" },
-  { "word": "HOP", "clue": "Short jump" },
-  { "word": "HOT", "clue": "High temperature" },
-  { "word": "HUG", "clue": "Warm embrace" },
-  { "word": "HUT", "clue": "Small rustic shelter" },
-  { "word": "ICE", "clue": "Frozen water" },
-  { "word": "ILL", "clue": "Sick or unwell" },
-  { "word": "INK", "clue": "Fluid inside a ballpoint pen" },
-  { "word": "ION", "clue": "Charged atomic particle" },
-  { "word": "JAM", "clue": "Fruit spread on toast" },
-  { "word": "JAR", "clue": "Glass preserve container" },
-  { "word": "JAW", "clue": "Mouth bone with teeth" },
-  { "word": "JET", "clue": "High-speed airplane" },
-  { "word": "JOY", "clue": "Great happiness" },
-  { "word": "KEY", "clue": "Unlocks a padlock" },
-  { "word": "KID", "clue": "Young child" },
-  { "word": "LAB", "clue": "Scientist's workplace" },
-  { "word": "LAP", "clue": "One circuit around a track" },
-  { "word": "LAW", "clue": "Legal rule" },
-  { "word": "LAY", "clue": "Place down flat" },
-  { "word": "LEG", "clue": "Limb used for walking" },
-  { "word": "LID", "clue": "Cover on a jar" },
-  { "word": "LIP", "clue": "Edge of the mouth" },
-  { "word": "LOG", "clue": "Felled tree trunk" },
-  { "word": "LOT", "clue": "Great amount or parking area" },
-  { "word": "LOW", "clue": "Not high" },
-  { "word": "MAP", "clue": "Navigational chart" },
-  { "word": "MAT", "clue": "Welcome pad at the front door" },
-  { "word": "MUD", "clue": "Wet dirt" },
-  { "word": "MUG", "clue": "Coffee vessel" },
-  { "word": "NAP", "clue": "Brief afternoon slumber" },
-  { "word": "NET", "clue": "Tennis court divider" },
-  { "word": "NEW", "clue": "Fresh, not used" },
-  { "word": "NOD", "clue": "Head gesture meaning 'yes'" },
-  { "word": "NUT", "clue": "Acorn or cashew" },
-  { "word": "OAK", "clue": "Mighty acorn tree" },
-  { "word": "OAR", "clue": "Paddle for rowing" },
-  { "word": "OAT", "clue": "Cereal grain for porridge" },
-  { "word": "OIL", "clue": "Lubricating liquid" },
-  { "word": "OLD", "clue": "Ancient or aged" },
-  { "word": "ONE", "clue": "First positive integer" },
-  { "word": "OWL", "clue": "Wise nocturnal bird" },
-  { "word": "PAN", "clue": "Cookware for frying" },
-  { "word": "PAW", "clue": "Puppy's foot" },
-  { "word": "PEA", "clue": "Little round green vegetable" },
-  { "word": "PEN", "clue": "Writing instrument" },
-  { "word": "PET", "clue": "Dog, cat, or hamster" },
-  { "word": "PIE", "clue": "Baked crust dessert" },
-  { "word": "PIG", "clue": "Farm animal with a snout" },
-  { "word": "PIN", "clue": "Bowling target or safety fastener" },
-  { "word": "PIT", "clue": "Cherry stone or deep hole" },
-  { "word": "POT", "clue": "Vessel for boiling soup" },
-  { "word": "RAG", "clue": "Scrap of cleaning cloth" },
-  { "word": "RAM", "clue": "Male horned sheep" },
-  { "word": "RAT", "clue": "Long-tailed rodent" },
-  { "word": "RAW", "clue": "Uncooked food" },
-  { "word": "RAY", "clue": "Beam of sunshine" },
-  { "word": "RED", "clue": "Color of a ripe strawberry" },
-  { "word": "RIB", "clue": "Chest bone" },
-  { "word": "ROD", "clue": "Angler's fishing pole" },
-  { "word": "ROW", "clue": "Propel a canoe" },
-  { "word": "RUB", "clue": "Chafe or massage gently" },
-  { "word": "RUG", "clue": "Floor carpet" },
-  { "word": "RUN", "clue": "Jog at high speed" },
-  { "word": "SAD", "clue": "Feeling downcast" },
-  { "word": "SAW", "clue": "Carpenter's cutting blade" },
-  { "word": "SEA", "clue": "Ocean waters" },
-  { "word": "SET", "clue": "Matched collection" },
-  { "word": "SEW", "clue": "Stitch with needle and thread" },
-  { "word": "SKI", "clue": "Glide on snowy slopes" },
-  { "word": "SKY", "clue": "Atmosphere above" },
-  { "word": "SON", "clue": "Male child" },
-  { "word": "SPY", "clue": "Undercover secret agent" },
-  { "word": "SUN", "clue": "Solar system star" },
-  { "word": "TAG", "clue": "Price label or playground chase game" },
-  { "word": "TAP", "clue": "Light knock on a door" },
-  { "word": "TEA", "clue": "Steeped herbal beverage" },
-  { "word": "TIE", "clue": "Neckwear for a suit" },
-  { "word": "TIP", "clue": "Gratuity for great service" },
-  { "word": "TOE", "clue": "Digit on a foot" },
-  { "word": "TOP", "clue": "Opposite of bottom" },
-  { "word": "TOY", "clue": "Child's plaything" },
-  { "word": "TUB", "clue": "Basin for a warm bath" },
-  { "word": "TWO", "clue": "Number after one" },
-  { "word": "VAN", "clue": "Delivery vehicle" },
-  { "word": "VET", "clue": "Animal doctor" },
-  { "word": "WAR", "clue": "Armed conflict" },
-  { "word": "WEB", "clue": "Spider's woven trap" },
-  { "word": "WET", "clue": "Soaked with water" },
-  { "word": "WIN", "clue": "Take first place" },
-  { "word": "YAK", "clue": "Himalayan shaggy ox" },
-  { "word": "YES", "clue": "Affirmative answer" },
-  { "word": "YET", "clue": "Up to now" },
-  { "word": "ZIP", "clue": "Close a jacket fastener" },
-  { "word": "ZOO", "clue": "Park where exotic animals live" }
+    {
+        "word": "ACE",
+        "clue": "High card or tennis point winner"
+    },
+    {
+        "word": "ACT",
+        "clue": "Perform on stage"
+    },
+    {
+        "word": "AGE",
+        "clue": "Grow older, like fine wine"
+    },
+    {
+        "word": "AID",
+        "clue": "Help or assist"
+    },
+    {
+        "word": "AIM",
+        "clue": "Point at a target"
+    },
+    {
+        "word": "AIR",
+        "clue": "What we breathe"
+    },
+    {
+        "word": "ALL",
+        "clue": "Everything without exception"
+    },
+    {
+        "word": "ANT",
+        "clue": "Picnic-crashing insect"
+    },
+    {
+        "word": "APE",
+        "clue": "Chimpanzee or gorilla"
+    },
+    {
+        "word": "ARC",
+        "clue": "Curved trajectory"
+    },
+    {
+        "word": "ARM",
+        "clue": "Limb with an elbow"
+    },
+    {
+        "word": "ART",
+        "clue": "Creative gallery display"
+    },
+    {
+        "word": "ASH",
+        "clue": "Residue after a campfire"
+    },
+    {
+        "word": "AWE",
+        "clue": "Feeling of wonder"
+    },
+    {
+        "word": "AXE",
+        "clue": "Lumberjack's tool"
+    },
+    {
+        "word": "BAD",
+        "clue": "Opposite of good"
+    },
+    {
+        "word": "BAG",
+        "clue": "Sack for groceries"
+    },
+    {
+        "word": "BAN",
+        "clue": "Official prohibition"
+    },
+    {
+        "word": "YES",
+        "clue": "Hoped-for response to \"will you marry me?\""
+    },
+    {
+        "word": "ROE",
+        "clue": "Fish eggs"
+    },
+    {
+        "word": "EGG",
+        "clue": "\"Which came first?\" item"
+    },
+    {
+        "word": "III",
+        "clue": "The third"
+    },
+    {
+        "word": "CRY",
+        "clue": "Weep"
+    },
+    {
+        "word": "ONE",
+        "clue": "First digit of pi after the decimal point"
+    },
+    {
+        "word": "BAR",
+        "clue": "Pub counter or chocolate block"
+    },
+    {
+        "word": "BAT",
+        "clue": "Cave flyer or baseball hitter"
+    },
+    {
+        "word": "LIL",
+        "clue": "rap's ___ wayne"
+    },
+    {
+        "word": "ETC",
+        "clue": "list-shortening abbr."
+    },
+    {
+        "word": "BED",
+        "clue": "Place for sleep"
+    },
+    {
+        "word": "BEE",
+        "clue": "Honey producer"
+    },
+    {
+        "word": "BET",
+        "clue": "Wager on a game"
+    },
+    {
+        "word": "BIN",
+        "clue": "Storage container"
+    },
+    {
+        "word": "BOW",
+        "clue": "Archery weapon or knot"
+    },
+    {
+        "word": "BOX",
+        "clue": "Cardboard package"
+    },
+    {
+        "word": "BOY",
+        "clue": "Young lad"
+    },
+    {
+        "word": "BUS",
+        "clue": "Public transit vehicle"
+    },
+    {
+        "word": "CAB",
+        "clue": "Taxi ride"
+    },
+    {
+        "word": "CAP",
+        "clue": "Baseball hat"
+    },
+    {
+        "word": "CAR",
+        "clue": "Automobile"
+    },
+    {
+        "word": "CAT",
+        "clue": "Feline pet"
+    },
+    {
+        "word": "COW",
+        "clue": "Barnyard milk producer"
+    },
+    {
+        "word": "CUP",
+        "clue": "Mug for tea"
+    },
+    {
+        "word": "DAY",
+        "clue": "24 hours"
+    },
+    {
+        "word": "DEN",
+        "clue": "Bear's lair or cozy home room"
+    },
+    {
+        "word": "DEW",
+        "clue": "Morning grass moisture"
+    },
+    {
+        "word": "DIM",
+        "clue": "Not brightly lit"
+    },
+    {
+        "word": "DOG",
+        "clue": "Man's best friend"
+    },
+    {
+        "word": "DOT",
+        "clue": "Small spot or period"
+    },
+    {
+        "word": "DRY",
+        "clue": "Lacking moisture"
+    },
+    {
+        "word": "EAR",
+        "clue": "Hearing organ"
+    },
+    {
+        "word": "EGG",
+        "clue": "Breakfast food with a yolk"
+    },
+    {
+        "word": "ELM",
+        "clue": "Deciduous shade tree"
+    },
+    {
+        "word": "END",
+        "clue": "Finish or conclusion"
+    },
+    {
+        "word": "ERA",
+        "clue": "Historic epoch"
+    },
+    {
+        "word": "EYE",
+        "clue": "Sight organ"
+    },
+    {
+        "word": "FAN",
+        "clue": "Devoted supporter or cooling blade"
+    },
+    {
+        "word": "FAR",
+        "clue": "Distant away"
+    },
+    {
+        "word": "FAT",
+        "clue": "Butter or lard, culinarily"
+    },
+    {
+        "word": "FIT",
+        "clue": "Healthy and in shape"
+    },
+    {
+        "word": "FLY",
+        "clue": "Soar through the skies"
+    },
+    {
+        "word": "FOG",
+        "clue": "Low-lying misty cloud"
+    },
+    {
+        "word": "FOX",
+        "clue": "Clever reddish creature"
+    },
+    {
+        "word": "FUN",
+        "clue": "Enjoyment or amusement"
+    },
+    {
+        "word": "FUR",
+        "clue": "Animal's warm coat"
+    },
+    {
+        "word": "GAP",
+        "clue": "Opening or space in between"
+    },
+    {
+        "word": "GAS",
+        "clue": "Fuel for cars"
+    },
+    {
+        "word": "GEM",
+        "clue": "Precious jewel"
+    },
+    {
+        "word": "GET",
+        "clue": "Obtain or acquire"
+    },
+    {
+        "word": "GLO",
+        "clue": "Shine softly (var.)"
+    },
+    {
+        "word": "HAT",
+        "clue": "Head covering"
+    },
+    {
+        "word": "HAY",
+        "clue": "Dried grass for horses"
+    },
+    {
+        "word": "HEN",
+        "clue": "Egg-laying farm bird"
+    },
+    {
+        "word": "HIP",
+        "clue": "Pelvis joint or trendy"
+    },
+    {
+        "word": "HIT",
+        "clue": "Strike a baseball"
+    },
+    {
+        "word": "HOP",
+        "clue": "Short jump"
+    },
+    {
+        "word": "HOT",
+        "clue": "High temperature"
+    },
+    {
+        "word": "HUG",
+        "clue": "Warm embrace"
+    },
+    {
+        "word": "HUT",
+        "clue": "Small rustic shelter"
+    },
+    {
+        "word": "ICE",
+        "clue": "Frozen water"
+    },
+    {
+        "word": "ILL",
+        "clue": "Sick or unwell"
+    },
+    {
+        "word": "INK",
+        "clue": "Fluid inside a ballpoint pen"
+    },
+    {
+        "word": "ION",
+        "clue": "Charged atomic particle"
+    },
+    {
+        "word": "JAM",
+        "clue": "Fruit spread on toast"
+    },
+    {
+        "word": "JAR",
+        "clue": "Glass preserve container"
+    },
+    {
+        "word": "JAW",
+        "clue": "Mouth bone with teeth"
+    },
+    {
+        "word": "JET",
+        "clue": "High-speed airplane"
+    },
+    {
+        "word": "JOY",
+        "clue": "Great happiness"
+    },
+    {
+        "word": "KEY",
+        "clue": "Unlocks a padlock"
+    },
+    {
+        "word": "KID",
+        "clue": "Young child"
+    },
+    {
+        "word": "LAB",
+        "clue": "Scientist's workplace"
+    },
+    {
+        "word": "LAP",
+        "clue": "One circuit around a track"
+    },
+    {
+        "word": "LAW",
+        "clue": "Legal rule"
+    },
+    {
+        "word": "LAY",
+        "clue": "Place down flat"
+    },
+    {
+        "word": "LEG",
+        "clue": "Limb used for walking"
+    },
+    {
+        "word": "LID",
+        "clue": "Cover on a jar"
+    },
+    {
+        "word": "LIP",
+        "clue": "Edge of the mouth"
+    },
+    {
+        "word": "LOG",
+        "clue": "Felled tree trunk"
+    },
+    {
+        "word": "LOT",
+        "clue": "Great amount or parking area"
+    },
+    {
+        "word": "LOW",
+        "clue": "Not high"
+    },
+    {
+        "word": "MAP",
+        "clue": "Navigational chart"
+    },
+    {
+        "word": "MAT",
+        "clue": "Welcome pad at the front door"
+    },
+    {
+        "word": "MUD",
+        "clue": "Wet dirt"
+    },
+    {
+        "word": "MUG",
+        "clue": "Coffee vessel"
+    },
+    {
+        "word": "NAP",
+        "clue": "Brief afternoon slumber"
+    },
+    {
+        "word": "NET",
+        "clue": "Tennis court divider"
+    },
+    {
+        "word": "NEW",
+        "clue": "Fresh, not used"
+    },
+    {
+        "word": "NOD",
+        "clue": "Head gesture meaning 'yes'"
+    },
+    {
+        "word": "NUT",
+        "clue": "Acorn or cashew"
+    },
+    {
+        "word": "OAK",
+        "clue": "Mighty acorn tree"
+    },
+    {
+        "word": "OAR",
+        "clue": "Paddle for rowing"
+    },
+    {
+        "word": "OAT",
+        "clue": "Cereal grain for porridge"
+    },
+    {
+        "word": "OIL",
+        "clue": "Lubricating liquid"
+    },
+    {
+        "word": "OLD",
+        "clue": "Ancient or aged"
+    },
+    {
+        "word": "ONE",
+        "clue": "First positive integer"
+    },
+    {
+        "word": "OWL",
+        "clue": "Wise nocturnal bird"
+    },
+    {
+        "word": "PAN",
+        "clue": "Cookware for frying"
+    },
+    {
+        "word": "PAW",
+        "clue": "Puppy's foot"
+    },
+    {
+        "word": "PEA",
+        "clue": "Little round green vegetable"
+    },
+    {
+        "word": "PEN",
+        "clue": "Writing instrument"
+    },
+    {
+        "word": "PET",
+        "clue": "Dog, cat, or hamster"
+    },
+    {
+        "word": "PIE",
+        "clue": "Baked crust dessert"
+    },
+    {
+        "word": "PIG",
+        "clue": "Farm animal with a snout"
+    },
+    {
+        "word": "PIN",
+        "clue": "Bowling target or safety fastener"
+    },
+    {
+        "word": "PIT",
+        "clue": "Cherry stone or deep hole"
+    },
+    {
+        "word": "POT",
+        "clue": "Vessel for boiling soup"
+    },
+    {
+        "word": "RAG",
+        "clue": "Scrap of cleaning cloth"
+    },
+    {
+        "word": "RAM",
+        "clue": "Male horned sheep"
+    },
+    {
+        "word": "RAT",
+        "clue": "Long-tailed rodent"
+    },
+    {
+        "word": "RAW",
+        "clue": "Uncooked food"
+    },
+    {
+        "word": "RAY",
+        "clue": "Beam of sunshine"
+    },
+    {
+        "word": "RED",
+        "clue": "Color of a ripe strawberry"
+    },
+    {
+        "word": "RIB",
+        "clue": "Chest bone"
+    },
+    {
+        "word": "ROD",
+        "clue": "Angler's fishing pole"
+    },
+    {
+        "word": "ROW",
+        "clue": "Propel a canoe"
+    },
+    {
+        "word": "RUB",
+        "clue": "Chafe or massage gently"
+    },
+    {
+        "word": "RUG",
+        "clue": "Floor carpet"
+    },
+    {
+        "word": "RUN",
+        "clue": "Jog at high speed"
+    },
+    {
+        "word": "SAD",
+        "clue": "Feeling downcast"
+    },
+    {
+        "word": "SAW",
+        "clue": "Carpenter's cutting blade"
+    },
+    {
+        "word": "SEA",
+        "clue": "Ocean waters"
+    },
+    {
+        "word": "SET",
+        "clue": "Matched collection"
+    },
+    {
+        "word": "SEW",
+        "clue": "Stitch with needle and thread"
+    },
+    {
+        "word": "SKI",
+        "clue": "Glide on snowy slopes"
+    },
+    {
+        "word": "SKY",
+        "clue": "Atmosphere above"
+    },
+    {
+        "word": "SON",
+        "clue": "Male child"
+    },
+    {
+        "word": "SPY",
+        "clue": "Undercover secret agent"
+    },
+    {
+        "word": "SUN",
+        "clue": "Solar system star"
+    },
+    {
+        "word": "TAG",
+        "clue": "Price label or playground chase game"
+    },
+    {
+        "word": "TAP",
+        "clue": "Light knock on a door"
+    },
+    {
+        "word": "TEA",
+        "clue": "Steeped herbal beverage"
+    },
+    {
+        "word": "TIE",
+        "clue": "Neckwear for a suit"
+    },
+    {
+        "word": "TIP",
+        "clue": "Gratuity for great service"
+    },
+    {
+        "word": "TOE",
+        "clue": "Digit on a foot"
+    },
+    {
+        "word": "TOP",
+        "clue": "Opposite of bottom"
+    },
+    {
+        "word": "TOY",
+        "clue": "Child's plaything"
+    },
+    {
+        "word": "TUB",
+        "clue": "Basin for a warm bath"
+    },
+    {
+        "word": "TWO",
+        "clue": "Number after one"
+    },
+    {
+        "word": "VAN",
+        "clue": "Delivery vehicle"
+    },
+    {
+        "word": "VET",
+        "clue": "Animal doctor"
+    },
+    {
+        "word": "WAR",
+        "clue": "Armed conflict"
+    },
+    {
+        "word": "WEB",
+        "clue": "Spider's woven trap"
+    },
+    {
+        "word": "WET",
+        "clue": "Soaked with water"
+    },
+    {
+        "word": "WIN",
+        "clue": "Take first place"
+    },
+    {
+        "word": "YAK",
+        "clue": "Himalayan shaggy ox"
+    },
+    {
+        "word": "YES",
+        "clue": "Affirmative answer"
+    },
+    {
+        "word": "YET",
+        "clue": "Up to now"
+    },
+    {
+        "word": "ZIP",
+        "clue": "Close a jacket fastener"
+    },
+    {
+        "word": "ZOO",
+        "clue": "Park where exotic animals live"
+    },
+    {
+        "word": "NIL",
+        "clue": "Nothing, to Nadal"
+    },
+    {
+        "word": "IDA",
+        "clue": "Program for understanding .exe files"
+    },
+    {
+        "word": "RES",
+        "clue": "Hotel reservation, for short"
+    },
+    {
+        "word": "BOK",
+        "clue": "___ choy (Chinese cabbage)"
+    },
+    {
+        "word": "ARF",
+        "clue": "Pup's bark"
+    },
+    {
+        "word": "BAN",
+        "clue": "Prohibit"
+    },
+    {
+        "word": "BAO",
+        "clue": "Steamed Chinese bun?"
+    },
+    {
+        "word": "BFF",
+        "clue": "Bestie, in a text"
+    },
+    {
+        "word": "CYA",
+        "clue": "\"Later!\" in textspeak"
+    },
+    {
+        "word": "SSE",
+        "clue": "Compass dir. opposite NNW"
+    },
+    {
+        "word": "GOO",
+        "clue": "Sticky stuff"
+    },
+    {
+        "word": "BIO",
+        "clue": "Short life story?"
+    },
+    {
+        "word": "BIN",
+        "clue": "Recycling receptacle"
+    },
+    {
+        "word": "TNT",
+        "clue": "Explosive initials"
+    },
+    {
+        "word": "ANY",
+        "clue": "\"Got ___ questions?\""
+    },
+    {
+        "word": "DAM",
+        "clue": "Hoover ___"
+    },
+    {
+        "word": "CAB",
+        "clue": "Yellow ride-share option"
+    },
+    {
+        "word": "SPY",
+        "clue": "007, for one"
+    },
+    {
+        "word": "BIT",
+        "clue": "Smallest unit in programming"
+    },
+    {
+        "word": "SEX",
+        "clue": "Gender, on a form"
+    },
+    {
+        "word": "BOW",
+        "clue": "Violinist's stick"
+    },
+    {
+        "word": "ISR",
+        "clue": "Country code for the Holy Land: Abbr."
+    },
+    {
+        "word": "OAR",
+        "clue": "Rower's tool"
+    },
+    {
+        "word": "PAN",
+        "clue": "Frying ___ (kitchen item)"
+    },
+    {
+        "word": "ACK",
+        "clue": "Comic strip exclamation of dismay?"
+    },
+    {
+        "word": "APE",
+        "clue": "Mimic"
+    },
+    {
+        "word": "AMP",
+        "clue": "Guitarist's amplifier, for short"
+    },
+    {
+        "word": "GPS",
+        "clue": "Driver's navigation aid, briefly"
+    },
+    {
+        "word": "BOY",
+        "clue": "Counterpart of girl"
+    },
+    {
+        "word": "PAR",
+        "clue": "Average score on a golf hole?"
+    },
+    {
+        "word": "AWW",
+        "clue": "\"How sweet!\""
+    },
+    {
+        "word": "ASS",
+        "clue": "Donkey... or one being foolish?"
+    },
+    {
+        "word": "BRR",
+        "clue": "Shiverer's sound?"
+    },
+    {
+        "word": "BLT",
+        "clue": "Deli sandwich, briefly"
+    },
+    {
+        "word": "NOD",
+        "clue": "Sleepy person's head movement"
+    },
+    {
+        "word": "ARK",
+        "clue": "Noah's boat"
+    },
+    {
+        "word": "KFC",
+        "clue": "Colonel's chicken chain?"
+    },
+    {
+        "word": "ETD",
+        "clue": "Flight board abbr."
+    },
+    {
+        "word": "ALI",
+        "clue": "Boxing's Muhammad"
+    },
+    {
+        "word": "ARK",
+        "clue": "Noah's boat?"
+    },
+    {
+        "word": "BUD",
+        "clue": "Beer, slangily"
+    },
+    {
+        "word": "EID",
+        "clue": "Muslim holiday"
+    },
+    {
+        "word": "AID",
+        "clue": "Helping hand"
+    },
+    {
+        "word": "USD",
+        "clue": "Greenback abbr."
+    },
+    {
+        "word": "DUE",
+        "clue": "Expected to arrive"
+    },
+    {
+        "word": "ARM",
+        "clue": "Body part with a bicep"
+    },
+    {
+        "word": "MIS",
+        "clue": "Prefix meaning 'wrong'"
+    },
+    {
+        "word": "ESE",
+        "clue": "Suffix with Brooklyn or Vietnam"
+    },
+    {
+        "word": "AMP",
+        "clue": "Guitar's loud friend"
+    },
+    {
+        "word": "ODD",
+        "clue": "Strange"
+    },
+    {
+        "word": "PAR",
+        "clue": "Standard score on a golf hole"
+    },
+    {
+        "word": "MOO",
+        "clue": "Sound from a cow on the grass?"
+    },
+    {
+        "word": "EXT",
+        "clue": "Phone no. add-on"
+    },
+    {
+        "word": "LAB",
+        "clue": "Place for beakers and Bunsen burners"
+    },
+    {
+        "word": "ARE",
+        "clue": "What U and I?"
+    },
+    {
+        "word": "TXT",
+        "clue": "Send a message, briefly"
+    },
+    {
+        "word": "AKA",
+        "clue": "Alias, in short"
+    },
+    {
+        "word": "EWE",
+        "clue": "Female sheep"
+    },
+    {
+        "word": "NES",
+        "clue": "Classic Nintendo console, for short"
+    },
+    {
+        "word": "LSD",
+        "clue": "'60s mind-altering drug, for short"
+    },
+    {
+        "word": "ACE",
+        "clue": "Tennis serve that can't be returned"
+    },
+    {
+        "word": "DON",
+        "clue": "Mafia boss"
+    },
+    {
+        "word": "BYE",
+        "clue": "Wave and this word often go together at a goodbye"
+    },
+    {
+        "word": "MSN",
+        "clue": "Microsoft's online service, once"
+    },
+    {
+        "word": "ERR",
+        "clue": "Make a mistake"
+    },
+    {
+        "word": "SUM",
+        "clue": "Total, in math"
+    },
+    {
+        "word": "BBS",
+        "clue": "Air rifle pellets, briefly"
+    },
+    {
+        "word": "ROT",
+        "clue": "Slowly decay"
+    },
+    {
+        "word": "MAR",
+        "clue": "Damage or spoil"
+    },
+    {
+        "word": "MAS",
+        "clue": "Moms, in Britain"
+    },
+    {
+        "word": "BCC",
+        "clue": "Email field for hidden recipients"
+    },
+    {
+        "word": "AVI",
+        "clue": "Video file format extension"
+    },
+    {
+        "word": "ADA",
+        "clue": "Programming language named for Lovelace"
+    },
+    {
+        "word": "RAM",
+        "clue": "Male sheep"
+    },
+    {
+        "word": "EAR",
+        "clue": "Part of the head that hears?"
+    },
+    {
+        "word": "ART",
+        "clue": "Museum display"
+    },
+    {
+        "word": "ONO",
+        "clue": "Yoko who married John Lennon"
+    },
+    {
+        "word": "BMX",
+        "clue": "Kind of bike used for dirt-track racing"
+    },
+    {
+        "word": "ABE",
+        "clue": "Nickname for Lincoln"
+    },
+    {
+        "word": "MIN",
+        "clue": "Sixty secs., for short"
+    },
+    {
+        "word": "BMX",
+        "clue": "___ bike (kind used for stunts and racing)"
+    },
+    {
+        "word": "LAY",
+        "clue": "Set (something) down"
+    },
+    {
+        "word": "TIS",
+        "clue": "\"'___ the season...\""
+    },
+    {
+        "word": "AHA",
+        "clue": "\"Now I get it!\""
+    },
+    {
+        "word": "BUD",
+        "clue": "Beer, informally"
+    },
+    {
+        "word": "LOS",
+        "clue": "___ Angeles"
+    },
+    {
+        "word": "BIG",
+        "clue": "Extra-large"
+    },
+    {
+        "word": "ABE",
+        "clue": "Honest ___ (Lincoln's nickname)"
+    },
+    {
+        "word": "DIS",
+        "clue": "Show disrespect to, informally"
+    },
+    {
+        "word": "LEG",
+        "clue": "Body part you might stand on?"
+    },
+    {
+        "word": "YEE",
+        "clue": "Cowboy's \"___-haw!\""
+    },
+    {
+        "word": "EEL",
+        "clue": "Slippery fish sometimes served smoked"
+    },
+    {
+        "word": "GAY",
+        "clue": "Full of cheer"
+    },
+    {
+        "word": "OMG",
+        "clue": "\"Wow!\" in a text"
+    },
+    {
+        "word": "YOU",
+        "clue": "The person being addressed"
+    },
+    {
+        "word": "ADO",
+        "clue": "Fuss or commotion"
+    },
+    {
+        "word": "ATS",
+        "clue": "Email address symbols"
+    },
+    {
+        "word": "AMA",
+        "clue": "Question-asking online session, in brief"
+    },
+    {
+        "word": "DOH",
+        "clue": "Homer Simpson's exclamation"
+    },
+    {
+        "word": "BOD",
+        "clue": "Physique, slangily"
+    },
+    {
+        "word": "ASS",
+        "clue": "Donkey"
+    },
+    {
+        "word": "BOP",
+        "clue": "Dance to a lively beat"
+    },
+    {
+        "word": "ENS",
+        "clue": "Plural-forming letters"
+    },
+    {
+        "word": "PIT",
+        "clue": "Fruit stone"
+    },
+    {
+        "word": "WEE",
+        "clue": "Very small"
+    },
+    {
+        "word": "PST",
+        "clue": "\"Hey, over here!\" whisper"
+    },
+    {
+        "word": "WED",
+        "clue": "Get married"
+    },
+    {
+        "word": "COP",
+        "clue": "Officer of the law"
+    },
+    {
+        "word": "DEN",
+        "clue": "Lion's home"
+    },
+    {
+        "word": "SOS",
+        "clue": "Distress signal"
+    },
+    {
+        "word": "CIA",
+        "clue": "Spy org. headquartered in Langley, Va."
+    },
+    {
+        "word": "SON",
+        "clue": "Boy in the family"
+    },
+    {
+        "word": "SGT",
+        "clue": "Army rank below lieutenant, for short"
+    },
+    {
+        "word": "SEE",
+        "clue": "Take a look at"
+    },
+    {
+        "word": "AIM",
+        "clue": "Point a bow and arrow"
+    },
+    {
+        "word": "ADD",
+        "clue": "Sum up, in math"
+    },
+    {
+        "word": "AIL",
+        "clue": "Feel poorly"
+    },
+    {
+        "word": "HID",
+        "clue": "Concealed"
+    },
+    {
+        "word": "AWE",
+        "clue": "Feeling of wonder"
+    },
+    {
+        "word": "SAW",
+        "clue": "Carpenter's cutting tool"
+    },
+    {
+        "word": "AYE",
+        "clue": "\"Yes\" from a sailor"
+    },
+    {
+        "word": "ALT",
+        "clue": "Keyboard key next to Ctrl"
+    },
+    {
+        "word": "ELK",
+        "clue": "Large deer with big antlers"
+    },
+    {
+        "word": "DEN",
+        "clue": "Cozy room for relaxing"
+    },
+    {
+        "word": "SAX",
+        "clue": "Jazz instrument, for short"
+    },
+    {
+        "word": "TEE",
+        "clue": "Where a golfer places the ball to start a hole"
+    },
+    {
+        "word": "ASK",
+        "clue": "Pose a question"
+    },
+    {
+        "word": "ARM",
+        "clue": "Body part with a hand at the end"
+    },
+    {
+        "word": "HAM",
+        "clue": "Meat on a breakfast plate, or an overactor"
+    },
+    {
+        "word": "BAY",
+        "clue": "Body of water partly enclosed by land"
+    },
+    {
+        "word": "SEW",
+        "clue": "Join with needle and thread"
+    },
+    {
+        "word": "BLT",
+        "clue": "Sandwich with bacon, for short"
+    },
+    {
+        "word": "BAN",
+        "clue": "Official prohibition"
+    },
+    {
+        "word": "TNT",
+        "clue": "Explosive stuff, for short"
+    },
+    {
+        "word": "TUB",
+        "clue": "Where you take a bath"
+    },
+    {
+        "word": "EYE",
+        "clue": "The one you see with?"
+    },
+    {
+        "word": "DUO",
+        "clue": "Dynamic ___ (comic-book pair)"
+    },
+    {
+        "word": "DOG",
+        "clue": "Loyal, tail-wagging pet"
+    },
+    {
+        "word": "NYE",
+        "clue": "Science Guy Bill"
+    },
+    {
+        "word": "BED",
+        "clue": "Where you sleep"
+    },
+    {
+        "word": "TEN",
+        "clue": "Number after nine"
+    },
+    {
+        "word": "HUB",
+        "clue": "Center of a wheel"
+    },
+    {
+        "word": "FIN",
+        "clue": "Shark's dorsal appendage"
+    },
+    {
+        "word": "DRY",
+        "clue": "Not wet"
+    },
+    {
+        "word": "SEE",
+        "clue": "Take in with your eyes"
+    },
+    {
+        "word": "FOX",
+        "clue": "Sly animal in the henhouse"
+    },
+    {
+        "word": "SNL",
+        "clue": "Late-night sketch show, for short"
+    },
+    {
+        "word": "TRY",
+        "clue": "Give it a go"
+    },
+    {
+        "word": "CPU",
+        "clue": "The \"brain\" of a computer, for short"
+    },
+    {
+        "word": "BTW",
+        "clue": "Texting shorthand for \"by the way\""
+    },
+    {
+        "word": "GPS",
+        "clue": "Navigation aid in your car, for short"
+    },
+    {
+        "word": "CSI",
+        "clue": "Forensic crime TV franchise, for short"
+    },
+    {
+        "word": "AXE",
+        "clue": "Tool for chopping wood"
+    },
+    {
+        "word": "EAR",
+        "clue": "Organ used for hearing"
+    },
+    {
+        "word": "RAP",
+        "clue": "Hip-hop music style"
+    },
+    {
+        "word": "DIG",
+        "clue": "Excavate with a shovel"
+    },
+    {
+        "word": "GDP",
+        "clue": "Economic measure of a country's output, for short"
+    },
+    {
+        "word": "LBS",
+        "clue": "Weight units on a bathroom scale, briefly"
+    },
+    {
+        "word": "DIP",
+        "clue": "Quick swim, or a chip's companion"
+    },
+    {
+        "word": "HUG",
+        "clue": "Warm embrace"
+    },
+    {
+        "word": "FIX",
+        "clue": "Repair"
+    },
+    {
+        "word": "XYZ",
+        "clue": "Letters right after W"
+    },
+    {
+        "word": "GAP",
+        "clue": "Space between two things"
+    },
+    {
+        "word": "BMI",
+        "clue": "Weight-to-height health stat, for short"
+    },
+    {
+        "word": "SLY",
+        "clue": "Cunning; foxlike"
+    },
+    {
+        "word": "PMS",
+        "clue": "Monthly cycle discomfort, briefly"
+    },
+    {
+        "word": "SOS",
+        "clue": "Distress signal in Morse code"
+    },
+    {
+        "word": "DJS",
+        "clue": "Radio music spinners, for short"
+    },
+    {
+        "word": "ABS",
+        "clue": "Toned stomach muscles, informally"
+    },
+    {
+        "word": "BIC",
+        "clue": "Pen brand known for disposable ballpoints"
+    },
+    {
+        "word": "DEW",
+        "clue": "Morning moisture on the grass"
+    },
+    {
+        "word": "HIT",
+        "clue": "Smash success at the box office"
+    },
+    {
+        "word": "AIR",
+        "clue": "What we breathe"
+    },
+    {
+        "word": "TEA",
+        "clue": "Hot drink brewed from leaves"
+    },
+    {
+        "word": "PSA",
+        "clue": "Public service announcement, for short"
+    },
+    {
+        "word": "ALL",
+        "clue": "Every single bit"
+    },
+    {
+        "word": "TLC",
+        "clue": "Tender loving care, for short"
+    },
+    {
+        "word": "SGT",
+        "clue": "Army rank below lieutenant, briefly"
+    },
+    {
+        "word": "NET",
+        "clue": "What a tennis ball goes over"
+    },
+    {
+        "word": "HER",
+        "clue": "\"His\" counterpart"
+    },
+    {
+        "word": "BAR",
+        "clue": "Place to grab a drink"
+    },
+    {
+        "word": "GEL",
+        "clue": "Sit like Jell-O"
+    },
+    {
+        "word": "LET",
+        "clue": "Allow"
+    },
+    {
+        "word": "KIA",
+        "clue": "Sorento or Sportage automaker"
+    },
+    {
+        "word": "MOW",
+        "clue": "Cut the lawn"
+    },
+    {
+        "word": "HOG",
+        "clue": "Take more than one's share of"
+    },
+    {
+        "word": "ASS",
+        "clue": "Stubborn animal on a farm"
+    },
+    {
+        "word": "FED",
+        "clue": "Well-nourished"
+    },
+    {
+        "word": "DYE",
+        "clue": "Color fabric with a new tint"
+    },
+    {
+        "word": "CON",
+        "clue": "Argument against, opposite of pro"
+    },
+    {
+        "word": "GAS",
+        "clue": "It fills up your car's tank"
+    },
+    {
+        "word": "NUT",
+        "clue": "Almond or cashew, for example"
+    },
+    {
+        "word": "FOG",
+        "clue": "Thick mist that's hard to see through"
+    },
+    {
+        "word": "CUP",
+        "clue": "Coffee mug"
+    },
+    {
+        "word": "OLE",
+        "clue": "Cheer at a bullfight"
+    },
+    {
+        "word": "MAT",
+        "clue": "Wrestling surface, or a welcome ___"
+    },
+    {
+        "word": "AND",
+        "clue": "Word joining two things"
+    },
+    {
+        "word": "ICE",
+        "clue": "Cubes in a cold drink"
+    },
+    {
+        "word": "APE",
+        "clue": "Chimp or gorilla"
+    },
+    {
+        "word": "ONE",
+        "clue": "The loneliest number, in a song"
+    },
+    {
+        "word": "EYE",
+        "clue": "Organ you see with"
+    },
+    {
+        "word": "TKO",
+        "clue": "Boxing win when a fighter can't continue, for short"
+    },
+    {
+        "word": "FAX",
+        "clue": "Send a document over a phone line"
+    },
+    {
+        "word": "SEX",
+        "clue": "Male or female, on a form"
+    },
+    {
+        "word": "SOW",
+        "clue": "Plant seeds"
+    },
+    {
+        "word": "ANT",
+        "clue": "Tiny picnic pest"
+    },
+    {
+        "word": "HID",
+        "clue": "Played hide-and-seek and tucked away"
+    },
+    {
+        "word": "AAH",
+        "clue": "\"That feels nice!\""
+    },
+    {
+        "word": "BUY",
+        "clue": "Purchase"
+    },
+    {
+        "word": "YUP",
+        "clue": "\"Yeah, sure\""
+    },
+    {
+        "word": "WWI",
+        "clue": "Conflict of 1914-1918, in brief"
+    },
+    {
+        "word": "HIS",
+        "clue": "Belonging to him"
+    },
+    {
+        "word": "STY",
+        "clue": "Pig's pen"
+    },
+    {
+        "word": "NIT",
+        "clue": "Tiny egg of a louse"
+    },
+    {
+        "word": "HOE",
+        "clue": "Garden tool for weeding"
+    },
+    {
+        "word": "TAX",
+        "clue": "Money paid to the government"
+    },
+    {
+        "word": "IVF",
+        "clue": "Fertility treatment, for short"
+    },
+    {
+        "word": "IOU",
+        "clue": "Note that says \"I owe you\""
+    },
+    {
+        "word": "INS",
+        "clue": "Those in power, with \"the\""
+    },
+    {
+        "word": "DOH",
+        "clue": "Homer Simpson's frustrated cry"
+    },
+    {
+        "word": "SKY",
+        "clue": "Where clouds float"
+    },
+    {
+        "word": "HUE",
+        "clue": "Shade of a color"
+    },
+    {
+        "word": "HAS",
+        "clue": "Owns"
+    },
+    {
+        "word": "FUN",
+        "clue": "A good time"
+    },
+    {
+        "word": "SUB",
+        "clue": "Sandwich also called a hoagie"
+    },
+    {
+        "word": "BRA",
+        "clue": "Undergarment with cups"
+    },
+    {
+        "word": "DEN",
+        "clue": "A lion's home"
+    },
+    {
+        "word": "ATE",
+        "clue": "Had lunch"
+    },
+    {
+        "word": "ADD",
+        "clue": "Do some sums"
+    },
+    {
+        "word": "DAM",
+        "clue": "Structure that holds back a river"
+    },
+    {
+        "word": "MSN",
+        "clue": "Microsoft's web portal, once"
+    },
+    {
+        "word": "STD",
+        "clue": "Sexually transmitted illness, for short"
+    },
+    {
+        "word": "FOE",
+        "clue": "Enemy"
+    },
+    {
+        "word": "GAY",
+        "clue": "Happy, in an old-fashioned sense"
+    },
+    {
+        "word": "DNA",
+        "clue": "Molecule that holds your genetic code"
+    },
+    {
+        "word": "GOT",
+        "clue": "Received or obtained"
+    },
+    {
+        "word": "OWE",
+        "clue": "Be in debt"
+    },
+    {
+        "word": "TAB",
+        "clue": "Restaurant bill"
+    },
+    {
+        "word": "BOO",
+        "clue": "Ghostly greeting"
+    },
+    {
+        "word": "BUN",
+        "clue": "Hairstyle worn in a knot"
+    },
+    {
+        "word": "MSG",
+        "clue": "Flavor enhancer in some Chinese food (abbr.)"
+    },
+    {
+        "word": "YET",
+        "clue": "So far; up to now"
+    },
+    {
+        "word": "ALL",
+        "clue": "Every last bit"
+    },
+    {
+        "word": "AIL",
+        "clue": "Feel unwell"
+    },
+    {
+        "word": "MEN",
+        "clue": "Gentlemen"
+    },
+    {
+        "word": "MOD",
+        "clue": "Stylish, in 1960s slang"
+    },
+    {
+        "word": "EEL",
+        "clue": "Slippery fish"
+    },
+    {
+        "word": "TLC",
+        "clue": "Tender loving care, in brief"
+    },
+    {
+        "word": "BLT",
+        "clue": "Sandwich with bacon, in brief"
+    },
+    {
+        "word": "SET",
+        "clue": "Ready, ___, go!"
+    },
+    {
+        "word": "COT",
+        "clue": "Simple folding bed"
+    },
+    {
+        "word": "DIY",
+        "clue": "Do-it-yourself, for short"
+    },
+    {
+        "word": "IDS",
+        "clue": "Wallet cards, informally"
+    },
+    {
+        "word": "GDP",
+        "clue": "Nation's economic output, in brief"
+    },
+    {
+        "word": "SIN",
+        "clue": "Wrongdoing, in religion"
+    }
 ]
