@@ -235,7 +235,9 @@ export function usePuzzleInput(
       if (foundNext) {
         setSelectedCell([nextR, nextC]);
       } else {
-        handleNextClue(1, gridValues, game.incorrectCells);
+        // If the board just became full, handleNextClue might be called with old gridValues.
+        // We should pass the updated grid to ensure it correctly identifies incorrect words.
+        handleNextClue(1, newGrid, game.incorrectCells);
       }
 
       if (checkIsComplete(newGrid)) {
@@ -307,7 +309,9 @@ export function usePuzzleInput(
       if (foundNext) {
         setSelectedCell([nextR, nextC]);
       } else {
-        handleNextClue(1, gridValues, game.incorrectCells);
+        // If the board just became full, handleNextClue might be called with old gridValues.
+        // We should pass the updated grid to ensure it correctly identifies incorrect words.
+        handleNextClue(1, newGrid, game.incorrectCells);
       }
       if (checkIsComplete(newGrid)) {
         handleSolve();

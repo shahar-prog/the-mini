@@ -164,19 +164,26 @@ export function useCrosswordNavigation(puzzle: CrosswordPuzzle) {
             )
           : false;
 
-        const hasIncorrect = incorrectCells
+        // Calculate correctness based on the provided gridValues, not the potentially stale incorrectCells set.
+        const isWordCorrect = gridValues
           ? (target.direction === 'across'
-              ? Array.from({ length: target.length }, (_, i) => `${target.row},${target.col + i}`).some(cell => incorrectCells.has(cell))
-              : Array.from({ length: target.length }, (_, i) => `${target.row + i},${target.col}`).some(cell => incorrectCells.has(cell))
+              ? Array.from({ length: target.length }, (_, i) =>
+                  gridValues[target.row][target.col + i].toUpperCase() === puzzle.grid[target.row][target.col + i].toUpperCase()
+                ).every(Boolean)
+              : Array.from({ length: target.length }, (_, i) =>
+                  gridValues[target.row + i][target.col].toUpperCase() === puzzle.grid[target.row + i][target.col].toUpperCase()
+                ).every(Boolean)
             )
-          : false;
+          : true;
+
+        const hasIncorrect = !isWordCorrect;
 
         let shouldSkip = false;
         if (isBoardFull) {
-          // If entire board is full, skip words that are correct
-          shouldSkip = !hasIncorrect;
+          // If entire board is full, skip words that are correct.
+          shouldSkip = isWordCorrect;
         } else {
-          // If board is not full, skip words that are already filled
+          // If board is not full, skip words that are already filled.
           shouldSkip = isWordFullyFilled;
         }
 
