@@ -64,6 +64,8 @@ export default function CrosswordGame({
       handleClearIncorrect: game.handleClearIncorrect,
       showIncorrectPopup: game.showIncorrectPopup,
     },
+
+
     nav.handleNextClue
   );
 
@@ -125,7 +127,11 @@ export default function CrosswordGame({
           onToggleTimer={() => game.setIsRunning(!game.isRunning)}
           onCheckPuzzle={game.handleCheckPuzzle}
           onClearIncorrect={game.handleClearIncorrect}
-          onRevealWord={() => game.handleRevealWord(nav.activeClue)}
+          onRevealWord={() => {
+            if (nav.activeClue) {
+              game.handleRevealWord(nav.activeClue);
+            }
+          }}
           onResetPuzzle={game.handleResetPuzzle}
           isSolved={game.isSolved}
           onShare={() => setShowShareModal(true)}
@@ -156,8 +162,8 @@ export default function CrosswordGame({
                     nav.selectedCell?.[1] === colIndex;
                   const isInActiveWord = nav.activeWordCells.has(`${rowIndex},${colIndex}`);
                   const cellNumber = puzzle.cellNumbers?.[rowIndex]?.[colIndex];
-                  const hasError = game.incorrectCells.has(`${rowIndex},${colIndex}`);
-                  const isCorrect = game.correctCells.has(`${rowIndex},${colIndex}`);
+                  const hasError = game.incorrectCells?.has(`${rowIndex},${colIndex}`);
+                  const isCorrect = game.correctCells?.has(`${rowIndex},${colIndex}`);
                   const userLetter = game.gridValues[rowIndex]?.[colIndex] || "";
 
                   return (

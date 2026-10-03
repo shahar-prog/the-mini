@@ -15,11 +15,12 @@ export function usePuzzleInput(
   game: {
     gridValues: string[][];
     setGridValues: (grid: string[][]) => void;
-    updateGridValues: (grid: string[][]) => void;
-    handleUndo: () => void;
-    handleRedo: () => void;
+    updateGridValues: (grid: string[][], nav?: { selectedCell: [number, number] | null; direction: 'across' | 'down' }) => void;
+    handleUndo: (nav?: { selectedCell: [number, number] | null; direction: 'across' | 'down' }) => void;
+    handleRedo: (nav?: { selectedCell: [number, number] | null; direction: 'across' | 'down' }) => void;
     isSolved: boolean;
     isRunning: boolean;
+    incorrectCells: Set<string>;
     setIncorrectCells: (cells: Set<string>) => void;
     checkIsComplete: (grid: string[][]) => boolean;
     handleSolve: () => void;
@@ -27,7 +28,8 @@ export function usePuzzleInput(
     handleCheckPuzzle: () => void;
     handleClearIncorrect: () => void;
   },
-  handleNextClue: (delta: 1 | -1) => void
+
+  handleNextClue: (delta: 1 | -1, gridValues?: string[][], incorrectCells?: Set<string>) => void
 ) {
   const {
     selectedCell, setSelectedCell, direction, setDirection,

@@ -81,7 +81,6 @@ export default function ShareModal({
 
     try {
       const dataUrl = await domtoimage.toPng(imageRef.current, {
-        backgroundColor: '#ffffff',
         style: {
           position: 'fixed',
           left: '0',

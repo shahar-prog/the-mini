@@ -1,19 +1,9 @@
-import { useEffect, useCallback } from 'react';
-import {
-  selectedCell,
-  direction,
-  setDirection,
-  setSelectedCell,
-  gridValues,
-  setGridValues,
-  incorrectCells,
-  setIncorrectCells,
-  checkIsComplete,
-  handleSolve
-} from './useCrosswordGame'; // Note: I'll fix the imports in a second
+import { useEffect } from 'react';
+import { CrosswordPuzzle } from '@/types/playminicrossword';
+
 
 export function useCrosswordInput(
-  puzzle: any,
+  puzzle: CrosswordPuzzle,
   game: any,
   moveCursor: (r: number, c: number, dir: 'across' | 'down', forward: boolean) => void,
   handleNextClue: (delta: 1 | -1) => void
@@ -52,7 +42,7 @@ export function useCrosswordInput(
       } else if (e.key === 'Backspace') {
         e.preventDefault();
         const currentVal = game.gridValues[r][c];
-        const newGrid = game.gridValues.map((row: any) => [...row]);
+        const newGrid = game.gridValues.map((row: string[]) => [...row]);
 
         if (currentVal !== '') {
           newGrid[r][c] = '';
@@ -61,7 +51,7 @@ export function useCrosswordInput(
           moveCursor(r, c, game.direction, false);
         }
 
-        game.setIncorrectCells((prev: any) => {
+        game.setIncorrectCells((prev: Set<string>) => {
           const next = new Set(prev);
           next.delete(`${r},${c}`);
           return next;
@@ -69,11 +59,11 @@ export function useCrosswordInput(
       } else if (e.key.length === 1 && /^[a-zA-Z]$/.test(e.key)) {
         e.preventDefault();
         const letter = e.key.toUpperCase();
-        const newGrid = game.gridValues.map((row: any) => [...row]);
+        const newGrid = game.gridValues.map((row: string[]) => [...row]);
         newGrid[r][c] = letter;
         game.setGridValues(newGrid);
 
-        game.setIncorrectCells((prev: any) => {
+        game.setIncorrectCells((prev: Set<string>) => {
           const next = new Set(prev);
           next.delete(`${r},${c}`);
           return next;

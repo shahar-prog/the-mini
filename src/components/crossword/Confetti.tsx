@@ -5,7 +5,10 @@ export default function Confetti() {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setIsMounted(true);
+    // Use a timeout or requestAnimationFrame to move the state update
+    // out of the synchronous effect body to avoid cascading renders.
+    const timer = setTimeout(() => setIsMounted(true), 0);
+    return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
