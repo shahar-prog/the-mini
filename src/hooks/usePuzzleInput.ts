@@ -220,13 +220,15 @@ export function usePuzzleInput(
         if (moveDir === "across") {
           nextC++;
           if (nextC >= puzzle.width || puzzle.grid[nextR][nextC] === " ") break;
-          if (newGrid[nextR][nextC] === "") {
+          // Only skip if the cell is filled AND not marked as incorrect (red)
+          if (newGrid[nextR][nextC] === "" || game.incorrectCells?.has(`${nextR},${nextC}`)) {
             foundNext = true;
           }
         } else {
           nextR++;
           if (nextR >= puzzle.height || puzzle.grid[nextR][nextC] === " ") break;
-          if (newGrid[nextR][nextC] === "") {
+          // Only skip if the cell is filled AND not marked as incorrect (red)
+          if (newGrid[nextR][nextC] === "" || game.incorrectCells?.has(`${nextR},${nextC}`)) {
             foundNext = true;
           }
         }
@@ -294,13 +296,15 @@ export function usePuzzleInput(
         if (moveDir === "across") {
           nextC++;
           if (nextC >= puzzle.width || puzzle.grid[nextR][nextC] === " ") break;
-          if (newGrid[nextR][nextC] === "") {
+          // Only skip if the cell is filled AND not marked as incorrect (red)
+          if (newGrid[nextR][nextC] === "" || game.incorrectCells?.has(`${nextR},${nextC}`)) {
             foundNext = true;
           }
         } else {
           nextR++;
           if (nextR >= puzzle.height || puzzle.grid[nextR][nextC] === " ") break;
-          if (newGrid[nextR][nextC] === "") {
+          // Only skip if the cell is filled AND not marked as incorrect (red)
+          if (newGrid[nextR][nextC] === "" || game.incorrectCells?.has(`${nextR},${nextC}`)) {
             foundNext = true;
           }
         }
