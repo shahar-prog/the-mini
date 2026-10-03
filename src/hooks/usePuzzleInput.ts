@@ -179,11 +179,6 @@ export function usePuzzleInput(
       } else {
         moveCursor(r, c, direction, false);
       }
-      setIncorrectCells((prev: Set<string>) => {
-        const next = new Set(prev);
-        next.delete(`${r},${c}`);
-        return next;
-      });
     } else if (e.key === "Delete") {
       e.preventDefault();
       const currentVal = gridValues[r][c];
@@ -199,11 +194,6 @@ export function usePuzzleInput(
       } else {
         moveCursor(r, c, direction, true);
       }
-      setIncorrectCells((prev: Set<string>) => {
-        const next = new Set(prev);
-        next.delete(`${r},${c}`);
-        return next;
-      });
     } else if (e.key.length === 1 && /^[a-zA-Z]$/.test(e.key)) {
       e.preventDefault();
       const letter = e.key.toUpperCase();
@@ -212,11 +202,6 @@ export function usePuzzleInput(
       updateGridValues(newGrid, {
         selectedCell,
         direction,
-      });
-      setIncorrectCells((prev: Set<string>) => {
-        const next = new Set(prev);
-        next.delete(`${r},${c}`);
-        return next;
       });
 
       const currentHasAcross = hasWordAt(r, c, "across");
@@ -281,11 +266,6 @@ export function usePuzzleInput(
       } else {
         moveCursor(r, c, direction, false);
       }
-      setIncorrectCells((prev: Set<string>) => {
-        const next = new Set(prev);
-        next.delete(`${r},${c}`);
-        return next;
-      });
     } else if (key === "SWITCH") {
       toggleDirectionIfPossible();
     } else {
@@ -294,11 +274,6 @@ export function usePuzzleInput(
       updateGridValues(newGrid, {
         selectedCell,
         direction,
-      });
-      setIncorrectCells((prev: Set<string>) => {
-        const next = new Set(prev);
-        next.delete(`${r},${c}`);
-        return next;
       });
 
       const hasAcross = hasWordAt(r, c, "across");

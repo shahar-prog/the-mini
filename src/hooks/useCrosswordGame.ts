@@ -183,32 +183,32 @@ export function useCrosswordGame(
       }
 
       if (isFullyFilled) {
-        if (checkIsComplete(newGrid)) {
-          handleSolve();
-        } else {
-          // Trigger the "check" logic to show incorrect cells
-          const errors = new Set<string>();
-          const corrects = new Set<string>();
-          for (let r = 0; r < puzzle.height; r++) {
-            for (let c = 0; c < puzzle.width; c++) {
-              if (puzzle.grid[r][c] !== ' ') {
-                const val = newGrid[r][c];
-                if (val && val !== puzzle.grid[r][c]) {
-                  errors.add(`${r},${c}`);
-                } else if (val && val === puzzle.grid[r][c]) {
-                  corrects.add(`${r},${c}`);
-                }
+        const errors = new Set<string>();
+        const corrects = new Set<string>();
+        for (let r = 0; r < puzzle.height; r++) {
+          for (let c = 0; c < puzzle.width; c++) {
+            if (puzzle.grid[r][c] !== ' ') {
+              const val = newGrid[r][c].toUpperCase();
+              const target = puzzle.grid[r][c].toUpperCase();
+              if (val && val !== target) {
+                errors.add(`${r},${c}`);
+              } else if (val && val === target) {
+                corrects.add(`${r},${c}`);
               }
             }
           }
-          setIncorrectCells(errors);
-          setCorrectCells(corrects);
+        }
 
-          // Show popup only the first time it's fully filled but incorrect
-          if (!hasShownIncorrectPopup) {
-            setShowIncorrectPopup(true);
-            setHasShownIncorrectPopup(true);
-          }
+        // We use the functional update form to ensure we have the latest state
+        // and to avoid potential race conditions with the .delete calls above.
+        setIncorrectCells(() => errors);
+        setCorrectCells(() => corrects);
+
+        if (checkIsComplete(newGrid)) {
+          handleSolve();
+        } else if (!hasShownIncorrectPopup) {
+          setShowIncorrectPopup(true);
+          setHasShownIncorrectPopup(true);
         }
       }
     }
