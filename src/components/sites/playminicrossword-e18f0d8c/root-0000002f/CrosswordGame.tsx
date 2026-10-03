@@ -56,6 +56,7 @@ export default function CrosswordGame({
       handleRedo: game.handleRedo,
       isSolved: game.isSolved,
       isRunning: game.isRunning,
+      incorrectCells: game.incorrectCells,
       setIncorrectCells: game.setIncorrectCells,
       checkIsComplete: game.checkIsComplete,
       handleSolve: game.handleSolve,

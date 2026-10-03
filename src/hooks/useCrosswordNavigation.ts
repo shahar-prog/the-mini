@@ -69,11 +69,26 @@ export function useCrosswordNavigation(puzzle: CrosswordPuzzle) {
     [puzzle],
   );
 
-  const handleClueClick = useCallback((clue: Clue, gridValues?: string[][]) => {
+  const handleClueClick = useCallback((clue: Clue, gridValues?: string[][], incorrectCells?: Set<string>) => {
     setDirection(clue.direction);
 
     if (gridValues) {
       const isAcross = clue.direction === 'across';
+
+      // 1. First priority: if the board is full and we have incorrect cells,
+      // jump specifically to the first incorrect letter in this word.
+      if (incorrectCells) {
+        for (let i = 0; i < clue.length; i++) {
+          const r = isAcross ? clue.row : clue.row + i;
+          const c = isAcross ? clue.col + i : clue.col;
+          if (incorrectCells.has(`${r},${c}`)) {
+            setSelectedCell([r, c]);
+            return;
+          }
+        }
+      }
+
+      // 2. Second priority: jump to the first unwritten letter.
       for (let i = 0; i < clue.length; i++) {
         const r = isAcross ? clue.row : clue.row + i;
         const c = isAcross ? clue.col + i : clue.col;
@@ -119,7 +134,7 @@ export function useCrosswordNavigation(puzzle: CrosswordPuzzle) {
   }, [activeClue]);
 
   const handleNextClue = useCallback(
-    (delta: 1 | -1, gridValues?: string[][]) => {
+    (delta: 1 | -1, gridValues?: string[][], incorrectCells?: Set<string>) => {
       const allClues = [...puzzle.clues.across, ...puzzle.clues.down];
       if (allClues.length === 0) return;
 
@@ -129,31 +144,56 @@ export function useCrosswordNavigation(puzzle: CrosswordPuzzle) {
           c.number === activeClue?.number,
       );
 
-      // Loop until we find a clue that isn't fully filled
+      // Determine if the entire board is filled
+      const isBoardFull = gridValues
+        ? puzzle.grid.every((row, r) =>
+            row.every((cell, c) => cell === ' ' || gridValues[r][c] !== '')
+          )
+        : false;
+
+      // Loop until we find a clue that needs attention
       let attempts = 0;
       while (attempts < allClues.length) {
         curIdx = (curIdx + delta + allClues.length) % allClues.length;
         const target = allClues[curIdx];
 
-        const isFullyFilled = gridValues
+        const isWordFullyFilled = gridValues
           ? (target.direction === 'across'
               ? Array.from({ length: target.length }, (_, i) => gridValues[target.row][target.col + i]).every(v => v !== '')
               : Array.from({ length: target.length }, (_, i) => gridValues[target.row + i][target.col]).every(v => v !== '')
             )
           : false;
 
-        if (!isFullyFilled) {
-          handleClueClick(target, gridValues);
+        const hasIncorrect = incorrectCells
+          ? (target.direction === 'across'
+              ? Array.from({ length: target.length }, (_, i) => `${target.row},${target.col + i}`).some(cell => incorrectCells.has(cell))
+              : Array.from({ length: target.length }, (_, i) => `${target.row + i},${target.col}`).some(cell => incorrectCells.has(cell))
+            )
+          : false;
+
+        let shouldSkip = false;
+        if (isBoardFull) {
+          // If entire board is full, skip words that are correct
+          shouldSkip = !hasIncorrect;
+        } else {
+          // If board is not full, skip words that are already filled
+          shouldSkip = isWordFullyFilled;
+        }
+
+        if (!shouldSkip) {
+          handleClueClick(target, gridValues, incorrectCells);
           return;
         }
         attempts++;
       }
 
-      // If all remaining clues are filled, just go to the next one anyway
+      // If we've looped through everything and everything is "skipped"
+      // (e.g. board is full and all remaining are correct, or board is not full and all are filled)
+      // just go to the next one to avoid getting stuck.
       const finalIdx = (curIdx + delta + allClues.length) % allClues.length;
-      handleClueClick(allClues[finalIdx], gridValues);
+      handleClueClick(allClues[finalIdx], gridValues, incorrectCells);
     },
-    [puzzle.clues, activeClue, handleClueClick],
+    [puzzle.clues, activeClue, handleClueClick, puzzle],
   );
 
   const jumpToWordEdge = useCallback(
