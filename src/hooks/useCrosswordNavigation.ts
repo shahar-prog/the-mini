@@ -75,24 +75,15 @@ export function useCrosswordNavigation(puzzle: CrosswordPuzzle) {
     if (gridValues) {
       const isAcross = clue.direction === 'across';
 
-      // 1. First priority: if the board is full and we have incorrect cells,
-      // jump specifically to the first incorrect letter in this word.
-      if (incorrectCells) {
-        for (let i = 0; i < clue.length; i++) {
-          const r = isAcross ? clue.row : clue.row + i;
-          const c = isAcross ? clue.col + i : clue.col;
-          if (incorrectCells.has(`${r},${c}`)) {
-            setSelectedCell([r, c]);
-            return;
-          }
-        }
-      }
-
-      // 2. Second priority: jump to the first unwritten letter.
+      // Priority: jump to the first cell that is either empty OR incorrect.
       for (let i = 0; i < clue.length; i++) {
         const r = isAcross ? clue.row : clue.row + i;
         const c = isAcross ? clue.col + i : clue.col;
-        if (!gridValues[r][c]) {
+
+        const isEmpty = !gridValues[r][c];
+        const isIncorrect = incorrectCells?.has(`${r},${c}`);
+
+        if (isEmpty || isIncorrect) {
           setSelectedCell([r, c]);
           return;
         }
