@@ -183,8 +183,17 @@ export function useCrosswordNavigation(puzzle: CrosswordPuzzle) {
           // If entire board is full, skip words that are correct.
           shouldSkip = isWordCorrect;
         } else {
-          // If board is not full, skip words that are already filled.
-          shouldSkip = isWordFullyFilled;
+          // If board is not full, skip words that are already filled,
+          // UNLESS they contain letters that are marked as incorrect.
+          const hasIncorrectCell = incorrectCells
+            ? Array.from({ length: target.length }, (_, i) => {
+                const r = target.direction === 'across' ? target.row : target.row + i;
+                const c = target.direction === 'across' ? target.col + i : target.col;
+                return incorrectCells.has(`${r},${c}`);
+              }).some(Boolean)
+            : false;
+
+          shouldSkip = isWordFullyFilled && !hasIncorrectCell;
         }
 
         if (!shouldSkip) {
