@@ -122,14 +122,36 @@ export function useCrosswordNavigation(puzzle: CrosswordPuzzle) {
     (delta: 1 | -1, gridValues?: string[][]) => {
       const allClues = [...puzzle.clues.across, ...puzzle.clues.down];
       if (allClues.length === 0) return;
-      const curIdx = allClues.findIndex(
+
+      let curIdx = allClues.findIndex(
         (c) =>
           c.direction === activeClue?.direction &&
           c.number === activeClue?.number,
       );
-      const nextIdx = (curIdx + delta + allClues.length) % allClues.length;
-      const target = allClues[nextIdx];
-      handleClueClick(target, gridValues);
+
+      // Loop until we find a clue that isn't fully filled
+      let attempts = 0;
+      while (attempts < allClues.length) {
+        curIdx = (curIdx + delta + allClues.length) % allClues.length;
+        const target = allClues[curIdx];
+
+        const isFullyFilled = gridValues
+          ? (target.direction === 'across'
+              ? Array.from({ length: target.length }, (_, i) => gridValues[target.row][target.col + i]).every(v => v !== '')
+              : Array.from({ length: target.length }, (_, i) => gridValues[target.row + i][target.col]).every(v => v !== '')
+            )
+          : false;
+
+        if (!isFullyFilled) {
+          handleClueClick(target, gridValues);
+          return;
+        }
+        attempts++;
+      }
+
+      // If all remaining clues are filled, just go to the next one anyway
+      const finalIdx = (curIdx + delta + allClues.length) % allClues.length;
+      handleClueClick(allClues[finalIdx], gridValues);
     },
     [puzzle.clues, activeClue, handleClueClick],
   );
